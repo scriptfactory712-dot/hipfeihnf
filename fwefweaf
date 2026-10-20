@@ -1,51 +1,248 @@
-if type(loadchar) ~= "function" then loadchar = function() end end
-if type(loadcharacter) ~= "function" then loadcharacter = function() end end
+-- obfuscated by LuaHub
+-- string decoder
+local function _dec(t)
+    local k = 'BZ2026'
+    local r = ''
+    for i = 1, #t do
+        r = r .. string.char(bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], string.byte(k, (i-1) % #k + 1))
+    end
+    return r
+end
+
+local _s1 = _dec({1,53,95,82,83,66})
+local _s2 = _dec({1109,1130,1025,1136,1137,1024,1143,1127,1036,30,18,1045,1142,1130,1141,1032,18,1028,98,1131,1036,1150,19,22,129594})
+local _s3 = _dec({22,63,94,85,66,89,48,46,97,85,64,64,43,57,87})
+local _s4 = _dec({4,21,100})
+local _s5 = _dec({3,51,95,31,97,94,45,45,115,67,65,95,49,46,118,95,70,69})
+local _s6 = _dec({3,51,95,31,100,95,49,51,80,89,94,95,54,35,113,88,87,85,41})
+local _s7 = _dec({22,63,94,85,66,89,48,46})
+local _s8 = _dec({49,53,94,81,64,12,33,54,93,67,87,27,46,99,88,93,0,69,111,56,93,92,86})
+local _s9 = _dec({1,59,95,85,64,87,98,28,125,102})
+local _s10 = _dec({14,51,85,88,70,95,44,61})
+local _s11 = _dec({3,47,86,89,93})
+local _s12 = _dec({0,0,113,66,93,69,49,50,83,89,64})
+local _s13 = _dec({4,21,100,16,113,94,39,57,89})
+local _s14 = _dec({16,63,66,92,91,85,35,46,87,84,97,66,45,40,83,87,87})
+local _s15 = _dec({1104,1090,1061,1043,1058,1069})
+local _s16 = _dec({49,53,94,81,64,12,32,53,94,68,31,84,45,54,86})
+local _s17 = _dec({1117,1050,1036,1026,1031,1142,1146,1048,1150,16,1143,1141,1144})
+local _s18 = _dec({97,28,116,6,112,0,0})
+local _s19 = _dec({23,41,87,66,123,88,50,47,70,99,87,68,52,51,81,85})
+local _s20 = _dec({49,46,64,89,92,81})
+local _s21 = _dec({12,53,18,98,87,85,45,51,94,16,26,1031,1143,1133,18,1038,1136,1026,1138,1053,1034,25})
+local _s22 = _dec({36,47,92,83,70,95,45,52})
+local _s23 = _dec({3,51,95,31,98,68,43,53,64,89,70,79})
+local _s24 = _dec({1127,1049,1032,16,1071,1059,98,1049,1139,1138,1026,1035,1148,1128,1033,1029,1039,24,98,31,74,85,81,67,54,53,64,16,1039,1027,98,1125,1036,1028,1030,1027,1026,1132,1034,1026,1026,1027,1024,122,90,95,93,93,47,63,70,81,95,83,54,50,93,84,28})
+local _s25 = _dec({22,59,64,87,87,66,120,122,113,92,93,69,39,41,70})
+local _s26 = _dec({0,0,109,118,125,96,1,51,64,83,94,83})
+local _s27 = _dec({0,0,119,67,66,126,43,61,90,92,91,81,42,46})
+local _s28 = _dec({9,51,81,91})
+local _s29 = _dec({1123,1120,1138,1032,1037,1140,98,1128,1145,1027,1138,1141,1140,1135,1039})
+local _s30 = _dec({49,53,94,81,64,12,33,50,87,83,89,27,46,99,88,93,0,69,111,56,93,92,86})
+local _s31 = _dec({10,51,85,88,94,95,37,50,70})
+local _s32 = _dec({12,47,95,82,87,68,20,59,94,69,87})
+local _s33 = _dec({97,28,116,4,6,2,118})
+local _s34 = _dec({32,54,93,95,95})
+local _s35 = _dec({23,52,94,95,83,82,98,15,123})
+local _s36 = _dec({9,51,81,91,80,87,33,49})
+local _s37 = _dec({17,53,71,94,86})
+local _s38 = _dec({1116,1146,1041,1062,1066,1059})
+local _s39 = _dec({13,42,87,94,18,122,55,59,18,120,71,84})
+local _s40 = _dec({20,51,64,68,71,87,46,15,65,85,64})
+local _s41 = _dec({33,54,91,93,80})
+local _s42 = _dec({10,46,70,64,97,83,48,44,91,83,87})
+local _s43 = _dec({15,47,70,85,18,113,35,55,87,16,115,67,38,51,93})
+local _s44 = _dec({33,53,92,85})
+local _s45 = _dec({18,59,64,68,91,85,46,63,119,93,91,66,54,63,64})
+local _s46 = _dec({22,63,74,68,126,87,32,63,94})
+local _s47 = _dec({22,63,94,85,66,89,48,46,18,114,87,94,43,52,86,16,98,90,35,35,87,66})
+local _s48 = _dec({1122,1135,1028,1032,1038,12,98,28,125,102,18,30,1139,1121,1034,1030,1026,1039,1034,1122,1035,16,1032,22,1149,1050,1034,1142,1031,1037,1025,115})
+local _s49 = _dec({22,45,87,85,92,101,39,40,68,89,81,83})
+local _s50 = _dec({1120,1135,1039,1032,18,1032,1024,1120,1033,1150,1141,1027,1151,1041})
+local _s51 = _dec({0,54,93,84,104,89,44,63,18,113,91,91,32,53,70})
+local _s52 = _dec({1,53,64,85,117,67,43})
+local _s53 = _dec({4,21,100,16,26,1142,1138,1134,1034,1139,1139,31})
+local _s54 = _dec({1114,1129,1138,1038,1032,1038,98,1127,1031,16,1039,1030,1147,1134,1031,1037,1145})
+local _s55 = _dec({4,51,64,85,97,83,48,44,87,66})
+local _s56 = _dec({25,22,71,81,18,126,55,56,111,16,1069,1142,1148,1054,1034,1035,1150,22,1151,1130,1028,1024,1136})
+local _s57 = _dec({49,53,94,81,64,12,46,41,3,6,3,2,111,56,93,92,86})
+local _s58 = _dec({3,51,95,31,102,83,35,55,113,88,87,85,41})
+local _s59 = _dec({4,21,100,115,91,68,33,54,87})
+local _s60 = _dec({42,46,70,64,65,12,109,117,64,81,69,24,37,51,70,88,71,84,55,41,87,66,81,89,44,46,87,94,70,24,33,53,95,31,116,89,45,46,83,87,87,69,55,41,29,92,5,67,112,34,74,64,71,93,109,55,83,89,92,25,46,105,68,65,93,88,49,107,68,31,95,87,43,52,28,92,71,87})
+local _s61 = _dec({10,63,83,84})
+local _s62 = _dec({1104,1120,1033,1150,1141,1127,1151,122,8230,16,1039,1030,1136,1124,1030,1032,1136,1143,1037,122,1039,1024,18,1031,1145,1122,1028,1024,1035,1150,1143,1129,1036,16,1032,22,1144,1049,1138,1137,1036,1142,1025})
+local _s63 = _dec({18,53,65,89,70,95,45,52})
+local _s64 = _dec({6,59,64,91})
+local _s65 = _dec({23,19,97,68,64,89,41,63})
+local _s66 = _dec({49,42,64,85,83,82})
+local _s67 = _dec({3,51,95,82,93,66,98,30,91,67,70,87,44,57,87,16,26,1026,1138,1121,1150,1037,1036,1143,1024,1046,18,1026,18,1143,1024,1130,1030,1024,1143,31})
+local _s68 = _dec({3,51,95,31,116,121,20,117,96,81,86,95,55,41})
+local _s69 = _dec({17,53,71,94,86,101,39,40,68,89,81,83})
+local _s70 = _dec({0,51,94,92,80,89,35,40,86,119,71,95})
+local _s71 = _dec({11,52,83,83,81,67,48,59,81,73})
+local _s72 = _dec({1120,1103,1065,1061,1069,1064,1122,1144})
+local _s73 = _dec({3,51,95,31,115,90,53,59,75,67,119,88,35,56,94,85,86})
+local _s74 = _dec({1127,1049,1032,16,1137,1143,1024,1130,1039,1038,1024,1037,1143,1127,18,1139,1139,1033,1143,1042,1039,1038,19,22,17,51,94,85,92,66,98,27,91,93,18,1142,1138,1131,1036,1138,1026,1027,1024,116})
+local _s75 = _dec({54,53,85,87,94,83})
+local _s76 = _dec({1112,1130,1141,1029,1139,1140,1136,1124,18,1137,1039,1038,1140,1135,1039,1038})
+local _s77 = _dec({29,5,92,81,95,83,33,59,94,92})
+local _s78 = _dec({22,63,94,85,66,89,48,46,18,68,93,22,12,63,83,66,87,69,54,122,98,92,83,79,39,40})
+local _s79 = _dec({3,57,81,69,64,87,33,35})
+local _s80 = _dec({1116,1147,1071,1070,1056,1067,1116,1103})
+local _s81 = _dec({1114,1095,1046,1070})
+local _s82 = _dec({17,51,94,85,92,66,98,27,91,93,18,1028,1144,1121,1148,1143,1123,1035})
+local _s83 = _dec({3,51,95,82,93,66,98,28,125,102,18,30,1026,1130,1030,1032,1137,1143,98,1127,1026,16,1151,1036,1026,1130,1039,1029,27})
+local _s84 = _dec({22,53,64,67,93})
+local _s85 = _dec({1109,1128,1137,1034,18,1028,1144,1121,1148,1143,1123,1035})
+local _s86 = _dec({1114,1129,1138,1038,1032,22,1151,1135,18,1037,1026,1039,1142,1135,1039})
+local _s87 = _dec({48,63,81,95,91,90})
+local _s88 = _dec({20,51,65,89,80,95,46,51,70,73,18,117,42,63,81,91,18,30,1151,1135,18,1143,1031,1142,1143,1133,18,1137,1136,1027,1151,1041,27})
+local _s89 = _dec({1109,1130,18,1137,1037,1038,1151,1049,18})
+local _s90 = _dec({6,51,65,81,80,90,39,122,117,92,93,84,35,54,18,99,90,87,38,53,69,67})
+local _s91 = _dec({10,47,95,81,92,89,43,62,96,95,93,66,18,59,64,68})
+local _s92 = _dec({25,22,71,81,18,126,55,56,111,16,1071,1027,98,1049,1030,1024,1033,1032,1027,1046,18,1031,1026,1029,1026,1049,1029,1032,1136,1146,98,54,5,69,0,78,58,42,71,91,28})
+local _s93 = _dec({97,28,116,8,113,2,112})
+local _s94 = _dec({20,51,65,69,83,90,49,122,20,16,119,101,18})
+local _s95 = _dec({1119,1098,1043,1042,1042,1064,1115,1088,1066})
+local _s96 = _dec({0,54,93,95,95})
+local _s97 = _dec({1109,1128,1137,1034,18,1028,1033,1120,1033,1150,1141,1027,1151})
+local _s98 = _dec({10,47,95,81,92,89,43,62})
+local _s99 = _dec({22,59,64,87,87,66,120,122,116,127,100,22,106,1131,1033,1032,1028,1030,1147,1042,1034,1033,18,1036,98,1052,1031,1037,1136,1142,1025,115})
+local _s100 = _dec({21,59,94,92,80,87,44,61,18,24,1139,1140,1026,1135,1033,1151,1136,1146,98,1053,1031,1136,1031,1025,98,1051,1136,1029,1039,1149,107})
+local _s101 = _dec({35,57,81,69,64,87,33,35})
+local _s102 = _dec({14,47,83,16,122,67,32})
+local _s103 = _dec({18,54,83,73,87,68,5,47,91})
+local _s104 = _dec({17,42,64,85,83,82})
+local _s105 = _dec({98,18,98})
+local _s106 = _dec({17,63,70,68,91,88,37,41})
+local _s107 = _dec({0,0,119,67,66,122,35,56,87,92})
+local _s108 = _dec({11,55,95,69,92,83})
+local _s109 = _dec({16,47,92,99,87,68,52,51,81,85})
+local _s110 = _dec({4,21,100,16,113,95,48,57,94,85})
+local _s111 = _dec({17,51,94,85,92,66,98,27,91,93,18,122,43,55,91,68,18,30,1142,1130,1033,1148,1039,1032,1027,1048,1150,25})
+local _s112 = _dec({22,27,96,119,119,98,98,23,119,100,122,121,6})
+local _s113 = _dec({22,53,93,92})
+local _s114 = _dec({5,47,92,120,91,66})
+local _s115 = _dec({16,63,88,95,91,88,98,9,87,66,68,83,48})
+local _s116 = _dec({1120,1135,1033,1029,1037,1032,1026,1048,18,1034,18})
+local _s117 = _dec({18,54,83,73,87,68,98,31,97,96,18,30,1146,1126,1149,28,18,126,18,118,18,1028,1034,1143,1024,1130,1039,1142,1034,1145,107})
+local _s118 = _dec({0,59,65,85,98,87,48,46})
+local _s119 = _dec({16,63,95,95,68,83,98,28,93,87})
+local _s120 = _dec({17,51,94,85,92,66,98,27,91,93,18,30,1149,1049,1033,1032,18,1037,1143,1048,1149,1138,18,1028,98,1052,1031,1035,1150,31})
+local _s121 = _dec({18,54,83,73,87,68,49})
+local _s122 = _dec({49,53,94,81,64,12,39,35,87,29,80,89,46,62})
+local _s123 = _dec({30,52})
+local _s124 = _dec({17,57,64,85,87,88,5,47,91})
+local _s125 = _dec({17,43,71,81,64,83})
+local _s126 = _dec({41,51,81,91})
+local _s127 = _dec({49,53,94,81,64,12,38,59,92,87,87,68,111,56,93,92,86})
+local _s128 = _dec({49,54,91,84,87,68})
+local _s129 = _dec({4,40,83,93,87})
+local _s130 = _dec({3,51,95,82,93,66})
+local _s131 = _dec({7,9,98})
+local _s132 = _dec({18,63,64,86,93,68,47,59,92,83,87})
+local _s133 = _dec({1,54,91,83,89,22,22,10,18,24,113,66,48,54,18,27,18,117,46,51,81,91,27})
+local _s134 = _dec({3,51,95,31,118,87,47,42,87,94,91,88,37,117,102,88,64,83,49,50,93,92,86})
+local _s135 = _dec({20,63,81,68,93,68,113,12,83,92,71,83})
+local _s136 = _dec({1,54,93,67,87,69,54})
+local _s137 = _dec({18,22,115,105,119,100,98,122,105})
+local _s138 = _dec({97,25,5,7,118,112,4})
+local _s139 = _dec({3,51,95,31,118,87,47,42,87,94,91,88,37,117,97,68,64,83,44,61,70,88})
+local _s140 = _dec({49,53,94,81,64,12,52,53,94,69,95,83,111,56,93,92,86})
+local _s141 = _dec({11,52,70,102,83,90,55,63})
+local _s142 = _dec({38,63,68,89,83,66,43,53,92})
+local _s143 = _dec({43,52,83,83,81,67,48,59,81,73})
+local _s144 = _dec({16,63,81,95,91,90})
+local _s145 = _dec({3,51,95,16,83,66,98,18,87,81,86,22,106,1122,1039,1024,1141,1027,98,14,93,66,65,89,107})
+local _s146 = _dec({11,52,65,68,83,88,33,63})
+local _s147 = _dec({1,47,65,68,93,91,98,25,64,95,65,69,42,59,91,66})
+local _s148 = _dec({17,46,83,66,70,83,48,29,71,89})
+local _s149 = _dec({3,19,127,114,125,98})
+local _s150 = _dec({50,54,83,73,87,68})
+local _s151 = _dec({49,53,94,81,64,12,52,53,94,69,95,83,111,57,64,95,65,69,111,56,93,92,86})
+local _s152 = _dec({3,51,95,31,115,66,54,40,83,83,70,95,45,52,97,68,64,83,44,61,70,88})
+local _s153 = _dec({14,47,83,120,71,84,29,24,94,95,93,82,24,53,92,85})
+local _s154 = _dec({21,53,64,91,65,70,35,57,87})
+local _s155 = _dec({32,53,71,94,81,83})
+local _s156 = _dec({14,47,83,16,122,67,32,122,8230,16,112,90,45,53,86,16,104,89,44,63,18,129608})
+local _s157 = _dec({6,63,68,89,83,66,43,53,92})
+local _s158 = _dec({1122,1135,1028,1032,1038,12,98,25,94,95,65,83,49,46,18,24,1027,1037,1146,1132,1026,1033,1146,1038,1147,115})
+local _s159 = _dec({3,52,70,89,31,119,4,17})
+local _s160 = _dec({97,28,116,0,2,6,114})
+local _s161 = _dec({49,53,94,81,64,12,32,63,94,92,31,84,45,54,86})
+local _s162 = _dec({49,53,94,81,64,12,36,53,94,84,87,68,111,104,31,82,93,90,38,119,86,69,93,66,45,52,87})
+local _s163 = _dec({32,47,70,68,93,88})
+local _s164 = _dec({14,47,83,120,71,84,29,31,97,96,109,116,24})
+local _s165 = _dec({3,51,95,31,115,95,47,22,93,83,89})
+local _s166 = _dec({16,63,81,95,91,90,15,47,94,68,91,70,46,51,87,66})
+local _s167 = _dec({32,35,18,124,71,87,98,18,71,82})
+local _s168 = _dec({17,51,94,85,92,66,98,27,91,93,18,30,7,52,83,82,94,83,38,115})
+local _s169 = _dec({3,51,95,82,93,66,98,28,125,102,18,117,43,40,81,92,87,22,106,1120,1138,1139,1025,22,1151,1130,18,1149,1032,1142,1138,1127,1031,25})
+local _s170 = _dec({0,54,93,84,104,89,44,63})
+local _s171 = _dec({3,51,95,31,118,87,47,42,87,94,91,88,37})
+local _s172 = _dec({14,47,83,16,122,67,32,122,8230,16,112,90,45,53,86,16,104,89,44,63})
+local _s173 = _dec({98,41,70,69,86,69,31})
+local _s174 = _dec({23,19,113,95,64,88,39,40})
+local _s175 = _dec({3,51,95,82,93,66,98,114,1039,1024,1024,1032,1142,1120,1026,16,1039,1030,98,1131,1033,1032,1028,1030,1147,1042,1031,1027,1036,31})
+local _s176 = _dec({12,53,18,99,66,68,39,59,86,16,26,1031,1143,1133,18,1136,1026,1025,1139,1050,1036,1137,1026,31})
+local _s177 = _dec({4,47,94,92,80,68,43,61,90,68})
+local _s178 = _dec({3,51,95,31,116,121,20,117,97,88,93,65,1,51,64,83,94,83})
+local _s179 = _dec({15,59,81})
+local _s180 = _dec({17,51,94,85,92,66,98,27,91,93,18,1028,1033,1120,1033,1150,1141,1027,1151})
+local _s181 = _dec({4,10,97,16,112,89,45,41,70,85,64})
+local _s182 = _dec({49,50,83,91,87})
+local _s183 = _dec({3,51,95,82,93,66,98,9,95,95,93,66,42,122,26,1137,1032,1032,1026,1124,1139,1138,1150,22,1151,1130,1024,1038,1030,1036,1146,115})
+local _s184 = _dec({22,40,83,83,87,68,49,122,26,1035,1034,1035,1146,1122,18,1034,18,1038,1137,1050,1036,1034,1026,1034,107})
+local _s185 = _dec({49,53,94,81,64,12,49,50,91,85,94,82,111,56,93,92,86})
+
+if type(loadchar) ~= _s22 then loadchar = function() end end
+if type(loadcharacter) ~= _s22 then loadcharacter = function() end end
 do
- local vkh1dn = (type(mouse1click) == "function") and mouse1click or nil
+ local lhoa86zp = (type(mouse1click) == _s22) and mouse1click or nil
  mouse1click = function(...)
- if vkh1dn then pcall(vkh1dn) end
+ if lhoa86zp then pcall(lhoa86zp) end
  end
 end
-local vb0z3nx = nil
-local vf1t2 = pcall(function()
- vb0z3nx = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/vb0z3nx/main/vepq85/main.lua"))()
+local l7u2xxpuk = nil
+local lqejes = pcall(function()
+ l7u2xxpuk = loadstring(game:HttpGet(_s60))()
 end)
-if not vf1t2 or not vb0z3nx then
- warn("[Lua Hub] Не удалось загрузить vb0z3nx.")
+if not lqejes or not l7u2xxpuk then
+ warn(_s92)
  return
 end
-local Players = game:GetService("Players")
-local TweenService = game:GetService("TweenService")
-local UserInputService = game:GetService("UserInputService")
-local Lighting = game:GetService("Lighting")
-local Workspace = game:GetService("Workspace")
-local RunService = game:GetService("RunService")
-local TeleportService = game:GetService("TeleportService")
-local VirtualUser = game:GetService("VirtualUser")
-local HttpService = game:GetService("HttpService")
-local StarterGui = game:GetService("StarterGui")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local SoundService = game:GetService("SoundService")
+local Players = game:GetService(_s121)
+local TweenService = game:GetService(_s49)
+local UserInputService = game:GetService(_s19)
+local Lighting = game:GetService(_s10)
+local Workspace = game:GetService(_s154)
+local RunService = game:GetService(_s109)
+local TeleportService = game:GetService(_s3)
+local VirtualUser = game:GetService(_s40)
+local HttpService = game:GetService(_s42)
+local StarterGui = game:GetService(_s148)
+local ReplicatedStorage = game:GetService(_s14)
+local SoundService = game:GetService(_s69)
 local LocalPlayer = Players.LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local Camera = Workspace.CurrentCamera
-local vdaly8 = (type(getgenv) == "function" and getgenv()) or _G
-local function vbn78(path, data)
- if type(writefile) == "function" then pcall(function() writefile(path, data) end) end
+local lwa5ffy = (type(getgenv) == _s22 and getgenv()) or _G
+local function lp7srs(path, data)
+ if type(writefile) == _s22 then pcall(function() writefile(path, data) end) end
 end
-local function vq77aw(path)
- if type(readfile) == "function" then
+local function lhay9x(path)
+ if type(readfile) == _s22 then
  local ok, data = pcall(function() return readfile(path) end)
- if ok and type(data) == "string" then return data end
+ if ok and type(data) == _s20 then return data end
  end
  return nil
 end
-local vaqvk = {
+local l72pwmz = {
  NotifyDuration = 4,
  FlySpeed = 80,
  AimbotRadius = 200,
 }
-local vytj = {
+local lwlbivqm = {
  walkspeed = 16,
  jumppower = 50,
  infjump = false,
@@ -67,7 +264,7 @@ local vytj = {
  noRecoil = false,
  noSpread = false,
  aimbotFOVCircle = false,
- aimbotTarget = "Head", 
+ aimbotTarget = _s61, 
  visCheck = true,
  fullbright = false,
  nofog = false,
@@ -78,103 +275,103 @@ local vytj = {
  fov = 70,
  muted = false,
 }
-local vr56fao = Workspace.Gravity
-local vbvm2p = Lighting.Ambient
-local vptx6 = Lighting.FogEnd
-local v64c = Lighting.FogStart
-local vkoi = Lighting.Brightness
-local virodxm = Lighting.GlobalShadows
-local v3d8w3z = {}
-local function viujv() return Workspace.CurrentCamera or Camera end
-local function vw9xa3() return LocalPlayer.Character end
-local function vaf58c2()
- local char = vw9xa3()
- if not char then return nil end
- return char:FindFirstChildOfClass("Humanoid")
+local lfnznk2al = Workspace.Gravity
+local lex3da8 = Lighting.Ambient
+local l05c884 = Lighting.FogEnd
+local l348pbb = Lighting.FogStart
+local lytymd4q = Lighting.Brightness
+local ljpnsu = Lighting.GlobalShadows
+local lt7xf04 = {}
+local function ltv7jzs() return Workspace.CurrentCamera or Camera end
+local function lnxefr6() return LocalPlayer.Character end
+local function lfzgmam()
+ local l2k0n79 = lnxefr6()
+ if not l2k0n79 then return nil end
+ return l2k0n79:FindFirstChildOfClass(_s98)
 end
-local function vjcit()
- local char = vw9xa3()
- if not char then return nil end
- return char:FindFirstChild("HumanoidRootPart") or char:FindFirstChild("Torso")
+local function lv0d5di()
+ local l2k0n79 = lnxefr6()
+ if not l2k0n79 then return nil end
+ return l2k0n79:FindFirstChild(_s91) or l2k0n79:FindFirstChild(_s84)
 end
-local function vrixa11()
- local v9t6v = {}
+local function l0un47()
+ local lnt9yqg = {}
  for _, plr in ipairs(Players:GetPlayers()) do
  if plr ~= LocalPlayer and plr.Character then
- table.insert(v9t6v, plr)
+ table.insert(lnt9yqg, plr)
  end
  end
- return v9t6v
+ return lnt9yqg
 end
-local function vmu5(plr)
+local function lloknw(plr)
  if not plr or not plr.Character then return nil end
- return plr.Character:FindFirstChild("HumanoidRootPart") or plr.Character:FindFirstChild("Torso")
+ return plr.Character:FindFirstChild(_s91) or plr.Character:FindFirstChild(_s84)
 end
-local function vgv0e3(plr)
+local function l076do8ij(plr)
  if not plr or not plr.Character then return nil end
- return plr.Character:FindFirstChildOfClass("Humanoid")
+ return plr.Character:FindFirstChildOfClass(_s98)
 end
-local function vhv3a3z(plr)
+local function llevlkh(plr)
  if not plr or not plr.Character then return false end
- local vk8ut = plr.Character:FindFirstChildOfClass("Humanoid")
- return vk8ut and vk8ut.Health > 0
+ local l9k4dst = plr.Character:FindFirstChildOfClass(_s98)
+ return l9k4dst and l9k4dst.Health > 0
 end
-local function vusgio(vkkv, v7hv3iz)
- if not vytj.visCheck then return true end
- local v6yfpmv = Camera.CFrame.Position
- local vdiuov = vkkv - v6yfpmv
- local vvre = RaycastParams.new()
- vvre.FilterType = Enum.RaycastFilterType.Exclude
- vvre.FilterDescendantsInstances = {LocalPlayer.Character, v7hv3iz}
- local vbi4q2y = Workspace:Raycast(v6yfpmv, vdiuov, vvre)
- if vbi4q2y then
+local function l0d8o7t1(ler01yj, lrdrvms96)
+ if not lwlbivqm.visCheck then return true end
+ local lea82cd5 = Camera.CFrame.Position
+ local ltfst1gt = ler01yj - lea82cd5
+ local lar187 = RaycastParams.new()
+ lar187.FilterType = Enum.RaycastFilterType.Exclude
+ lar187.FilterDescendantsInstances = {LocalPlayer.Character, lrdrvms96}
+ local l190qby = Workspace:Raycast(lea82cd5, ltfst1gt, lar187)
+ if l190qby then
  return false
  end
  return true
 end
-local function vbme9f()
- local vkxw, closestDist = nil, math.huge
- local vkz02xr = vcoto and Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2) or UserInputService:GetMouseLocation()
- for _, plr in ipairs(vrixa11()) do
- if vhv3a3z(plr) then
- local v91zdfk = vmu5(plr)
- if v91zdfk then
- local screenPos, onScreen = Camera:WorldToViewportPoint(v91zdfk.Position)
+local function l0pfgid()
+ local l0a3m7, closestDist = nil, math.huge
+ local lpi5alogy = l69u5t and Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2) or UserInputService:GetMouseLocation()
+ for _, plr in ipairs(l0un47()) do
+ if llevlkh(plr) then
+ local lc4ddf1 = lloknw(plr)
+ if lc4ddf1 then
+ local screenPos, onScreen = Camera:WorldToViewportPoint(lc4ddf1.Position)
  if onScreen then
- local vepq85 = (Vector2.new(screenPos.X, screenPos.Y) - vkz02xr).Magnitude
- if vepq85 < closestDist and vepq85 < vaqvk.AimbotRadius then
- local vlztgxn = plr.Character and plr.Character:FindFirstChild("Head")
- local vkkv = vlztgxn and vlztgxn.Position or v91zdfk.Position
- if vusgio(vkkv, plr.Character) then
- closestDist = vepq85
- vkxw = plr
+ local l3vqons1v = (Vector2.new(screenPos.X, screenPos.Y) - lpi5alogy).lircqlpp
+ if l3vqons1v < closestDist and l3vqons1v < l72pwmz.AimbotRadius then
+ local lp56l2 = plr.Character and plr.Character:FindFirstChild(_s61)
+ local ler01yj = lp56l2 and lp56l2.Position or lc4ddf1.Position
+ if l0d8o7t1(ler01yj, plr.Character) then
+ closestDist = l3vqons1v
+ l0a3m7 = plr
  end
  end
  end
  end
  end
  end
- return vkxw
+ return l0a3m7
 end
-local function vq5u(title, text, icon)
- vb0z3nx:Notify({
+local function lg08nu(title, text, icon)
+ l7u2xxpuk:Notify({
  Title = title,
  Content = text,
- Icon = icon or "solar:bell-bold",
+ Icon = icon or _s161,
  Duration = 4,
  })
 end
-local vcoto = UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled
-local vp0j43d = vb0z3nx:CreateWindow({
- Title = "Lua Hub — Blood Zone 🩸",
- Author = "by Lua Hub",
- Folder = "LuaHub_BloodZone",
- Icon = "solar:folder-2-bold-duotone",
- Size = vcoto and UDim2.fromOffset(400, 320) or UDim2.fromOffset(650, 480),
- Theme = "Dark",
+local l69u5t = UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled
+local ltfinrqf = l7u2xxpuk:CreateWindow({
+ Title = _s156,
+ Author = _s167,
+ Folder = _s153,
+ Icon = _s162,
+ Size = l69u5t and UDim2.fromOffset(400, 320) or UDim2.fromOffset(650, 480),
+ Theme = _s64,
  HideSearchBar = false,
  OpenButton = {
- Title = "Open Lua Hub",
+ Title = _s39,
  CornerRadius = UDim.new(1, 0),
  StrokeThickness = 3,
  Enabled = true,
@@ -182,41 +379,41 @@ local vp0j43d = vb0z3nx:CreateWindow({
  OnlyMobile = false,
  Scale = 0.5,
  Color = ColorSequence.new(
- Color3.fromHex("#FF4444"),
- Color3.fromHex("#FF8C42")
+ Color3.fromHex(_s33),
+ Color3.fromHex(_s93)
  ),
  },
  Topbar = {
  Height = 44,
- ButtonsType = "Mac",
+ ButtonsType = _s179,
  },
  User = {
  Enabled = true,
  Anonymous = true,
- Callback = function() print("[Lua Hub] Профиль нажат") end,
+ Callback = function() print(_s56) end,
  },
 })
-local vki7p = vp0j43d:Tab({ Title = "Combat", Icon = "solar:v3o18-bold", IconColor = Color3.fromHex("#FF4444"), IconShape = "Square", Border = true })
-local v1n6k = vp0j43d:Tab({ Title = "BlodZone Aimbot", Icon = "solar:v3o18-bold", IconColor = Color3.fromHex("#FF0000"), IconShape = "Square", Border = true })
-local vnuj = vp0j43d:Tab({ Title = "Visuals & ESP", Icon = "solar:eye-bold", IconColor = Color3.fromHex("#FF6B6B"), IconShape = "Square", Border = true })
-local vp87wx = vp0j43d:Tab({ Title = "Settings", Icon = "solar:shield-bold", IconColor = Color3.fromHex("#C77DFF"), IconShape = "Square", Border = true })
-local vwpv = {}
-local function ve9vift(tab, title)
+local lna1qt = ltfinrqf:Tab({ Title = _s1, Icon = _s57, IconColor = Color3.fromHex(_s33), IconShape = _s125, Border = true })
+local llwpbbc = ltfinrqf:Tab({ Title = _s51, Icon = _s57, IconColor = Color3.fromHex(_s160), IconShape = _s125, Border = true })
+local lmi7z70 = ltfinrqf:Tab({ Title = _s94, Icon = _s122, IconColor = Color3.fromHex(_s18), IconShape = _s125, Border = true })
+local lji9in = ltfinrqf:Tab({ Title = _s106, Icon = _s185, IconColor = Color3.fromHex(_s138), IconShape = _s125, Border = true })
+local lhdhhfgn = {}
+local function ld2juau(tab, title)
  tab:Section({ Title = title })
 end
-local function vc5wi(tab, title, default, callback, key)
- local v74f = tab:Toggle({
+local function ltx8z7fp(tab, title, default, callback, key)
+ local l4otjlc2 = tab:Toggle({
  Title = title,
  Value = default or false,
  Callback = function(state)
  task.spawn(callback, state)
  end,
  })
- table.insert(vwpv, { Type = "toggle", Element = v74f, Key = key })
- return v74f
+ table.insert(lhdhhfgn, { Type = _s75, Element = l4otjlc2, Key = key })
+ return l4otjlc2
 end
-local function v7kzorq(tab, title, min, max, default, callback, key)
- local v74f = tab:Slider({
+local function leqxmibf5(tab, title, min, max, default, callback, key)
+ local l4otjlc2 = tab:Slider({
  Title = title,
  Step = 1,
  Value = { Min = min, Max = max, Default = default or min },
@@ -224,92 +421,92 @@ local function v7kzorq(tab, title, min, max, default, callback, key)
  task.spawn(callback, value)
  end,
  })
- table.insert(vwpv, { Type = "slider", Element = v74f, Key = key })
- return v74f
+ table.insert(lhdhhfgn, { Type = _s128, Element = l4otjlc2, Key = key })
+ return l4otjlc2
 end
-local function vh2vlp(tab, title, callback)
- local v74f = tab:Button({
+local function lwsza76(tab, title, callback)
+ local l4otjlc2 = tab:Button({
  Title = title,
  Callback = function()
  task.spawn(callback)
  end,
  })
- table.insert(vwpv, { Type = "button", Element = v74f })
- return v74f
+ table.insert(lhdhhfgn, { Type = _s163, Element = l4otjlc2 })
+ return l4otjlc2
 end
-ve9vift(vki7p, "AIMBOT")
-vc5wi(vki7p, "Aimbot (наводка на ближайшего)", false, function(state)
- vytj.aimbot = state
- if state then vq5u("Aimbot", "Включён — наводится на ближайшего к курсору", "solar:v3o18-bold") end
+ld2juau(lna1qt, _s149)
+ltx8z7fp(lna1qt, _s175, false, function(state)
+ lwlbivqm.aimbot = state
+ if state then lg08nu(_s130, _s62, _s57) end
 end)
-v7kzorq(vki7p, "Aimbot FOV (радиус на экране)", 50, 500, 200, function(val)
- vytj.aimbotFOV = val
- vaqvk.AimbotRadius = val
+leqxmibf5(lna1qt, _s83, 50, 500, 200, function(val)
+ lwlbivqm.aimbotFOV = val
+ l72pwmz.AimbotRadius = val
 end)
-v7kzorq(vki7p, "Aimbot Distance (дальность в стадах)", 50, 1000, 500, function(val)
- vytj.aimbotDistance = val
+leqxmibf5(lna1qt, _s67, 50, 1000, 500, function(val)
+ lwlbivqm.aimbotDistance = val
 end)
-v7kzorq(vki7p, "Aimbot Smooth (скорость наводки)", 1, 20, 5, function(val)
- vytj.aimbotSmooth = val
+leqxmibf5(lna1qt, _s183, 1, 20, 5, function(val)
+ lwlbivqm.aimbotSmooth = val
 end)
-vc5wi(vki7p, "Silent Aim (пули летят в цель)", false, function(state)
- vytj.silentAim = state
+ltx8z7fp(lna1qt, _s120, false, function(state)
+ lwlbivqm.silentAim = state
 end)
-vc5wi(vki7p, "Aimbot FOV Circle (круг на экране)", false, function(state)
- vytj.aimbotFOVCircle = state
+ltx8z7fp(lna1qt, _s169, false, function(state)
+ lwlbivqm.aimbotFOVCircle = state
 end)
-vc5wi(vki7p, "Aim at Head (иначе Torso)", true, function(state)
- vytj.aimbotTarget = state and "Head" or "Torso"
+ltx8z7fp(lna1qt, _s145, true, function(state)
+ lwlbivqm.aimbotTarget = state and _s61 or _s84
 end)
-vc5wi(vki7p, "Visibility Check (не через стены)", false, function(state)
- vytj.visCheck = state
+ltx8z7fp(lna1qt, _s88, false, function(state)
+ lwlbivqm.visCheck = state
 end)
-ve9vift(vki7p, "ОРУЖИЕ")
-vc5wi(vki7p, "No Recoil (без отдачи)", false, function(state)
- vytj.noRecoil = state
+ld2juau(lna1qt, _s38)
+ltx8z7fp(lna1qt, _s21, false, function(state)
+ lwlbivqm.noRecoil = state
 end)
-vc5wi(vki7p, "No Spread (без разброса)", false, function(state)
- vytj.noSpread = state
+ltx8z7fp(lna1qt, _s176, false, function(state)
+ lwlbivqm.noSpread = state
 end)
-ve9vift(vki7p, "ТЕЛЕПОРТ")
-vh2vlp(vki7p, "Teleport to Nearest Player", function()
- local v91zdfk = vjcit()
- if not v91zdfk then return end
+ld2juau(lna1qt, _s72)
+lwsza76(lna1qt, _s78, function()
+ local lc4ddf1 = lv0d5di()
+ if not lc4ddf1 then return end
  local nearest, nearestDist = nil, math.huge
- for _, plr in ipairs(vrixa11()) do
- if vhv3a3z(plr) then
- local vd96qe3 = vmu5(plr)
- if vd96qe3 then
- local vepq85 = (vd96qe3.Position - v91zdfk.Position).Magnitude
- if vepq85 < nearestDist then nearestDist = vepq85; nearest = plr end
+ for _, plr in ipairs(l0un47()) do
+ if llevlkh(plr) then
+ local lp9d44jjj = lloknw(plr)
+ if lp9d44jjj then
+ local l3vqons1v = (lp9d44jjj.Position - lc4ddf1.Position).lircqlpp
+ if l3vqons1v < nearestDist then nearestDist = l3vqons1v; nearest = plr end
  end
  end
  end
  if nearest then
- local vd96qe3 = vmu5(nearest)
- v91zdfk.CFrame = vd96qe3.CFrame + Vector3.new(0, 3, 0)
- vq5u("Teleport", "Телепорт к " .. nearest.Name, "solar:v3o18-bold")
+ local lp9d44jjj = lloknw(nearest)
+ lc4ddf1.CFrame = lp9d44jjj.CFrame + Vector3.new(0, 3, 0)
+ lg08nu(_s7, _s116 .. nearest.Name, _s57)
  else
- vq5u("Teleport", "Игроки не найдены", "solar:danger-bold")
+ lg08nu(_s7, _s54, _s127)
  end
 end)
-vh2vlp(vki7p, "Teleport Behind Player", function()
- local v91zdfk = vjcit()
- if not v91zdfk then return end
- local v3o18 = vbme9f()
- if v3o18 then
- local vd96qe3 = vmu5(v3o18)
- if vd96qe3 then
- v91zdfk.CFrame = vd96qe3.CFrame * CFrame.new(0, 0, 3)
- vq5u("Teleport", "За спину " .. v3o18.Name, "solar:v3o18-bold")
+lwsza76(lna1qt, _s47, function()
+ local lc4ddf1 = lv0d5di()
+ if not lc4ddf1 then return end
+ local ls1614 = l0pfgid()
+ if ls1614 then
+ local lp9d44jjj = lloknw(ls1614)
+ if lp9d44jjj then
+ lc4ddf1.CFrame = lp9d44jjj.CFrame * CFrame.new(0, 0, 3)
+ lg08nu(_s7, _s89 .. ls1614.Name, _s57)
  end
  else
- vq5u("Teleport", "Игрок не найден", "solar:danger-bold")
+ lg08nu(_s7, _s86, _s127)
  end
 end)
-local vogn1w1 = {
+local lnflqx = {
  Enabled = false,
- TargetMethod = "FOV", 
+ TargetMethod = _s4, 
  FOVCheck = false,
  VisibilityCheck = false,
  Wallbang = false,
@@ -327,367 +524,367 @@ local vogn1w1 = {
  ESPFillTransparency = 0.75,
  FOVColor = Color3.fromRGB(255, 70, 70),
 }
-local v7if2 = nil
-local vb94 = {}
-local function v58kxo(v7hv3iz)
- if not v7hv3iz then return nil end
- local vlztgxn = v7hv3iz:FindFirstChild("Head")
- local vg0jv = v7hv3iz:FindFirstChild("Torso")
- local vw1da = {}
- if vlztgxn and vlztgxn:IsA("BasePart") then table.insert(vw1da, vlztgxn) end
- if vg0jv and vg0jv:IsA("BasePart") then table.insert(vw1da, vg0jv) end
- if #vw1da == 0 then return nil end
- return vw1da[math.random(1, #vw1da)]
+local ldolux = nil
+local lr1tmt2r9 = {}
+local function lqa1i9isr(lrdrvms96)
+ if not lrdrvms96 then return nil end
+ local lp56l2 = lrdrvms96:FindFirstChild(_s61)
+ local l0upyiml3 = lrdrvms96:FindFirstChild(_s84)
+ local ljwwg00t0 = {}
+ if lp56l2 and lp56l2:IsA(_s118) then table.insert(ljwwg00t0, lp56l2) end
+ if l0upyiml3 and l0upyiml3:IsA(_s118) then table.insert(ljwwg00t0, l0upyiml3) end
+ if #ljwwg00t0 == 0 then return nil end
+ return ljwwg00t0[math.random(1, #ljwwg00t0)]
 end
-local function vgvwrd(vpseim)
- if not vpseim then return false end
- local vwjckjl = Workspace.CurrentCamera
- if not vwjckjl then return false end
- local v7d5j6 = (vwjckjl.CFrame.Position - vpseim.Position).Magnitude
- return v7d5j6 <= vogn1w1.SilentAimLimit
+local function lztn6dtq(lsxpq67)
+ if not lsxpq67 then return false end
+ local l7m1ue = Workspace.CurrentCamera
+ if not l7m1ue then return false end
+ local lcdzgbyl9 = (l7m1ue.CFrame.Position - lsxpq67.Position).lircqlpp
+ return lcdzgbyl9 <= lnflqx.SilentAimLimit
 end
-local function v45n(vpseim)
- if not vpseim then return false end
- local vwjckjl = Workspace.CurrentCamera
- local v7hv3iz = LocalPlayer.Character
- if not vwjckjl or not v7hv3iz then return false end
- local v7e8g8 = RaycastParams.new()
- v7e8g8.FilterType = Enum.RaycastFilterType.Exclude
- v7e8g8.FilterDescendantsInstances = {v7hv3iz}
- v7e8g8.IgnoreWater = true
- local v72wx = vwjckjl.CFrame.Position
- local vdiuov = vpseim.Position - v72wx
- local vbi4q2y = Workspace:Raycast(v72wx, vdiuov, v7e8g8)
- if not vbi4q2y then return true end
- return vbi4q2y.Instance:IsDescendantOf(vpseim.Parent)
+local function lfxoszq(lsxpq67)
+ if not lsxpq67 then return false end
+ local l7m1ue = Workspace.CurrentCamera
+ local lrdrvms96 = LocalPlayer.Character
+ if not l7m1ue or not lrdrvms96 then return false end
+ local l2i83fb = RaycastParams.new()
+ l2i83fb.FilterType = Enum.RaycastFilterType.Exclude
+ l2i83fb.FilterDescendantsInstances = {lrdrvms96}
+ l2i83fb.IgnoreWater = true
+ local lax5m3xaq = l7m1ue.CFrame.Position
+ local ltfst1gt = lsxpq67.Position - lax5m3xaq
+ local l190qby = Workspace:Raycast(lax5m3xaq, ltfst1gt, l2i83fb)
+ if not l190qby then return true end
+ return l190qby.Instance:IsDescendantOf(lsxpq67.Parent)
 end
-local function v86wzs(vpseim)
- local vwjckjl = Workspace.CurrentCamera
- if not vwjckjl or not vpseim then return math.huge, false end
- local position, onScreen = vwjckjl:WorldToViewportPoint(vpseim.Position)
+local function l2es4ny(lsxpq67)
+ local l7m1ue = Workspace.CurrentCamera
+ if not l7m1ue or not lsxpq67 then return math.huge, false end
+ local position, onScreen = l7m1ue:WorldToViewportPoint(lsxpq67.Position)
  if not onScreen then return math.huge, false end
- local viqvnb4 = vwjckjl.ViewportSize / 2
- local v7d5j6 = (Vector2.new(position.X, position.Y) - viqvnb4).Magnitude
- return v7d5j6, true
+ local l5474j1c1 = l7m1ue.ViewportSize / 2
+ local lcdzgbyl9 = (Vector2.new(position.X, position.Y) - l5474j1c1).lircqlpp
+ return lcdzgbyl9, true
 end
-local function v59in4(vpseim)
- local v7d5j6, onScreen = v86wzs(vpseim)
- return onScreen and v7d5j6 <= vogn1w1.FOV
+local function lppgfsf3m(lsxpq67)
+ local lcdzgbyl9, onScreen = l2es4ny(lsxpq67)
+ return onScreen and lcdzgbyl9 <= lnflqx.FOV
 end
-local function v8w5rtw(player)
+local function lj3k4a(player)
  if player == LocalPlayer then return false end
- local v7hv3iz = player.Character
- if not v7hv3iz then return false end
- if v7hv3iz:GetAttribute("Immune") == true then return false end
- local v31y = v7hv3iz:FindFirstChildOfClass("Humanoid")
- if not v31y or v31y.Health <= 0 then return false end
- local v91zdfk = v7hv3iz:FindFirstChild("HumanoidRootPart")
- if not v91zdfk then return false end
- local vpseim = v58kxo(v7hv3iz)
- if not vpseim then return false end
- if not vgvwrd(vpseim) then return false end
- if vogn1w1.FOVCheck then
- if not v59in4(vpseim) then return false end
+ local lrdrvms96 = player.Character
+ if not lrdrvms96 then return false end
+ if lrdrvms96:GetAttribute(_s108) == true then return false end
+ local lw33vbw = lrdrvms96:FindFirstChildOfClass(_s98)
+ if not lw33vbw or lw33vbw.Health <= 0 then return false end
+ local lc4ddf1 = lrdrvms96:FindFirstChild(_s91)
+ if not lc4ddf1 then return false end
+ local lsxpq67 = lqa1i9isr(lrdrvms96)
+ if not lsxpq67 then return false end
+ if not lztn6dtq(lsxpq67) then return false end
+ if lnflqx.FOVCheck then
+ if not lppgfsf3m(lsxpq67) then return false end
  end
- if not vogn1w1.Wallbang and vogn1w1.VisibilityCheck then
- if not v45n(vpseim) then return false end
+ if not lnflqx.Wallbang and lnflqx.VisibilityCheck then
+ if not lfxoszq(lsxpq67) then return false end
  end
  return true
 end
-local function v253j2d()
- local vkxw = nil
- local v2dgtf = math.huge
+local function lr9yep9aq()
+ local l0a3m7 = nil
+ local l49a354n = math.huge
  for _, player in ipairs(Players:GetPlayers()) do
- if v8w5rtw(player) then
- local v7hv3iz = player.Character
- local vpseim = v58kxo(v7hv3iz)
- if vpseim and vgvwrd(vpseim) then
- local v7d5j6, onScreen = v86wzs(vpseim)
- if onScreen and v7d5j6 < v2dgtf then
- v2dgtf = v7d5j6
- vkxw = vpseim
+ if lj3k4a(player) then
+ local lrdrvms96 = player.Character
+ local lsxpq67 = lqa1i9isr(lrdrvms96)
+ if lsxpq67 and lztn6dtq(lsxpq67) then
+ local lcdzgbyl9, onScreen = l2es4ny(lsxpq67)
+ if onScreen and lcdzgbyl9 < l49a354n then
+ l49a354n = lcdzgbyl9
+ l0a3m7 = lsxpq67
  end
  end
  end
  end
- return vkxw
+ return l0a3m7
 end
-local function vu1gsp()
- local vkxw = nil
- local v2dgtf = math.huge
+local function la5htdt2()
+ local l0a3m7 = nil
+ local l49a354n = math.huge
  for _, player in ipairs(Players:GetPlayers()) do
- if v8w5rtw(player) then
- local v7hv3iz = player.Character
- local vpseim = v58kxo(v7hv3iz)
- if vpseim and vgvwrd(vpseim) then
- local v7d5j6, onScreen = v86wzs(vpseim)
- if onScreen and v7d5j6 <= vogn1w1.FOV and v7d5j6 < v2dgtf then
- v2dgtf = v7d5j6
- vkxw = vpseim
+ if lj3k4a(player) then
+ local lrdrvms96 = player.Character
+ local lsxpq67 = lqa1i9isr(lrdrvms96)
+ if lsxpq67 and lztn6dtq(lsxpq67) then
+ local lcdzgbyl9, onScreen = l2es4ny(lsxpq67)
+ if onScreen and lcdzgbyl9 <= lnflqx.FOV and lcdzgbyl9 < l49a354n then
+ l49a354n = lcdzgbyl9
+ l0a3m7 = lsxpq67
  end
  end
  end
  end
- return vkxw
+ return l0a3m7
 end
-local function vbmyofq()
- if not vogn1w1.Enabled then return nil end
- if vogn1w1.TargetMethod == "FOV" then
- return vu1gsp()
+local function lb3bxlp()
+ if not lnflqx.Enabled then return nil end
+ if lnflqx.TargetMethod == _s4 then
+ return la5htdt2()
  end
- return v253j2d()
+ return lr9yep9aq()
 end
-local vw790 = false
+local l36c3np5 = false
 pcall(function()
  local old
- old = hookmetamethod(game, "__namecall", newcclosure(function(self, ...)
- local vjek5 = {...}
- if tostring(self) == "GunHit" and getnamecallmethod() == "FireServer" then
- if v7if2 and typeof(v7if2) == "Instance" then
- local vdp5 = v7if2
- if rawget(vjek5[2][1], "Position") and rawget(vjek5[2][1], "Instance") then
- rawset(vjek5[2][1], "Position", vdp5.Position)
- rawset(vjek5[2][1], "Instance", vdp5)
+ old = hookmetamethod(game, _s77, newcclosure(function(self, ...)
+ local lifktsaa = {...}
+ if tostring(self) == _s114 and getnamecallmethod() == _s55 then
+ if ldolux and typeof(ldolux) == _s146 then
+ local l3speb = ldolux
+ if rawget(lifktsaa[2][1], _s63) and rawget(lifktsaa[2][1], _s146) then
+ rawset(lifktsaa[2][1], _s63, l3speb.Position)
+ rawset(lifktsaa[2][1], _s146, l3speb)
  end
  end
  end
- return old(self, unpack(vjek5))
+ return old(self, unpack(lifktsaa))
  end))
- vw790 = true
+ l36c3np5 = true
 end)
-local vvazc = nil
-local vkwv08h = nil
-local function vbnhl()
- if vvazc then return end
- local vvqjt7y = Instance.new("ScreenGui")
- vvqjt7y.Name = "BZ_FOVCircle"
- vvqjt7y.ResetOnSpawn = false
- vvqjt7y.IgnoreGuiInset = true
- vvqjt7y.DisplayOrder = 999
- pcall(function() vvqjt7y.Parent = game:GetService("CoreGui") end)
- if not vvqjt7y.Parent then vvqjt7y.Parent = LocalPlayer:WaitForChild("PlayerGui") end
- vvazc = Instance.new("Frame")
- vvazc.Name = "FOVCircle"
- vvazc.AnchorPoint = Vector2.new(0.5, 0.5)
- vvazc.BackgroundTransparency = 1
- vvazc.BorderSizePixel = 0
- vvazc.Visible = false
- vvazc.Parent = vvqjt7y
- vkwv08h = Instance.new("UIStroke")
- vkwv08h.Color = vogn1w1.FOVColor
- vkwv08h.Thickness = 2
- vkwv08h.Transparency = 0
- vkwv08h.Parent = vvazc
- local vkk4c = Instance.new("UICorner")
- vkk4c.CornerRadius = UDim.new(1, 0)
- vkk4c.Parent = vvazc
+local lsz40xv = nil
+local laes2ml = nil
+local function l26a3b59()
+ if lsz40xv then return end
+ local laepxidyy = Instance.new(_s124)
+ laepxidyy.Name = _s26
+ laepxidyy.ResetOnSpawn = false
+ laepxidyy.IgnoreGuiInset = true
+ laepxidyy.DisplayOrder = 999
+ pcall(function() laepxidyy.Parent = game:GetService(_s52) end)
+ if not laepxidyy.Parent then laepxidyy.Parent = LocalPlayer:WaitForChild(_s103) end
+ lsz40xv = Instance.new(_s129)
+ lsz40xv.Name = _s59
+ lsz40xv.AnchorPoint = Vector2.new(0.5, 0.5)
+ lsz40xv.BackgroundTransparency = 1
+ lsz40xv.BorderSizePixel = 0
+ lsz40xv.Visible = false
+ lsz40xv.Parent = laepxidyy
+ laes2ml = Instance.new(_s65)
+ laes2ml.Color = lnflqx.FOVColor
+ laes2ml.Thickness = 2
+ laes2ml.Transparency = 0
+ laes2ml.Parent = lsz40xv
+ local lsqqp6l = Instance.new(_s174)
+ lsqqp6l.CornerRadius = UDim.new(1, 0)
+ lsqqp6l.Parent = lsz40xv
 end
 RunService.RenderStepped:Connect(function()
- v7if2 = vbmyofq()
- if vogn1w1.FOVCircle then
- if not vvazc then vbnhl() end
- if vvazc then
- local vwjckjl = Workspace.CurrentCamera
- if vwjckjl then
- vvazc.Position = UDim2.fromOffset(vwjckjl.ViewportSize.X / 2, vwjckjl.ViewportSize.Y / 2)
- vvazc.Size = UDim2.fromOffset(vogn1w1.FOV * 2, vogn1w1.FOV * 2)
- vvazc.Visible = true
- if vkwv08h then vkwv08h.Color = vogn1w1.FOVColor end
+ ldolux = lb3bxlp()
+ if lnflqx.FOVCircle then
+ if not lsz40xv then l26a3b59() end
+ if lsz40xv then
+ local l7m1ue = Workspace.CurrentCamera
+ if l7m1ue then
+ lsz40xv.Position = UDim2.fromOffset(l7m1ue.ViewportSize.X / 2, l7m1ue.ViewportSize.Y / 2)
+ lsz40xv.Size = UDim2.fromOffset(lnflqx.FOV * 2, lnflqx.FOV * 2)
+ lsz40xv.Visible = true
+ if laes2ml then laes2ml.Color = lnflqx.FOVColor end
  end
  end
  else
- if vvazc then vvazc.Visible = false end
+ if lsz40xv then lsz40xv.Visible = false end
  end
 end)
-ve9vift(v1n6k, "ОСНОВНОЕ")
-vc5wi(v1n6k, "Silent Aim (Enabled)", vogn1w1.Enabled, function(state)
- vogn1w1.Enabled = state
- vq5u("BlodZone", state and "Silent Aim включён" or "Silent Aim выключен", "solar:v3o18-bold")
+ld2juau(llwpbbc, _s80)
+ltx8z7fp(llwpbbc, _s168, lnflqx.Enabled, function(state)
+ lnflqx.Enabled = state
+ lg08nu(_s170, state and _s82 or _s180, _s57)
 end)
-vc5wi(v1n6k, "FOV Check", vogn1w1.FOVCheck, function(state)
- vogn1w1.FOVCheck = state
+ltx8z7fp(llwpbbc, _s13, lnflqx.FOVCheck, function(state)
+ lnflqx.FOVCheck = state
 end)
-vc5wi(v1n6k, "Visibility Check (не через стены)", vogn1w1.VisibilityCheck, function(state)
- vogn1w1.VisibilityCheck = state
+ltx8z7fp(llwpbbc, _s88, lnflqx.VisibilityCheck, function(state)
+ lnflqx.VisibilityCheck = state
 end)
-vc5wi(v1n6k, "Wallbang (стрелять через стены)", vogn1w1.Wallbang, function(state)
- vogn1w1.Wallbang = state
+ltx8z7fp(llwpbbc, _s100, lnflqx.Wallbang, function(state)
+ lnflqx.Wallbang = state
 end)
-vc5wi(v1n6k, "FOV Circle", vogn1w1.FOVCircle, function(state)
- vogn1w1.FOVCircle = state
+ltx8z7fp(llwpbbc, _s110, lnflqx.FOVCircle, function(state)
+ lnflqx.FOVCircle = state
 end)
-ve9vift(v1n6k, "НАСТРОЙКИ")
-v7kzorq(v1n6k, "FOV (радиус)", 10, 500, vogn1w1.FOV, function(val)
- vogn1w1.FOV = val
+ld2juau(llwpbbc, _s95)
+leqxmibf5(llwpbbc, _s53, 10, 500, lnflqx.FOV, function(val)
+ lnflqx.FOV = val
 end)
-v7kzorq(v1n6k, "Silent Aim Limit (дальность)", 10, 500, vogn1w1.SilentAimLimit, function(val)
- vogn1w1.SilentAimLimit = val
+leqxmibf5(llwpbbc, _s111, 10, 500, lnflqx.SilentAimLimit, function(val)
+ lnflqx.SilentAimLimit = val
 end)
-ve9vift(v1n6k, "TARGET METHOD")
-vh2vlp(v1n6k, "Target: Closest", function()
- vogn1w1.TargetMethod = "Closest"
- vq5u("BlodZone", "Режим: Closest (ближайший)", "solar:v3o18-bold")
+ld2juau(llwpbbc, _s112)
+lwsza76(llwpbbc, _s25, function()
+ lnflqx.TargetMethod = _s136
+ lg08nu(_s170, _s158, _s57)
 end)
-vh2vlp(v1n6k, "Target: FOV (ближайший к центру)", function()
- vogn1w1.TargetMethod = "FOV"
- vq5u("BlodZone", "Режим: FOV (ближайший к прицелу)", "solar:v3o18-bold")
+lwsza76(llwpbbc, _s99, function()
+ lnflqx.TargetMethod = _s4
+ lg08nu(_s170, _s48, _s57)
 end)
-ve9vift(v1n6k, "ИНФО")
-vh2vlp(v1n6k, "Проверить хук", function()
- if vw790 then
- vq5u("BlodZone", "Хук установлен успешно! Silent Aim работает.", "solar:check-vy41i-bold")
+ld2juau(llwpbbc, _s81)
+lwsza76(llwpbbc, _s17, function()
+ if l36c3np5 then
+ lg08nu(_s170, _s74, _s30)
  else
- vq5u("BlodZone", "Хук НЕ установлен. Executor не поддерживает hookmetamethod.", "solar:danger-bold")
+ lg08nu(_s170, _s24, _s127)
  end
 end)
-ve9vift(vnuj, "ESP")
-vc5wi(vnuj, "Player ESP (имя, HP, дистанция)", false, function(state)
- vytj.espPlayers = state
+ld2juau(lmi7z70, _s131)
+ltx8z7fp(lmi7z70, _s117, false, function(state)
+ lwlbivqm.espPlayers = state
 end)
-vc5wi(vnuj, "Tracers (линии к игрокам)", false, function(state)
- vytj.tracers = state
+ltx8z7fp(lmi7z70, _s184, false, function(state)
+ lwlbivqm.tracers = state
 end)
-ve9vift(vnuj, "ВИЗУАЛ")
-vc5wi(vnuj, "Fullbright", false, function(state)
- vytj.fullbright = state
- Lighting.Ambient = state and Color3.fromRGB(255, 255, 255) or vbvm2p
- Lighting.Brightness = state and 3 or vkoi
- Lighting.OutdoorAmbient = state and Color3.fromRGB(255, 255, 255) or vbvm2p
+ld2juau(lmi7z70, _s15)
+ltx8z7fp(lmi7z70, _s177, false, function(state)
+ lwlbivqm.fullbright = state
+ Lighting.Ambient = state and Color3.fromRGB(255, 255, 255) or lex3da8
+ Lighting.Brightness = state and 3 or lytymd4q
+ Lighting.OutdoorAmbient = state and Color3.fromRGB(255, 255, 255) or lex3da8
 end)
-vc5wi(vnuj, "Remove Fog", false, function(state)
- vytj.nofog = state
- Lighting.FogEnd = state and 9e9 or vptx6
- Lighting.FogStart = state and -9e9 or v64c
+ltx8z7fp(lmi7z70, _s119, false, function(state)
+ lwlbivqm.nofog = state
+ Lighting.FogEnd = state and 9e9 or l05c884
+ Lighting.FogStart = state and -9e9 or l348pbb
 end)
-vc5wi(vnuj, "Custom Crosshair", false, function(state)
- vytj.crosshair = state
+ltx8z7fp(lmi7z70, _s147, false, function(state)
+ lwlbivqm.crosshair = state
 end)
-ve9vift(vp87wx, "НАСТРОЙКИ")
-v7kzorq(vp87wx, "Camera FOV", 70, 120, 70, function(val)
- vytj.fov = val
- local vm35ixo = viujv()
- if vm35ixo then vm35ixo.FieldOfView = val end
+ld2juau(lji9in, _s95)
+leqxmibf5(lji9in, _s9, 70, 120, 70, function(val)
+ lwlbivqm.fov = val
+ local lrjhklnwn = ltv7jzs()
+ if lrjhklnwn then lrjhklnwn.FieldOfView = val end
 end)
-vh2vlp(vp87wx, "FPS Booster", function()
+lwsza76(lji9in, _s181, function()
  for _, obj in ipairs(Workspace:GetDescendants()) do
- if obj:IsA("BasePart") then pcall(function() obj.Material = Enum.Material.SmoothPlastic; obj.CastShadow = false end)
- elseif obj:IsA("ParticleEmitter") then pcall(function() obj.Rate = 0 end) end
+ if obj:IsA(_s118) then pcall(function() obj.Material = Enum.Material.SmoothPlastic; obj.CastShadow = false end)
+ elseif obj:IsA(_s45) then pcall(function() obj.Rate = 0 end) end
  end
  Lighting.GlobalShadows = false
- vq5u("Performance", "Качество снижено", "solar:bolt-bold")
+ lg08nu(_s132, _s76, _s16)
 end)
-vh2vlp(vp87wx, "Disable Global Shadows", function()
+lwsza76(lji9in, _s90, function()
  Lighting.GlobalShadows = false
- vq5u("Lighting", "Тени отключены", "solar:bolt-bold")
+ lg08nu(_s10, _s50, _s16)
 end)
-vh2vlp(vp87wx, "Mute Game Audio", function()
- vytj.muted = not vytj.muted
- if vytj.muted then
- v3d8w3z = {}
+lwsza76(lji9in, _s43, function()
+ lwlbivqm.muted = not lwlbivqm.muted
+ if lwlbivqm.muted then
+ lt7xf04 = {}
  for _, obj in ipairs(Workspace:GetDescendants()) do
- if obj:IsA("Sound") then v3d8w3z[obj] = obj.Volume; pcall(function() obj.Volume = 0 end) end
+ if obj:IsA(_s37) then lt7xf04[obj] = obj.Volume; pcall(function() obj.Volume = 0 end) end
  end
- vq5u("Audio", "Звук выключен", "solar:volume-cross-bold")
+ lg08nu(_s11, _s97, _s151)
  else
- for obj, vol in pairs(v3d8w3z) do
+ for obj, vol in pairs(lt7xf04) do
  if obj and obj.Parent then pcall(function() obj.Volume = vol end) end
  end
- v3d8w3z = {}
- vq5u("Audio", "Звук включён", "solar:volume-bold")
+ lt7xf04 = {}
+ lg08nu(_s11, _s85, _s140)
  end
 end)
-vc5wi(vp87wx, "Anti-AFK", false, function(state)
- vytj.antiAfk = state
+ltx8z7fp(lji9in, _s159, false, function(state)
+ lwlbivqm.antiAfk = state
 end)
-vc5wi(vp87wx, "Click TP (Ctrl + Click)", false, function(state)
- vytj.clickTP = state
+ltx8z7fp(lji9in, _s133, false, function(state)
+ lwlbivqm.clickTP = state
 end)
-vh2vlp(vp87wx, "Rejoin Server", function()
+lwsza76(lji9in, _s115, function()
  pcall(function() TeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId, LocalPlayer) end)
 end)
-vh2vlp(vp87wx, "Unload UI", function()
- vp0j43d:Destroy()
- vq5u("Lua Hub", "Скрипт выгружен", "solar:close-vy41i-bold")
+lwsza76(lji9in, _s35, function()
+ ltfinrqf:Destroy()
+ lg08nu(_s102, _s29, _s8)
 end)
-local v871yzo = nil
+local l8ktolj7 = nil
 do
- local vvqjt7y = Instance.new("ScreenGui")
- vvqjt7y.Name = "LuaHub_ESP_BZ"
- vvqjt7y.ResetOnSpawn = false
- vvqjt7y.IgnoreGuiInset = true
- vvqjt7y.DisplayOrder = 1000
- pcall(function() vvqjt7y.Parent = game:GetService("CoreGui") end)
- if not vvqjt7y.Parent then vvqjt7y.Parent = LocalPlayer:WaitForChild("PlayerGui") end
- v871yzo = vvqjt7y
+ local laepxidyy = Instance.new(_s124)
+ laepxidyy.Name = _s164
+ laepxidyy.ResetOnSpawn = false
+ laepxidyy.IgnoreGuiInset = true
+ laepxidyy.DisplayOrder = 1000
+ pcall(function() laepxidyy.Parent = game:GetService(_s52) end)
+ if not laepxidyy.Parent then laepxidyy.Parent = LocalPlayer:WaitForChild(_s103) end
+ l8ktolj7 = laepxidyy
 end
-local va7tz0y = {}
-local v4ve92 = {}
-local v4v30t = {}
-local vyxr2 = nil
-local function vgsxw71(v3o18, color)
- local vj9tz = va7tz0y[v3o18]
- if vj9tz and vj9tz.Parent then return vj9tz end
- local v84u8 = Instance.new("Highlight")
- v84u8.Name = "BZEspHighlight"; v84u8.FillColor = color
- v84u8.OutlineColor = Color3.fromRGB(255, 255, 255)
- v84u8.FillTransparency = 0.5; v84u8.OutlineTransparency = 0.1
- v84u8.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
- v84u8.Parent = v3o18
- va7tz0y[v3o18] = v84u8
- return v84u8
+local l5aiui401 = {}
+local l8spex0 = {}
+local lmdaol9 = {}
+local llhn4j = nil
+local function l4ofym7oa(ls1614, color)
+ local la751gdo5 = l5aiui401[ls1614]
+ if la751gdo5 and la751gdo5.Parent then return la751gdo5 end
+ local lm4jff = Instance.new(_s31)
+ lm4jff.Name = _s27; lm4jff.FillColor = color
+ lm4jff.OutlineColor = Color3.fromRGB(255, 255, 255)
+ lm4jff.FillTransparency = 0.5; lm4jff.OutlineTransparency = 0.1
+ lm4jff.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+ lm4jff.Parent = ls1614
+ l5aiui401[ls1614] = lm4jff
+ return lm4jff
 end
-local function vt026rj(v3o18, text, color)
- local vj9tz = v4ve92[v3o18]
- local vlztgxn = (v3o18:IsA("BasePart") and v3o18) or v3o18:FindFirstChild("Head") or v3o18:FindFirstChild("HumanoidRootPart") or v3o18:FindFirstChildWhichIsA("BasePart")
- if not vlztgxn then return end
- if vj9tz and vj9tz.Parent then
- local vcvs4f = vj9tz:FindFirstChild("TextLabel")
- if vcvs4f then vcvs4f.Text = text; vcvs4f.TextColor3 = color end
+local function l9asvl16q(ls1614, text, color)
+ local la751gdo5 = l8spex0[ls1614]
+ local lp56l2 = (ls1614:IsA(_s118) and ls1614) or ls1614:FindFirstChild(_s61) or ls1614:FindFirstChild(_s91) or ls1614:FindFirstChildWhichIsA(_s118)
+ if not lp56l2 then return end
+ if la751gdo5 and la751gdo5.Parent then
+ local l6qjq3he = la751gdo5:FindFirstChild(_s46)
+ if l6qjq3he then l6qjq3he.Text = text; l6qjq3he.TextColor3 = color end
  return
  end
- local vsj6bw = Instance.new("BillboardGui")
- vsj6bw.Name = "BZEspLabel"; vsj6bw.Adornee = vlztgxn
- vsj6bw.Size = UDim2.fromOffset(150, 34); vsj6bw.StudsOffset = Vector3.new(0, 2.6, 0)
- vsj6bw.AlwaysOnTop = true; vsj6bw.MaxDistance = 5000; vsj6bw.Parent = v871yzo
- local vcvs4f = Instance.new("TextLabel")
- vcvs4f.Name = "TextLabel"; vcvs4f.Size = UDim2.fromScale(1, 1)
- vcvs4f.BackgroundTransparency = 1; vcvs4f.Text = text; vcvs4f.TextColor3 = color
- vcvs4f.TextSize = 13; vcvs4f.Font = Enum.Font.GothamBold
- vcvs4f.TextStrokeTransparency = 0.35; vcvs4f.Parent = vsj6bw
- v4ve92[v3o18] = vsj6bw
+ local l0isz33 = Instance.new(_s70)
+ l0isz33.Name = _s107; l0isz33.Adornee = lp56l2
+ l0isz33.Size = UDim2.fromOffset(150, 34); l0isz33.StudsOffset = Vector3.new(0, 2.6, 0)
+ l0isz33.AlwaysOnTop = true; l0isz33.MaxDistance = 5000; l0isz33.Parent = l8ktolj7
+ local l6qjq3he = Instance.new(_s46)
+ l6qjq3he.Name = _s46; l6qjq3he.Size = UDim2.fromScale(1, 1)
+ l6qjq3he.BackgroundTransparency = 1; l6qjq3he.Text = text; l6qjq3he.TextColor3 = color
+ l6qjq3he.TextSize = 13; l6qjq3he.Font = Enum.Font.GothamBold
+ l6qjq3he.TextStrokeTransparency = 0.35; l6qjq3he.Parent = l0isz33
+ l8spex0[ls1614] = l0isz33
 end
-local function vchj(v3o18)
- if va7tz0y[v3o18] then va7tz0y[v3o18]:Destroy(); va7tz0y[v3o18] = nil end
- if v4ve92[v3o18] then v4ve92[v3o18]:Destroy(); v4ve92[v3o18] = nil end
- if v4v30t[v3o18] then v4v30t[v3o18]:Destroy(); v4v30t[v3o18] = nil end
+local function l9bd0g0(ls1614)
+ if l5aiui401[ls1614] then l5aiui401[ls1614]:Destroy(); l5aiui401[ls1614] = nil end
+ if l8spex0[ls1614] then l8spex0[ls1614]:Destroy(); l8spex0[ls1614] = nil end
+ if lmdaol9[ls1614] then lmdaol9[ls1614]:Destroy(); lmdaol9[ls1614] = nil end
 end
-local function v5a0l()
- for v3o18 in pairs(va7tz0y) do vchj(v3o18) end
- for v3o18 in pairs(v4ve92) do vchj(v3o18) end
- for v3o18 in pairs(v4v30t) do vchj(v3o18) end
- va7tz0y = {}; v4ve92 = {}; v4v30t = {}
+local function l5ldgbz()
+ for ls1614 in pairs(l5aiui401) do l9bd0g0(ls1614) end
+ for ls1614 in pairs(l8spex0) do l9bd0g0(ls1614) end
+ for ls1614 in pairs(lmdaol9) do l9bd0g0(ls1614) end
+ l5aiui401 = {}; l8spex0 = {}; lmdaol9 = {}
 end
-local v55nf4 = nil
-local function vckw5ng()
- if v55nf4 then return v55nf4 end
- v55nf4 = Instance.new("Frame")
- v55nf4.Name = "BZCrosshair"
- v55nf4.Size = UDim2.new(0, 20, 0, 20)
- v55nf4.Position = UDim2.new(0.5, -10, 0.5, -10)
- v55nf4.BackgroundTransparency = 1
- v55nf4.Parent = v871yzo
- local function vtn7s55(w, h, x, y)
- local v7hzio = Instance.new("Frame"); v7hzio.Size = UDim2.fromOffset(w, h); v7hzio.Position = UDim2.fromOffset(x, y)
- v7hzio.BackgroundColor3 = Color3.fromRGB(255, 60, 60); v7hzio.BorderSizePixel = 0; v7hzio.Parent = v55nf4
- local v9mx = Instance.new("UICorner"); v9mx.CornerRadius = UDim.new(1, 0); v9mx.Parent = v7hzio
+local lfhj47b = nil
+local function ljitjwum()
+ if lfhj47b then return lfhj47b end
+ lfhj47b = Instance.new(_s129)
+ lfhj47b.Name = _s12
+ lfhj47b.Size = UDim2.new(0, 20, 0, 20)
+ lfhj47b.Position = UDim2.new(0.5, -10, 0.5, -10)
+ lfhj47b.BackgroundTransparency = 1
+ lfhj47b.Parent = l8ktolj7
+ local function lirujt(w, h, x, y)
+ local lpafrcvg = Instance.new(_s129); lpafrcvg.Size = UDim2.fromOffset(w, h); lpafrcvg.Position = UDim2.fromOffset(x, y)
+ lpafrcvg.BackgroundColor3 = Color3.fromRGB(255, 60, 60); lpafrcvg.BorderSizePixel = 0; lpafrcvg.Parent = lfhj47b
+ local lj2atlkmv = Instance.new(_s174); lj2atlkmv.CornerRadius = UDim.new(1, 0); lj2atlkmv.Parent = lpafrcvg
  end
- vtn7s55(2, 8, 9, 0); vtn7s55(2, 8, 9, 12); vtn7s55(8, 2, 0, 9); vtn7s55(8, 2, 12, 9)
- local vtxcxa = Instance.new("Frame"); vtxcxa.Size = UDim2.fromOffset(2, 2); vtxcxa.Position = UDim2.fromOffset(9, 9)
- vtxcxa.BackgroundColor3 = Color3.fromRGB(255, 255, 255); vtxcxa.BorderSizePixel = 0; vtxcxa.Parent = v55nf4
- local vs280 = Instance.new("UICorner"); vs280.CornerRadius = UDim.new(1, 0); vs280.Parent = vtxcxa
- return v55nf4
+ lirujt(2, 8, 9, 0); lirujt(2, 8, 9, 12); lirujt(8, 2, 0, 9); lirujt(8, 2, 12, 9)
+ local l8xxfv = Instance.new(_s129); l8xxfv.Size = UDim2.fromOffset(2, 2); l8xxfv.Position = UDim2.fromOffset(9, 9)
+ l8xxfv.BackgroundColor3 = Color3.fromRGB(255, 255, 255); l8xxfv.BorderSizePixel = 0; l8xxfv.Parent = lfhj47b
+ local l9ozjem = Instance.new(_s174); l9ozjem.CornerRadius = UDim.new(1, 0); l9ozjem.Parent = l8xxfv
+ return lfhj47b
 end
-local vn9er14 = {
+local lxgqsup7b = {
  Aim = false,
  LastAimTarget = nil,
  LastMouseMode = nil,
@@ -695,205 +892,205 @@ local vn9er14 = {
  LastOriginY = nil,
  AcquiringFrames = 0
 }
-local vjjeget = {
- ["Aim/AimLock"] = true,
- ["Aim/AlwaysEnabled"] = true,
- ["Aim/ShowAssistDots"] = false,
- ["Aim/TeamCheck"] = false,
- ["Aim/VisibilityCheck"] = false,
- ["Aim/AttractionStrength"] = 200,
- ["Aim/FOV/Radius"] = 200,
- ["Aim/FOV/ShowCircle"] = true,
- ["Aim/Dampening"] = true,
- ["Aim/Dampening/Threshold"] = 5,
- ["Aim/Dampening/Strength"] = 5,
- ["Aim/Priority"] = "Head",
+local lhsjvtydw = {
+ [_s165] = true,
+ [_s73] = true,
+ [_s5] = false,
+ [_s58] = false,
+ [_s6] = false,
+ [_s152] = 200,
+ [_s68] = 200,
+ [_s178] = true,
+ [_s171] = true,
+ [_s134] = 5,
+ [_s139] = 5,
+ [_s23] = _s61,
 }
-local v2oc = {}
-local function v4uf(player)
+local l0v1az = {}
+local function lkhgy8(player)
  if not player then return nil end
- local vbdivuz = v2oc[player]
- if vbdivuz then
- local char = vbdivuz.Char
- local v91zdfk = vbdivuz.Root
- if char and char.Parent and char == player.Character and v91zdfk and v91zdfk.Parent then
- if vbdivuz.Humanoid then
- if vbdivuz.Humanoid.Health > 0 then
- return char, v91zdfk
+ local lrz9d4 = l0v1az[player]
+ if lrz9d4 then
+ local l2k0n79 = lrz9d4.Char
+ local lc4ddf1 = lrz9d4.Root
+ if l2k0n79 and l2k0n79.Parent and l2k0n79 == player.Character and lc4ddf1 and lc4ddf1.Parent then
+ if lrz9d4.Humanoid then
+ if lrz9d4.Humanoid.Health > 0 then
+ return l2k0n79, lc4ddf1
  end
  return nil
  else
- return char, v91zdfk
+ return l2k0n79, lc4ddf1
  end
  else
- vbdivuz.Char = nil
- vbdivuz.Root = nil
- vbdivuz.Humanoid = nil
- vbdivuz.Head = nil
+ lrz9d4.Char = nil
+ lrz9d4.Root = nil
+ lrz9d4.Humanoid = nil
+ lrz9d4.Head = nil
  end
  end
- local v7hv3iz = player.Character
- if not v7hv3iz or not v7hv3iz.Parent then return nil end
- local vqpgb7 = v7hv3iz:FindFirstChild("HumanoidRootPart") or v7hv3iz.PrimaryPart
- if not vqpgb7 then return nil end
- local vk8ut = v7hv3iz:FindFirstChildOfClass("Humanoid")
- v2oc[player] = {
- Char = v7hv3iz,
- Root = vqpgb7,
- Humanoid = vk8ut,
- Head = v7hv3iz:FindFirstChild("Head"),
+ local lrdrvms96 = player.Character
+ if not lrdrvms96 or not lrdrvms96.Parent then return nil end
+ local l03jlo = lrdrvms96:FindFirstChild(_s91) or lrdrvms96.PrimaryPart
+ if not l03jlo then return nil end
+ local l9k4dst = lrdrvms96:FindFirstChildOfClass(_s98)
+ l0v1az[player] = {
+ Char = lrdrvms96,
+ Root = l03jlo,
+ Humanoid = l9k4dst,
+ Head = lrdrvms96:FindFirstChild(_s61),
  }
- if vk8ut and vk8ut.Health <= 0 then return nil end
- return v7hv3iz, vqpgb7
+ if l9k4dst and l9k4dst.Health <= 0 then return nil end
+ return lrdrvms96, l03jlo
 end
-local function vpqkoj(v4cc)
+local function lsad5wke(lpffll)
  if not Camera then
  Camera = Workspace.CurrentCamera
  end
  if not Camera then
  return nil, nil, false
  end
- local vkrt0 = Camera.ViewportSize
- if v4cc == Enum.MouseBehavior.LockCenter then
- return vkrt0.X * 0.5, vkrt0.Y * 0.5, true
+ local li4nego = Camera.ViewportSize
+ if lpffll == Enum.MouseBehavior.LockCenter then
+ return li4nego.X * 0.5, li4nego.Y * 0.5, true
  end
- local vuhz = UserInputService:GetMouseLocation()
- local veiy = vuhz.X
- local vk8p4q0 = vuhz.Y
- if veiy ~= veiy or vk8p4q0 ~= vk8p4q0 then
+ local lpb8bw = UserInputService:GetMouseLocation()
+ local lc78w4if = lpb8bw.X
+ local l2xr0o7 = lpb8bw.Y
+ if lc78w4if ~= lc78w4if or l2xr0o7 ~= l2xr0o7 then
  return nil, nil, false
  end
- if veiy < 0 or vk8p4q0 < 0 or veiy > vkrt0.X or vk8p4q0 > vkrt0.Y then
+ if lc78w4if < 0 or l2xr0o7 < 0 or lc78w4if > li4nego.X or l2xr0o7 > li4nego.Y then
  return nil, nil, false
  end
- return veiy, vk8p4q0, true
+ return lc78w4if, l2xr0o7, true
 end
-local function vrtp0l(worldPos)
+local function l2t4ad(worldPos)
  local screenPos, onScreen = Camera:WorldToViewportPoint(worldPos)
  return screenPos, onScreen
 end
-local function vk83tql(resetMouseMode)
- vn9er14.LastAimTarget = nil
- vn9er14.LastOriginX = nil
- vn9er14.LastOriginY = nil
- vn9er14.AcquiringFrames = 0
+local function l1jr3552x(resetMouseMode)
+ lxgqsup7b.LastAimTarget = nil
+ lxgqsup7b.LastOriginX = nil
+ lxgqsup7b.LastOriginY = nil
+ lxgqsup7b.AcquiringFrames = 0
  if resetMouseMode then
- vn9er14.LastMouseMode = nil
+ lxgqsup7b.LastMouseMode = nil
  end
 end
-local function vvg0(Hitbox)
+local function l4re3yt6o(Hitbox)
  if not Hitbox then
- vk83tql(false)
+ l1jr3552x(false)
  return
  end
- local vq0y9do = (type(mousemoverel) == "function")
- local vdp5 = Hitbox[3]
- if not vdp5 or not vdp5.Parent then
- vk83tql(false)
+ local l14lpn1 = (type(mousemoverel) == _s22)
+ local l3speb = Hitbox[3]
+ if not l3speb or not l3speb.Parent then
+ l1jr3552x(false)
  return
  end
- local vecruyf = UserInputService.MouseBehavior
- if vecruyf ~= vn9er14.LastMouseMode then
- vn9er14.LastMouseMode = vecruyf
- vn9er14.LastOriginX = nil
- vn9er14.LastOriginY = nil
+ local lyl3pig = UserInputService.MouseBehavior
+ if lyl3pig ~= lxgqsup7b.LastMouseMode then
+ lxgqsup7b.LastMouseMode = lyl3pig
+ lxgqsup7b.LastOriginX = nil
+ lxgqsup7b.LastOriginY = nil
  end
- local vwnnhj7 = Hitbox[1]
- if vwnnhj7 ~= vn9er14.LastAimTarget then
- vn9er14.LastAimTarget = vwnnhj7
- vn9er14.LastOriginX = nil
- vn9er14.LastOriginY = nil
+ local lueaf6e = Hitbox[1]
+ if lueaf6e ~= lxgqsup7b.LastAimTarget then
+ lxgqsup7b.LastAimTarget = lueaf6e
+ lxgqsup7b.LastOriginX = nil
+ lxgqsup7b.LastOriginY = nil
  end
- local vkkv = vdp5.Position
- local v6hi = Camera.CFrame
- local vhr5xf = v6hi.Position
- local vepq85 = (vkkv - vhr5xf).Magnitude
- if vepq85 < 1 then
+ local ler01yj = l3speb.Position
+ local lrv1543kt = Camera.CFrame
+ local l2z064 = lrv1543kt.Position
+ local l3vqons1v = (ler01yj - l2z064).lircqlpp
+ if l3vqons1v < 1 then
  return
  end
- local ScreenPosition, OnScreen = vrtp0l(vkkv)
+ local ScreenPosition, OnScreen = l2t4ad(ler01yj)
  if not OnScreen or ScreenPosition.Z <= 0 then
  return
  end
- local vkrt0 = Camera.ViewportSize
- local originX, originY, originValid = vpqkoj(vecruyf)
+ local li4nego = Camera.ViewportSize
+ local originX, originY, originValid = lsad5wke(lyl3pig)
  if not originValid then
  return
  end
- local v41n = vn9er14.LastOriginX
- local vy6d = vn9er14.LastOriginY
- vn9er14.LastOriginX = originX
- vn9er14.LastOriginY = originY
+ local l8n6zu = lxgqsup7b.LastOriginX
+ local lez66ejs = lxgqsup7b.LastOriginY
+ lxgqsup7b.LastOriginX = originX
+ lxgqsup7b.LastOriginY = originY
  local targetX, targetY = ScreenPosition.X, ScreenPosition.Y
  local dx, dy = targetX - originX, targetY - originY
- local v2h2 = math.sqrt(dx * dx + dy * dy)
- if v2h2 > vjjeget["Aim/FOV/Radius"] then
+ local lf5wjp = math.sqrt(dx * dx + dy * dy)
+ if lf5wjp > lhsjvtydw[_s68] then
  return
  end
- local vdrc = vjjeget["Aim/AttractionStrength"] / 100
- if vjjeget["Aim/Dampening"] then
- local vwkta = vjjeget["Aim/Dampening/Threshold"]
- if v2h2 < vwkta then
- local vrbsv = math.max(vjjeget["Aim/Dampening/Strength"] / 100, v2h2 / vwkta)
- vdrc = vdrc * vrbsv
+ local l0d53suhn = lhsjvtydw[_s152] / 100
+ if lhsjvtydw[_s171] then
+ local l59c39kmg = lhsjvtydw[_s134]
+ if lf5wjp < l59c39kmg then
+ local l2ecxa = math.max(lhsjvtydw[_s139] / 100, lf5wjp / l59c39kmg)
+ l0d53suhn = l0d53suhn * l2ecxa
  end
  end
- local vjvzh = 0.2
- local viwqy = dx * vjvzh * vdrc
- local vyqk94d = dy * vjvzh * vdrc
- if viwqy ~= viwqy or vyqk94d ~= vyqk94d then
+ local lx0th3t = 0.2
+ local ludlv2 = dx * lx0th3t * l0d53suhn
+ local llp9lx = dy * lx0th3t * l0d53suhn
+ if ludlv2 ~= ludlv2 or llp9lx ~= llp9lx then
  return
  end
- local ve153a = vkrt0.X * 0.5
- local vpioyg = vkrt0.Y * 0.5
- viwqy = math.clamp(viwqy, -ve153a, ve153a)
- vyqk94d = math.clamp(vyqk94d, -vpioyg, vpioyg)
- if vq0y9do then
- pcall(function() mousemoverel(math.floor(viwqy + 0.5), math.floor(vyqk94d + 0.5)) end)
+ local l76ucvr = li4nego.X * 0.5
+ local lu6jhz = li4nego.Y * 0.5
+ ludlv2 = math.clamp(ludlv2, -l76ucvr, l76ucvr)
+ llp9lx = math.clamp(llp9lx, -lu6jhz, lu6jhz)
+ if l14lpn1 then
+ pcall(function() mousemoverel(math.floor(ludlv2 + 0.5), math.floor(llp9lx + 0.5)) end)
  else
- local vpv60va = CFrame.new(vhr5xf, vkkv)
- Camera.CFrame = Camera.CFrame:Lerp(vpv60va, 0.3)
+ local l889ncf4m = CFrame.new(l2z064, ler01yj)
+ Camera.CFrame = Camera.CFrame:Lerp(l889ncf4m, 0.3)
  end
 end
-local v93kmk = {}
-local voldfo = 0
-local vtpac56 = 15
-local function v4i3()
- local vw2pc = Camera.CFrame.Position
- local v4cc = UserInputService.MouseBehavior
- local veiy, vk8p4q0, crosshairValid = vpqkoj(v4cc)
+local lv0ryp = {}
+local l6ajkjg12 = 0
+local ls8bf93fi = 15
+local function lhsj75zu0()
+ local lngkd6p = Camera.CFrame.Position
+ local lpffll = UserInputService.MouseBehavior
+ local lc78w4if, l2xr0o7, crosshairValid = lsad5wke(lpffll)
  if not crosshairValid then return nil end
- voldfo = 0
- local vkxw = nil
- local v7ko = math.huge
- local v5ps = Players:GetPlayers()
- for _, Player in ipairs(v5ps) do
+ l6ajkjg12 = 0
+ local l0a3m7 = nil
+ local ljazbuw78 = math.huge
+ local l03247jpn = Players:GetPlayers()
+ for _, Player in ipairs(l03247jpn) do
  if Player ~= LocalPlayer then
- local char, v91zdfk = v4uf(Player)
- if char and v91zdfk then
- local vk8ut = char:FindFirstChildOfClass("Humanoid")
- if vk8ut and vk8ut.Health > 0 then
- local vdp5 = nil
- if vytj.aimbotTarget == "Head" then
- vdp5 = char:FindFirstChild("Head")
+ local l2k0n79, lc4ddf1 = lkhgy8(Player)
+ if l2k0n79 and lc4ddf1 then
+ local l9k4dst = l2k0n79:FindFirstChildOfClass(_s98)
+ if l9k4dst and l9k4dst.Health > 0 then
+ local l3speb = nil
+ if lwlbivqm.aimbotTarget == _s61 then
+ l3speb = l2k0n79:FindFirstChild(_s61)
  else
- vdp5 = char:FindFirstChild("HumanoidRootPart") or char:FindFirstChild("Torso") or char:FindFirstChild("Head")
+ l3speb = l2k0n79:FindFirstChild(_s91) or l2k0n79:FindFirstChild(_s84) or l2k0n79:FindFirstChild(_s61)
  end
- if vdp5 then
- local v5qrl1n = vdp5.Position
- if vytj.visCheck and not vusgio(v5qrl1n, char) then
+ if l3speb then
+ local loxjex = l3speb.Position
+ if lwlbivqm.visCheck and not l0d8o7t1(loxjex, l2k0n79) then
  else
- local ScreenPosition, OnScreen = vrtp0l(v5qrl1n)
+ local ScreenPosition, OnScreen = l2t4ad(loxjex)
  if OnScreen and ScreenPosition.Z > 0 then
  local screenX, screenY = ScreenPosition.X, ScreenPosition.Y
- local dx, dy = screenX - veiy, screenY - vk8p4q0
- local Magnitude = math.sqrt(dx * dx + dy * dy)
- if Magnitude < vjjeget["Aim/FOV/Radius"] then
- local vepq85 = (vdp5.Position - Camera.CFrame.Position).Magnitude
- if vepq85 <= vytj.aimbotDistance then
- if Magnitude < v7ko then
- v7ko = Magnitude
- vkxw = {Player, char, vdp5}
+ local dx, dy = screenX - lc78w4if, screenY - l2xr0o7
+ local lircqlpp = math.sqrt(dx * dx + dy * dy)
+ if lircqlpp < lhsjvtydw[_s68] then
+ local l3vqons1v = (l3speb.Position - Camera.CFrame.Position).lircqlpp
+ if l3vqons1v <= lwlbivqm.aimbotDistance then
+ if lircqlpp < ljazbuw78 then
+ ljazbuw78 = lircqlpp
+ l0a3m7 = {Player, l2k0n79, l3speb}
  end
  end
  end
@@ -904,141 +1101,141 @@ local function v4i3()
  end
  end
  end
- return vkxw
+ return l0a3m7
 end
-local function v3fb9()
- if not vytj.aimbot then
- vk83tql(false)
+local function l79mgh()
+ if not lwlbivqm.aimbot then
+ l1jr3552x(false)
  return
  end
- local v3o18 = v4i3()
- if v3o18 then
- vvg0(v3o18)
+ local ls1614 = lhsj75zu0()
+ if ls1614 then
+ l4re3yt6o(ls1614)
  else
- vk83tql(false)
+ l1jr3552x(false)
  end
 end
-local v81sdw = nil
-local function vb2k()
- local v18h = vytj.aimbot and vytj.aimbotFOVCircle
- if not v18h then
- if v81sdw then
- v81sdw.Visible = false
+local l0tiues = nil
+local function lrewbb()
+ local loqj0rjb = lwlbivqm.aimbot and lwlbivqm.aimbotFOVCircle
+ if not loqj0rjb then
+ if l0tiues then
+ l0tiues.Visible = false
  end
  return
  end
- local vrmjk = v871yzo
- if not vrmjk then
- if v81sdw then v81sdw.Visible = false end
+ local lxc6c3 = l8ktolj7
+ if not lxc6c3 then
+ if l0tiues then l0tiues.Visible = false end
  return
  end
- if not v81sdw or v81sdw.Parent ~= vrmjk then
- if v81sdw then pcall(function() v81sdw:Destroy() end) end
- v81sdw = Instance.new("Frame")
- v81sdw.Name = "FOVCircle"
- v81sdw.AnchorPoint = Vector2.new(0.5, 0.5)
- v81sdw.BorderSizePixel = 0
- v81sdw.BackgroundTransparency = 1
- v81sdw.ZIndex = 100
- v81sdw.Parent = vrmjk
- local vy41i = Instance.new("UIStroke")
- vy41i.Color = Color3.fromRGB(255, 255, 255)
- vy41i.Thickness = 1
- vy41i.Transparency = 0.5
- vy41i.Parent = v81sdw
- local vkk4c = Instance.new("UICorner")
- vkk4c.CornerRadius = UDim.new(1, 0)
- vkk4c.Parent = v81sdw
+ if not l0tiues or l0tiues.Parent ~= lxc6c3 then
+ if l0tiues then pcall(function() l0tiues:Destroy() end) end
+ l0tiues = Instance.new(_s129)
+ l0tiues.Name = _s59
+ l0tiues.AnchorPoint = Vector2.new(0.5, 0.5)
+ l0tiues.BorderSizePixel = 0
+ l0tiues.BackgroundTransparency = 1
+ l0tiues.ZIndex = 100
+ l0tiues.Parent = lxc6c3
+ local l9jm2s = Instance.new(_s65)
+ l9jm2s.Color = Color3.fromRGB(255, 255, 255)
+ l9jm2s.Thickness = 1
+ l9jm2s.Transparency = 0.5
+ l9jm2s.Parent = l0tiues
+ local lsqqp6l = Instance.new(_s174)
+ lsqqp6l.CornerRadius = UDim.new(1, 0)
+ lsqqp6l.Parent = l0tiues
  end
  local pos
- if vcoto then
+ if l69u5t then
  pos = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
  else
  pos = UserInputService:GetMouseLocation()
  end
- local vmyx44 = vytj.aimbotFOV or 200
- v81sdw.Position = UDim2.fromOffset(pos.X, pos.Y)
- v81sdw.Size = UDim2.fromOffset(vmyx44 * 2, vmyx44 * 2)
- v81sdw.Visible = true
+ local l17c763 = lwlbivqm.aimbotFOV or 200
+ l0tiues.Position = UDim2.fromOffset(pos.X, pos.Y)
+ l0tiues.Size = UDim2.fromOffset(l17c763 * 2, l17c763 * 2)
+ l0tiues.Visible = true
 end
 RunService.RenderStepped:Connect(function()
- vjjeget["Aim/AimLock"] = vytj.aimbot
- vjjeget["Aim/AlwaysEnabled"] = vytj.aimbot
- vjjeget["Aim/FOV/Radius"] = vytj.aimbotFOV
- vjjeget["Aim/FOV/ShowCircle"] = vytj.aimbotFOVCircle
- pcall(vb2k)
- if vytj.aimbot then
- v3fb9()
+ lhsjvtydw[_s165] = lwlbivqm.aimbot
+ lhsjvtydw[_s73] = lwlbivqm.aimbot
+ lhsjvtydw[_s68] = lwlbivqm.aimbotFOV
+ lhsjvtydw[_s178] = lwlbivqm.aimbotFOVCircle
+ pcall(lrewbb)
+ if lwlbivqm.aimbot then
+ l79mgh()
  else
- vk83tql(false)
+ l1jr3552x(false)
  end
 end)
-local vwir = 0
-local vbik = 0
+local l1ykzyr = 0
+local lhgmli1 = 0
 RunService.RenderStepped:Connect(function(dt)
- local v91zdfk = vjcit()
- local vk8ut = vaf58c2()
- local vm35ixo = viujv()
- if vk8ut and v91zdfk then
- if vk8ut.WalkSpeed ~= vytj.walkspeed then vk8ut.WalkSpeed = vytj.walkspeed end
- if vytj.jumppower ~= 50 then
- vk8ut.UseJumpPower = true
- if vk8ut.JumpPower ~= vytj.jumppower then vk8ut.JumpPower = vytj.jumppower end
+ local lc4ddf1 = lv0d5di()
+ local l9k4dst = lfzgmam()
+ local lrjhklnwn = ltv7jzs()
+ if l9k4dst and lc4ddf1 then
+ if l9k4dst.WalkSpeed ~= lwlbivqm.walkspeed then l9k4dst.WalkSpeed = lwlbivqm.walkspeed end
+ if lwlbivqm.jumppower ~= 50 then
+ l9k4dst.UseJumpPower = true
+ if l9k4dst.JumpPower ~= lwlbivqm.jumppower then l9k4dst.JumpPower = lwlbivqm.jumppower end
  end
  end
- if vytj.infjump and UserInputService:IsKeyDown(Enum.KeyCode.Space) then
- if vk8ut and vk8ut.FloorMaterial ~= Enum.Material.Air then vk8ut:ChangeState(Enum.HumanoidStateType.Jumping) end
+ if lwlbivqm.infjump and UserInputService:IsKeyDown(Enum.KeyCode.Space) then
+ if l9k4dst and l9k4dst.FloorMaterial ~= Enum.Material.Air then l9k4dst:ChangeState(Enum.HumanoidStateType.Jumping) end
  end
- if vytj.bhop and UserInputService:IsKeyDown(Enum.KeyCode.Space) then
- if vk8ut and vk8ut.FloorMaterial ~= Enum.Material.Air then vk8ut:ChangeState(Enum.HumanoidStateType.Jumping) end
+ if lwlbivqm.bhop and UserInputService:IsKeyDown(Enum.KeyCode.Space) then
+ if l9k4dst and l9k4dst.FloorMaterial ~= Enum.Material.Air then l9k4dst:ChangeState(Enum.HumanoidStateType.Jumping) end
  end
- if vytj.fly and v91zdfk and vm35ixo then
- local vaji = Vector3.zero
- if UserInputService:IsKeyDown(Enum.KeyCode.W) then vaji = vaji + vm35ixo.CFrame.LookVector end
- if UserInputService:IsKeyDown(Enum.KeyCode.S) then vaji = vaji - vm35ixo.CFrame.LookVector end
- if UserInputService:IsKeyDown(Enum.KeyCode.D) then vaji = vaji + vm35ixo.CFrame.RightVector end
- if UserInputService:IsKeyDown(Enum.KeyCode.A) then vaji = vaji - vm35ixo.CFrame.RightVector end
- if UserInputService:IsKeyDown(Enum.KeyCode.Space) then vaji = vaji + Vector3.new(0, 1, 0) end
- if UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) then vaji = vaji - Vector3.new(0, 1, 0) end
- if vaji.Magnitude > 0 then v91zdfk.AssemblyLinearVelocity = vaji.Unit * vaqvk.FlySpeed else v91zdfk.AssemblyLinearVelocity = Vector3.zero end
+ if lwlbivqm.fly and lc4ddf1 and lrjhklnwn then
+ local lflbzc97 = Vector3.zero
+ if UserInputService:IsKeyDown(Enum.KeyCode.W) then lflbzc97 = lflbzc97 + lrjhklnwn.CFrame.LookVector end
+ if UserInputService:IsKeyDown(Enum.KeyCode.S) then lflbzc97 = lflbzc97 - lrjhklnwn.CFrame.LookVector end
+ if UserInputService:IsKeyDown(Enum.KeyCode.D) then lflbzc97 = lflbzc97 + lrjhklnwn.CFrame.RightVector end
+ if UserInputService:IsKeyDown(Enum.KeyCode.A) then lflbzc97 = lflbzc97 - lrjhklnwn.CFrame.RightVector end
+ if UserInputService:IsKeyDown(Enum.KeyCode.Space) then lflbzc97 = lflbzc97 + Vector3.new(0, 1, 0) end
+ if UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) then lflbzc97 = lflbzc97 - Vector3.new(0, 1, 0) end
+ if lflbzc97.lircqlpp > 0 then lc4ddf1.AssemblyLinearVelocity = lflbzc97.Unit * l72pwmz.FlySpeed else lc4ddf1.AssemblyLinearVelocity = Vector3.zero end
  end
- if vytj.lowgravity then Workspace.Gravity = 35 else Workspace.Gravity = vr56fao end
- if vytj.noScreenShake then
- if vk8ut then pcall(function() vk8ut.CameraOffset = Vector3.zero end) end
- if vm35ixo then pcall(function() vm35ixo.CameraOffset = Vector3.zero end) end
+ if lwlbivqm.lowgravity then Workspace.Gravity = 35 else Workspace.Gravity = lfnznk2al end
+ if lwlbivqm.noScreenShake then
+ if l9k4dst then pcall(function() l9k4dst.CameraOffset = Vector3.zero end) end
+ if lrjhklnwn then pcall(function() lrjhklnwn.CameraOffset = Vector3.zero end) end
  end
- if vytj.fov and vm35ixo then
- if vm35ixo.FieldOfView ~= vytj.fov then vm35ixo.FieldOfView = vytj.fov end
+ if lwlbivqm.fov and lrjhklnwn then
+ if lrjhklnwn.FieldOfView ~= lwlbivqm.fov then lrjhklnwn.FieldOfView = lwlbivqm.fov end
  end
- if vytj.clickTP and Mouse and Mouse.Hit and v91zdfk then
+ if lwlbivqm.clickTP and Mouse and Mouse.Hit and lc4ddf1 then
  end
- if vytj.crosshair and not v55nf4 then vckw5ng() end
- if v55nf4 then v55nf4.Visible = vytj.crosshair end
- vwir = vwir + dt
- if vwir >= 0.5 then
- vwir = 0
- if vytj.espPlayers or vytj.espPotato then
- local v14m2j = vjcit()
- local vzkl = {}
- if vytj.espPlayers then
- for _, plr in ipairs(vrixa11()) do
- if plr.Character then vzkl[plr.Character] = { Color = Color3.fromRGB(80, 200, 255), Kind = "player" } end
+ if lwlbivqm.crosshair and not lfhj47b then ljitjwum() end
+ if lfhj47b then lfhj47b.Visible = lwlbivqm.crosshair end
+ l1ykzyr = l1ykzyr + dt
+ if l1ykzyr >= 0.5 then
+ l1ykzyr = 0
+ if lwlbivqm.espPlayers or lwlbivqm.espPotato then
+ local l1ny1r = lv0d5di()
+ local lxux56db6 = {}
+ if lwlbivqm.espPlayers then
+ for _, plr in ipairs(l0un47()) do
+ if plr.Character then lxux56db6[plr.Character] = { Color = Color3.fromRGB(80, 200, 255), Kind = _s150 } end
  end
  end
- for v3o18 in pairs(va7tz0y) do
- if not vzkl[v3o18] then vchj(v3o18) end
+ for ls1614 in pairs(l5aiui401) do
+ if not lxux56db6[ls1614] then l9bd0g0(ls1614) end
  end
- for v3o18, info in pairs(vzkl) do
- local v84u8 = vgsxw71(v3o18, info.Color)
- v84u8.FillColor = info.Color
- if v14m2j then
- local vo7uu = v3o18:FindFirstChild("HumanoidRootPart") or v3o18:FindFirstChildWhichIsA("BasePart")
- if vo7uu then
- local vepq85 = math.floor((vo7uu.Position - v14m2j.Position).Magnitude)
- local vcfl0 = v3o18:FindFirstChildOfClass("Humanoid")
- local vertj = ""
- if vcfl0 then vertj = "\n" .. math.floor(vcfl0.Health) .. " HP" end
- vt026rj(v3o18, "PLAYER [" .. vepq85 .. " studs]" .. vertj, info.Color)
+ for ls1614, info in pairs(lxux56db6) do
+ local lm4jff = l4ofym7oa(ls1614, info.Color)
+ lm4jff.FillColor = info.Color
+ if l1ny1r then
+ local l18pfh = ls1614:FindFirstChild(_s91) or ls1614:FindFirstChildWhichIsA(_s118)
+ if l18pfh then
+ local l3vqons1v = math.floor((l18pfh.Position - l1ny1r.Position).lircqlpp)
+ local ldj4hz9az = ls1614:FindFirstChildOfClass(_s98)
+ local l3p8p94 = ""
+ if ldj4hz9az then l3p8p94 = _s123 .. math.floor(ldj4hz9az.Health) .. _s105 end
+ l9asvl16q(ls1614, _s137 .. l3vqons1v .. _s173 .. l3p8p94, info.Color)
  end
  end
  end
@@ -1046,116 +1243,116 @@ RunService.RenderStepped:Connect(function(dt)
  end
 end)
 RunService.Stepped:Connect(function()
- if not vytj.noclip then return end
- local char = vw9xa3()
- if char then
- for _, vpseim in ipairs(char:GetDescendants()) do
- if vpseim:IsA("BasePart") then pcall(function() vpseim.CanCollide = false end) end
+ if not lwlbivqm.noclip then return end
+ local l2k0n79 = lnxefr6()
+ if l2k0n79 then
+ for _, lsxpq67 in ipairs(l2k0n79:GetDescendants()) do
+ if lsxpq67:IsA(_s118) then pcall(function() lsxpq67.CanCollide = false end) end
  end
  end
 end)
 UserInputService.InputBegan:Connect(function(input, gameProcessed)
- if vytj.clickTP and not gameProcessed then
+ if lwlbivqm.clickTP and not gameProcessed then
  if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
- if (not vcoto) and (UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) or UserInputService:IsKeyDown(Enum.KeyCode.RightControl)) then
- local v91zdfk = vjcit()
- if v91zdfk and Mouse and Mouse.Hit then v91zdfk.CFrame = CFrame.new(Mouse.Hit.Position + Vector3.new(0, 3, 0)) end
- elseif vcoto then
- local v91zdfk = vjcit()
- if v91zdfk and Mouse and Mouse.Hit then v91zdfk.CFrame = CFrame.new(Mouse.Hit.Position + Vector3.new(0, 3, 0)) end
+ if (not l69u5t) and (UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) or UserInputService:IsKeyDown(Enum.KeyCode.RightControl)) then
+ local lc4ddf1 = lv0d5di()
+ if lc4ddf1 and Mouse and Mouse.Hit then lc4ddf1.CFrame = CFrame.new(Mouse.Hit.Position + Vector3.new(0, 3, 0)) end
+ elseif l69u5t then
+ local lc4ddf1 = lv0d5di()
+ if lc4ddf1 and Mouse and Mouse.Hit then lc4ddf1.CFrame = CFrame.new(Mouse.Hit.Position + Vector3.new(0, 3, 0)) end
  end
  end
  end
 end)
 RunService.Heartbeat:Connect(function(dt)
- vbik = vbik + dt
- if vbik < 0.2 then return end
- vbik = 0
- local vk8ut = vaf58c2(); local v91zdfk = vjcit(); local char = vw9xa3(); local vm35ixo = viujv()
- if vytj.noRecoil then
- local vqj7y = LocalPlayer.Character and LocalPlayer.Character:FindFirstChildOfClass("Tool")
- if vqj7y then
- for _, obj in ipairs(vqj7y:GetDescendants()) do
- if obj:IsA("NumberValue") or obj:IsA("IntValue") then
- local v53lc5 = string.lower(obj.Name)
- if string.find(v53lc5, "recoil", 1, true) or string.find(v53lc5, "kick", 1, true) or
- string.find(v53lc5, "shake", 1, true) or string.find(v53lc5, "bounce", 1, true) or
- string.find(v53lc5, "climb", 1, true) then
+ lhgmli1 = lhgmli1 + dt
+ if lhgmli1 < 0.2 then return end
+ lhgmli1 = 0
+ local l9k4dst = lfzgmam(); local lc4ddf1 = lv0d5di(); local l2k0n79 = lnxefr6(); local lrjhklnwn = ltv7jzs()
+ if lwlbivqm.noRecoil then
+ local l2zqrrb = LocalPlayer.Character and LocalPlayer.Character:FindFirstChildOfClass(_s113)
+ if l2zqrrb then
+ for _, obj in ipairs(l2zqrrb:GetDescendants()) do
+ if obj:IsA(_s32) or obj:IsA(_s141) then
+ local l037p7o8t = string.lower(obj.Name)
+ if string.find(l037p7o8t, _s87, 1, true) or string.find(l037p7o8t, _s126, 1, true) or
+ string.find(l037p7o8t, _s182, 1, true) or string.find(l037p7o8t, _s155, 1, true) or
+ string.find(l037p7o8t, _s41, 1, true) then
  pcall(function() obj.Value = 0 end)
  end
- elseif obj:IsA("Vector3Value") then
- local v53lc5 = string.lower(obj.Name)
- if string.find(v53lc5, "recoil", 1, true) or string.find(v53lc5, "kick", 1, true) then
+ elseif obj:IsA(_s135) then
+ local l037p7o8t = string.lower(obj.Name)
+ if string.find(l037p7o8t, _s87, 1, true) or string.find(l037p7o8t, _s126, 1, true) then
  pcall(function() obj.Value = Vector3.zero end)
  end
  end
  end
- for _, attr in ipairs({"Recoil", "Kick", "RecoilMultiplier", "Kickback"}) do
- pcall(function() vqj7y:SetAttribute(attr, 0) end)
+ for _, attr in ipairs({_s144, _s28, _s166, _s36}) do
+ pcall(function() l2zqrrb:SetAttribute(attr, 0) end)
  end
  end
- local vm35ixo = viujv()
- if vm35ixo then
- pcall(function() vm35ixo.CFrame = vm35ixo.CFrame end)
+ local lrjhklnwn = ltv7jzs()
+ if lrjhklnwn then
+ pcall(function() lrjhklnwn.CFrame = lrjhklnwn.CFrame end)
  end
  end
- if vytj.noSpread then
- local vqj7y = LocalPlayer.Character and LocalPlayer.Character:FindFirstChildOfClass("Tool")
- if vqj7y then
- for _, obj in ipairs(vqj7y:GetDescendants()) do
- if obj:IsA("NumberValue") or obj:IsA("IntValue") then
- local v53lc5 = string.lower(obj.Name)
- if string.find(v53lc5, "spread", 1, true) or string.find(v53lc5, "accuracy", 1, true) or
- string.find(v53lc5, "bloom", 1, true) or string.find(v53lc5, "deviation", 1, true) or
- string.find(v53lc5, "cone", 1, true) or string.find(v53lc5, "inaccuracy", 1, true) then
+ if lwlbivqm.noSpread then
+ local l2zqrrb = LocalPlayer.Character and LocalPlayer.Character:FindFirstChildOfClass(_s113)
+ if l2zqrrb then
+ for _, obj in ipairs(l2zqrrb:GetDescendants()) do
+ if obj:IsA(_s32) or obj:IsA(_s141) then
+ local l037p7o8t = string.lower(obj.Name)
+ if string.find(l037p7o8t, _s66, 1, true) or string.find(l037p7o8t, _s101, 1, true) or
+ string.find(l037p7o8t, _s34, 1, true) or string.find(l037p7o8t, _s142, 1, true) or
+ string.find(l037p7o8t, _s44, 1, true) or string.find(l037p7o8t, _s143, 1, true) then
  pcall(function() obj.Value = 0 end)
  end
- elseif obj:IsA("Vector3Value") then
- local v53lc5 = string.lower(obj.Name)
- if string.find(v53lc5, "spread", 1, true) or string.find(v53lc5, "deviation", 1, true) then
+ elseif obj:IsA(_s135) then
+ local l037p7o8t = string.lower(obj.Name)
+ if string.find(l037p7o8t, _s66, 1, true) or string.find(l037p7o8t, _s142, 1, true) then
  pcall(function() obj.Value = Vector3.zero end)
  end
  end
  end
- for _, attr in ipairs({"Spread", "Accuracy", "Bloom", "Deviation", "Inaccuracy"}) do
- pcall(function() vqj7y:SetAttribute(attr, 0) end)
+ for _, attr in ipairs({_s104, _s79, _s96, _s157, _s71}) do
+ pcall(function() l2zqrrb:SetAttribute(attr, 0) end)
  end
  end
  end
- if vytj.antiAfk then
- local vm35ixo = viujv()
- if vm35ixo then
- pcall(function() VirtualUser:Button2Down(Vector2.new(0, 0), vm35ixo.CFrame) end)
+ if lwlbivqm.antiAfk then
+ local lrjhklnwn = ltv7jzs()
+ if lrjhklnwn then
+ pcall(function() VirtualUser:Button2Down(Vector2.new(0, 0), lrjhklnwn.CFrame) end)
  task.wait(0.1)
- pcall(function() VirtualUser:Button2Up(Vector2.new(0, 0), vm35ixo.CFrame) end)
+ pcall(function() VirtualUser:Button2Up(Vector2.new(0, 0), lrjhklnwn.CFrame) end)
  end
  end
 end)
-local function v60rjiw(v7hv3iz)
- if not v7hv3iz then return end
+local function lwpk2yx(lrdrvms96)
+ if not lrdrvms96 then return end
  task.wait(0.5)
- local vk8ut = v7hv3iz and v7hv3iz:FindFirstChildOfClass("Humanoid")
- if vk8ut then
- vk8ut.WalkSpeed = vytj.walkspeed
- vk8ut.UseJumpPower = true
- vk8ut.JumpPower = vytj.jumppower
+ local l9k4dst = lrdrvms96 and lrdrvms96:FindFirstChildOfClass(_s98)
+ if l9k4dst then
+ l9k4dst.WalkSpeed = lwlbivqm.walkspeed
+ l9k4dst.UseJumpPower = true
+ l9k4dst.JumpPower = lwlbivqm.jumppower
  end
 end
-LocalPlayer.CharacterAdded:Connect(function(v7hv3iz)
- v60rjiw(v7hv3iz)
+LocalPlayer.CharacterAdded:Connect(function(lrdrvms96)
+ lwpk2yx(lrdrvms96)
 end)
-if LocalPlayer.Character then task.spawn(v60rjiw, LocalPlayer.Character) end
+if LocalPlayer.Character then task.spawn(lwpk2yx, LocalPlayer.Character) end
 LocalPlayer.Idled:Connect(function()
- if not vytj.antiAfk then return end
- local vm35ixo = viujv()
- if not vm35ixo then return end
- pcall(function() VirtualUser:Button2Down(Vector2.new(0, 0), vm35ixo.CFrame) end)
+ if not lwlbivqm.antiAfk then return end
+ local lrjhklnwn = ltv7jzs()
+ if not lrjhklnwn then return end
+ pcall(function() VirtualUser:Button2Down(Vector2.new(0, 0), lrjhklnwn.CFrame) end)
  task.wait(1)
- pcall(function() VirtualUser:Button2Up(Vector2.new(0, 0), vm35ixo.CFrame) end)
+ pcall(function() VirtualUser:Button2Up(Vector2.new(0, 0), lrjhklnwn.CFrame) end)
 end)
-vb0z3nx:Notify({
- Title = "Lua Hub — Blood Zone",
- Content = "Загружено. Удачи в бою! 🩸",
- Icon = "solar:check-vy41i-bold",
+l7u2xxpuk:Notify({
+ Title = _s172,
+ Content = _s2,
+ Icon = _s30,
  Duration = 5,
 })
