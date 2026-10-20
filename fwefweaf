@@ -1,0 +1,1161 @@
+if type(loadchar) ~= "function" then loadchar = function() end end
+if type(loadcharacter) ~= "function" then loadcharacter = function() end end
+do
+ local vkh1dn = (type(mouse1click) == "function") and mouse1click or nil
+ mouse1click = function(...)
+ if vkh1dn then pcall(vkh1dn) end
+ end
+end
+local vb0z3nx = nil
+local vf1t2 = pcall(function()
+ vb0z3nx = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/vb0z3nx/main/vepq85/main.lua"))()
+end)
+if not vf1t2 or not vb0z3nx then
+ warn("[Lua Hub] Не удалось загрузить vb0z3nx.")
+ return
+end
+local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+local UserInputService = game:GetService("UserInputService")
+local Lighting = game:GetService("Lighting")
+local Workspace = game:GetService("Workspace")
+local RunService = game:GetService("RunService")
+local TeleportService = game:GetService("TeleportService")
+local VirtualUser = game:GetService("VirtualUser")
+local HttpService = game:GetService("HttpService")
+local StarterGui = game:GetService("StarterGui")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local SoundService = game:GetService("SoundService")
+local LocalPlayer = Players.LocalPlayer
+local Mouse = LocalPlayer:GetMouse()
+local Camera = Workspace.CurrentCamera
+local vdaly8 = (type(getgenv) == "function" and getgenv()) or _G
+local function vbn78(path, data)
+ if type(writefile) == "function" then pcall(function() writefile(path, data) end) end
+end
+local function vq77aw(path)
+ if type(readfile) == "function" then
+ local ok, data = pcall(function() return readfile(path) end)
+ if ok and type(data) == "string" then return data end
+ end
+ return nil
+end
+local vaqvk = {
+ NotifyDuration = 4,
+ FlySpeed = 80,
+ AimbotRadius = 200,
+}
+local vytj = {
+ walkspeed = 16,
+ jumppower = 50,
+ infjump = false,
+ fly = false,
+ noclip = false,
+ bhop = false,
+ lowgravity = false,
+ espPlayers = false,
+ espHealth = false,
+ espDistance = false,
+ espWeapon = false,
+ espPotato = false,
+ tracers = false,
+ aimbot = false,
+ silentAim = false,
+ aimbotFOV = 200,
+ aimbotSmooth = 5,
+ aimbotDistance = 500,
+ noRecoil = false,
+ noSpread = false,
+ aimbotFOVCircle = false,
+ aimbotTarget = "Head", 
+ visCheck = true,
+ fullbright = false,
+ nofog = false,
+ crosshair = false,
+ noScreenShake = false,
+ antiAfk = false,
+ clickTP = false,
+ fov = 70,
+ muted = false,
+}
+local vr56fao = Workspace.Gravity
+local vbvm2p = Lighting.Ambient
+local vptx6 = Lighting.FogEnd
+local v64c = Lighting.FogStart
+local vkoi = Lighting.Brightness
+local virodxm = Lighting.GlobalShadows
+local v3d8w3z = {}
+local function viujv() return Workspace.CurrentCamera or Camera end
+local function vw9xa3() return LocalPlayer.Character end
+local function vaf58c2()
+ local char = vw9xa3()
+ if not char then return nil end
+ return char:FindFirstChildOfClass("Humanoid")
+end
+local function vjcit()
+ local char = vw9xa3()
+ if not char then return nil end
+ return char:FindFirstChild("HumanoidRootPart") or char:FindFirstChild("Torso")
+end
+local function vrixa11()
+ local v9t6v = {}
+ for _, plr in ipairs(Players:GetPlayers()) do
+ if plr ~= LocalPlayer and plr.Character then
+ table.insert(v9t6v, plr)
+ end
+ end
+ return v9t6v
+end
+local function vmu5(plr)
+ if not plr or not plr.Character then return nil end
+ return plr.Character:FindFirstChild("HumanoidRootPart") or plr.Character:FindFirstChild("Torso")
+end
+local function vgv0e3(plr)
+ if not plr or not plr.Character then return nil end
+ return plr.Character:FindFirstChildOfClass("Humanoid")
+end
+local function vhv3a3z(plr)
+ if not plr or not plr.Character then return false end
+ local vk8ut = plr.Character:FindFirstChildOfClass("Humanoid")
+ return vk8ut and vk8ut.Health > 0
+end
+local function vusgio(vkkv, v7hv3iz)
+ if not vytj.visCheck then return true end
+ local v6yfpmv = Camera.CFrame.Position
+ local vdiuov = vkkv - v6yfpmv
+ local vvre = RaycastParams.new()
+ vvre.FilterType = Enum.RaycastFilterType.Exclude
+ vvre.FilterDescendantsInstances = {LocalPlayer.Character, v7hv3iz}
+ local vbi4q2y = Workspace:Raycast(v6yfpmv, vdiuov, vvre)
+ if vbi4q2y then
+ return false
+ end
+ return true
+end
+local function vbme9f()
+ local vkxw, closestDist = nil, math.huge
+ local vkz02xr = vcoto and Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2) or UserInputService:GetMouseLocation()
+ for _, plr in ipairs(vrixa11()) do
+ if vhv3a3z(plr) then
+ local v91zdfk = vmu5(plr)
+ if v91zdfk then
+ local screenPos, onScreen = Camera:WorldToViewportPoint(v91zdfk.Position)
+ if onScreen then
+ local vepq85 = (Vector2.new(screenPos.X, screenPos.Y) - vkz02xr).Magnitude
+ if vepq85 < closestDist and vepq85 < vaqvk.AimbotRadius then
+ local vlztgxn = plr.Character and plr.Character:FindFirstChild("Head")
+ local vkkv = vlztgxn and vlztgxn.Position or v91zdfk.Position
+ if vusgio(vkkv, plr.Character) then
+ closestDist = vepq85
+ vkxw = plr
+ end
+ end
+ end
+ end
+ end
+ end
+ return vkxw
+end
+local function vq5u(title, text, icon)
+ vb0z3nx:Notify({
+ Title = title,
+ Content = text,
+ Icon = icon or "solar:bell-bold",
+ Duration = 4,
+ })
+end
+local vcoto = UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled
+local vp0j43d = vb0z3nx:CreateWindow({
+ Title = "Lua Hub — Blood Zone 🩸",
+ Author = "by Lua Hub",
+ Folder = "LuaHub_BloodZone",
+ Icon = "solar:folder-2-bold-duotone",
+ Size = vcoto and UDim2.fromOffset(400, 320) or UDim2.fromOffset(650, 480),
+ Theme = "Dark",
+ HideSearchBar = false,
+ OpenButton = {
+ Title = "Open Lua Hub",
+ CornerRadius = UDim.new(1, 0),
+ StrokeThickness = 3,
+ Enabled = true,
+ Draggable = true,
+ OnlyMobile = false,
+ Scale = 0.5,
+ Color = ColorSequence.new(
+ Color3.fromHex("#FF4444"),
+ Color3.fromHex("#FF8C42")
+ ),
+ },
+ Topbar = {
+ Height = 44,
+ ButtonsType = "Mac",
+ },
+ User = {
+ Enabled = true,
+ Anonymous = true,
+ Callback = function() print("[Lua Hub] Профиль нажат") end,
+ },
+})
+local vki7p = vp0j43d:Tab({ Title = "Combat", Icon = "solar:v3o18-bold", IconColor = Color3.fromHex("#FF4444"), IconShape = "Square", Border = true })
+local v1n6k = vp0j43d:Tab({ Title = "BlodZone Aimbot", Icon = "solar:v3o18-bold", IconColor = Color3.fromHex("#FF0000"), IconShape = "Square", Border = true })
+local vnuj = vp0j43d:Tab({ Title = "Visuals & ESP", Icon = "solar:eye-bold", IconColor = Color3.fromHex("#FF6B6B"), IconShape = "Square", Border = true })
+local vp87wx = vp0j43d:Tab({ Title = "Settings", Icon = "solar:shield-bold", IconColor = Color3.fromHex("#C77DFF"), IconShape = "Square", Border = true })
+local vwpv = {}
+local function ve9vift(tab, title)
+ tab:Section({ Title = title })
+end
+local function vc5wi(tab, title, default, callback, key)
+ local v74f = tab:Toggle({
+ Title = title,
+ Value = default or false,
+ Callback = function(state)
+ task.spawn(callback, state)
+ end,
+ })
+ table.insert(vwpv, { Type = "toggle", Element = v74f, Key = key })
+ return v74f
+end
+local function v7kzorq(tab, title, min, max, default, callback, key)
+ local v74f = tab:Slider({
+ Title = title,
+ Step = 1,
+ Value = { Min = min, Max = max, Default = default or min },
+ Callback = function(value)
+ task.spawn(callback, value)
+ end,
+ })
+ table.insert(vwpv, { Type = "slider", Element = v74f, Key = key })
+ return v74f
+end
+local function vh2vlp(tab, title, callback)
+ local v74f = tab:Button({
+ Title = title,
+ Callback = function()
+ task.spawn(callback)
+ end,
+ })
+ table.insert(vwpv, { Type = "button", Element = v74f })
+ return v74f
+end
+ve9vift(vki7p, "AIMBOT")
+vc5wi(vki7p, "Aimbot (наводка на ближайшего)", false, function(state)
+ vytj.aimbot = state
+ if state then vq5u("Aimbot", "Включён — наводится на ближайшего к курсору", "solar:v3o18-bold") end
+end)
+v7kzorq(vki7p, "Aimbot FOV (радиус на экране)", 50, 500, 200, function(val)
+ vytj.aimbotFOV = val
+ vaqvk.AimbotRadius = val
+end)
+v7kzorq(vki7p, "Aimbot Distance (дальность в стадах)", 50, 1000, 500, function(val)
+ vytj.aimbotDistance = val
+end)
+v7kzorq(vki7p, "Aimbot Smooth (скорость наводки)", 1, 20, 5, function(val)
+ vytj.aimbotSmooth = val
+end)
+vc5wi(vki7p, "Silent Aim (пули летят в цель)", false, function(state)
+ vytj.silentAim = state
+end)
+vc5wi(vki7p, "Aimbot FOV Circle (круг на экране)", false, function(state)
+ vytj.aimbotFOVCircle = state
+end)
+vc5wi(vki7p, "Aim at Head (иначе Torso)", true, function(state)
+ vytj.aimbotTarget = state and "Head" or "Torso"
+end)
+vc5wi(vki7p, "Visibility Check (не через стены)", false, function(state)
+ vytj.visCheck = state
+end)
+ve9vift(vki7p, "ОРУЖИЕ")
+vc5wi(vki7p, "No Recoil (без отдачи)", false, function(state)
+ vytj.noRecoil = state
+end)
+vc5wi(vki7p, "No Spread (без разброса)", false, function(state)
+ vytj.noSpread = state
+end)
+ve9vift(vki7p, "ТЕЛЕПОРТ")
+vh2vlp(vki7p, "Teleport to Nearest Player", function()
+ local v91zdfk = vjcit()
+ if not v91zdfk then return end
+ local nearest, nearestDist = nil, math.huge
+ for _, plr in ipairs(vrixa11()) do
+ if vhv3a3z(plr) then
+ local vd96qe3 = vmu5(plr)
+ if vd96qe3 then
+ local vepq85 = (vd96qe3.Position - v91zdfk.Position).Magnitude
+ if vepq85 < nearestDist then nearestDist = vepq85; nearest = plr end
+ end
+ end
+ end
+ if nearest then
+ local vd96qe3 = vmu5(nearest)
+ v91zdfk.CFrame = vd96qe3.CFrame + Vector3.new(0, 3, 0)
+ vq5u("Teleport", "Телепорт к " .. nearest.Name, "solar:v3o18-bold")
+ else
+ vq5u("Teleport", "Игроки не найдены", "solar:danger-bold")
+ end
+end)
+vh2vlp(vki7p, "Teleport Behind Player", function()
+ local v91zdfk = vjcit()
+ if not v91zdfk then return end
+ local v3o18 = vbme9f()
+ if v3o18 then
+ local vd96qe3 = vmu5(v3o18)
+ if vd96qe3 then
+ v91zdfk.CFrame = vd96qe3.CFrame * CFrame.new(0, 0, 3)
+ vq5u("Teleport", "За спину " .. v3o18.Name, "solar:v3o18-bold")
+ end
+ else
+ vq5u("Teleport", "Игрок не найден", "solar:danger-bold")
+ end
+end)
+local vogn1w1 = {
+ Enabled = false,
+ TargetMethod = "FOV", 
+ FOVCheck = false,
+ VisibilityCheck = false,
+ Wallbang = false,
+ FOV = 150,
+ FOVCircle = false,
+ ESP = false,
+ BoxESP = false,
+ NameESP = false,
+ DistanceESP = false,
+ HealthESP = false,
+ TargetOnly = false,
+ SilentAimLimit = 100,
+ ESPColor = Color3.fromRGB(255, 70, 70),
+ ESPOutlineColor = Color3.fromRGB(255, 255, 255),
+ ESPFillTransparency = 0.75,
+ FOVColor = Color3.fromRGB(255, 70, 70),
+}
+local v7if2 = nil
+local vb94 = {}
+local function v58kxo(v7hv3iz)
+ if not v7hv3iz then return nil end
+ local vlztgxn = v7hv3iz:FindFirstChild("Head")
+ local vg0jv = v7hv3iz:FindFirstChild("Torso")
+ local vw1da = {}
+ if vlztgxn and vlztgxn:IsA("BasePart") then table.insert(vw1da, vlztgxn) end
+ if vg0jv and vg0jv:IsA("BasePart") then table.insert(vw1da, vg0jv) end
+ if #vw1da == 0 then return nil end
+ return vw1da[math.random(1, #vw1da)]
+end
+local function vgvwrd(vpseim)
+ if not vpseim then return false end
+ local vwjckjl = Workspace.CurrentCamera
+ if not vwjckjl then return false end
+ local v7d5j6 = (vwjckjl.CFrame.Position - vpseim.Position).Magnitude
+ return v7d5j6 <= vogn1w1.SilentAimLimit
+end
+local function v45n(vpseim)
+ if not vpseim then return false end
+ local vwjckjl = Workspace.CurrentCamera
+ local v7hv3iz = LocalPlayer.Character
+ if not vwjckjl or not v7hv3iz then return false end
+ local v7e8g8 = RaycastParams.new()
+ v7e8g8.FilterType = Enum.RaycastFilterType.Exclude
+ v7e8g8.FilterDescendantsInstances = {v7hv3iz}
+ v7e8g8.IgnoreWater = true
+ local v72wx = vwjckjl.CFrame.Position
+ local vdiuov = vpseim.Position - v72wx
+ local vbi4q2y = Workspace:Raycast(v72wx, vdiuov, v7e8g8)
+ if not vbi4q2y then return true end
+ return vbi4q2y.Instance:IsDescendantOf(vpseim.Parent)
+end
+local function v86wzs(vpseim)
+ local vwjckjl = Workspace.CurrentCamera
+ if not vwjckjl or not vpseim then return math.huge, false end
+ local position, onScreen = vwjckjl:WorldToViewportPoint(vpseim.Position)
+ if not onScreen then return math.huge, false end
+ local viqvnb4 = vwjckjl.ViewportSize / 2
+ local v7d5j6 = (Vector2.new(position.X, position.Y) - viqvnb4).Magnitude
+ return v7d5j6, true
+end
+local function v59in4(vpseim)
+ local v7d5j6, onScreen = v86wzs(vpseim)
+ return onScreen and v7d5j6 <= vogn1w1.FOV
+end
+local function v8w5rtw(player)
+ if player == LocalPlayer then return false end
+ local v7hv3iz = player.Character
+ if not v7hv3iz then return false end
+ if v7hv3iz:GetAttribute("Immune") == true then return false end
+ local v31y = v7hv3iz:FindFirstChildOfClass("Humanoid")
+ if not v31y or v31y.Health <= 0 then return false end
+ local v91zdfk = v7hv3iz:FindFirstChild("HumanoidRootPart")
+ if not v91zdfk then return false end
+ local vpseim = v58kxo(v7hv3iz)
+ if not vpseim then return false end
+ if not vgvwrd(vpseim) then return false end
+ if vogn1w1.FOVCheck then
+ if not v59in4(vpseim) then return false end
+ end
+ if not vogn1w1.Wallbang and vogn1w1.VisibilityCheck then
+ if not v45n(vpseim) then return false end
+ end
+ return true
+end
+local function v253j2d()
+ local vkxw = nil
+ local v2dgtf = math.huge
+ for _, player in ipairs(Players:GetPlayers()) do
+ if v8w5rtw(player) then
+ local v7hv3iz = player.Character
+ local vpseim = v58kxo(v7hv3iz)
+ if vpseim and vgvwrd(vpseim) then
+ local v7d5j6, onScreen = v86wzs(vpseim)
+ if onScreen and v7d5j6 < v2dgtf then
+ v2dgtf = v7d5j6
+ vkxw = vpseim
+ end
+ end
+ end
+ end
+ return vkxw
+end
+local function vu1gsp()
+ local vkxw = nil
+ local v2dgtf = math.huge
+ for _, player in ipairs(Players:GetPlayers()) do
+ if v8w5rtw(player) then
+ local v7hv3iz = player.Character
+ local vpseim = v58kxo(v7hv3iz)
+ if vpseim and vgvwrd(vpseim) then
+ local v7d5j6, onScreen = v86wzs(vpseim)
+ if onScreen and v7d5j6 <= vogn1w1.FOV and v7d5j6 < v2dgtf then
+ v2dgtf = v7d5j6
+ vkxw = vpseim
+ end
+ end
+ end
+ end
+ return vkxw
+end
+local function vbmyofq()
+ if not vogn1w1.Enabled then return nil end
+ if vogn1w1.TargetMethod == "FOV" then
+ return vu1gsp()
+ end
+ return v253j2d()
+end
+local vw790 = false
+pcall(function()
+ local old
+ old = hookmetamethod(game, "__namecall", newcclosure(function(self, ...)
+ local vjek5 = {...}
+ if tostring(self) == "GunHit" and getnamecallmethod() == "FireServer" then
+ if v7if2 and typeof(v7if2) == "Instance" then
+ local vdp5 = v7if2
+ if rawget(vjek5[2][1], "Position") and rawget(vjek5[2][1], "Instance") then
+ rawset(vjek5[2][1], "Position", vdp5.Position)
+ rawset(vjek5[2][1], "Instance", vdp5)
+ end
+ end
+ end
+ return old(self, unpack(vjek5))
+ end))
+ vw790 = true
+end)
+local vvazc = nil
+local vkwv08h = nil
+local function vbnhl()
+ if vvazc then return end
+ local vvqjt7y = Instance.new("ScreenGui")
+ vvqjt7y.Name = "BZ_FOVCircle"
+ vvqjt7y.ResetOnSpawn = false
+ vvqjt7y.IgnoreGuiInset = true
+ vvqjt7y.DisplayOrder = 999
+ pcall(function() vvqjt7y.Parent = game:GetService("CoreGui") end)
+ if not vvqjt7y.Parent then vvqjt7y.Parent = LocalPlayer:WaitForChild("PlayerGui") end
+ vvazc = Instance.new("Frame")
+ vvazc.Name = "FOVCircle"
+ vvazc.AnchorPoint = Vector2.new(0.5, 0.5)
+ vvazc.BackgroundTransparency = 1
+ vvazc.BorderSizePixel = 0
+ vvazc.Visible = false
+ vvazc.Parent = vvqjt7y
+ vkwv08h = Instance.new("UIStroke")
+ vkwv08h.Color = vogn1w1.FOVColor
+ vkwv08h.Thickness = 2
+ vkwv08h.Transparency = 0
+ vkwv08h.Parent = vvazc
+ local vkk4c = Instance.new("UICorner")
+ vkk4c.CornerRadius = UDim.new(1, 0)
+ vkk4c.Parent = vvazc
+end
+RunService.RenderStepped:Connect(function()
+ v7if2 = vbmyofq()
+ if vogn1w1.FOVCircle then
+ if not vvazc then vbnhl() end
+ if vvazc then
+ local vwjckjl = Workspace.CurrentCamera
+ if vwjckjl then
+ vvazc.Position = UDim2.fromOffset(vwjckjl.ViewportSize.X / 2, vwjckjl.ViewportSize.Y / 2)
+ vvazc.Size = UDim2.fromOffset(vogn1w1.FOV * 2, vogn1w1.FOV * 2)
+ vvazc.Visible = true
+ if vkwv08h then vkwv08h.Color = vogn1w1.FOVColor end
+ end
+ end
+ else
+ if vvazc then vvazc.Visible = false end
+ end
+end)
+ve9vift(v1n6k, "ОСНОВНОЕ")
+vc5wi(v1n6k, "Silent Aim (Enabled)", vogn1w1.Enabled, function(state)
+ vogn1w1.Enabled = state
+ vq5u("BlodZone", state and "Silent Aim включён" or "Silent Aim выключен", "solar:v3o18-bold")
+end)
+vc5wi(v1n6k, "FOV Check", vogn1w1.FOVCheck, function(state)
+ vogn1w1.FOVCheck = state
+end)
+vc5wi(v1n6k, "Visibility Check (не через стены)", vogn1w1.VisibilityCheck, function(state)
+ vogn1w1.VisibilityCheck = state
+end)
+vc5wi(v1n6k, "Wallbang (стрелять через стены)", vogn1w1.Wallbang, function(state)
+ vogn1w1.Wallbang = state
+end)
+vc5wi(v1n6k, "FOV Circle", vogn1w1.FOVCircle, function(state)
+ vogn1w1.FOVCircle = state
+end)
+ve9vift(v1n6k, "НАСТРОЙКИ")
+v7kzorq(v1n6k, "FOV (радиус)", 10, 500, vogn1w1.FOV, function(val)
+ vogn1w1.FOV = val
+end)
+v7kzorq(v1n6k, "Silent Aim Limit (дальность)", 10, 500, vogn1w1.SilentAimLimit, function(val)
+ vogn1w1.SilentAimLimit = val
+end)
+ve9vift(v1n6k, "TARGET METHOD")
+vh2vlp(v1n6k, "Target: Closest", function()
+ vogn1w1.TargetMethod = "Closest"
+ vq5u("BlodZone", "Режим: Closest (ближайший)", "solar:v3o18-bold")
+end)
+vh2vlp(v1n6k, "Target: FOV (ближайший к центру)", function()
+ vogn1w1.TargetMethod = "FOV"
+ vq5u("BlodZone", "Режим: FOV (ближайший к прицелу)", "solar:v3o18-bold")
+end)
+ve9vift(v1n6k, "ИНФО")
+vh2vlp(v1n6k, "Проверить хук", function()
+ if vw790 then
+ vq5u("BlodZone", "Хук установлен успешно! Silent Aim работает.", "solar:check-vy41i-bold")
+ else
+ vq5u("BlodZone", "Хук НЕ установлен. Executor не поддерживает hookmetamethod.", "solar:danger-bold")
+ end
+end)
+ve9vift(vnuj, "ESP")
+vc5wi(vnuj, "Player ESP (имя, HP, дистанция)", false, function(state)
+ vytj.espPlayers = state
+end)
+vc5wi(vnuj, "Tracers (линии к игрокам)", false, function(state)
+ vytj.tracers = state
+end)
+ve9vift(vnuj, "ВИЗУАЛ")
+vc5wi(vnuj, "Fullbright", false, function(state)
+ vytj.fullbright = state
+ Lighting.Ambient = state and Color3.fromRGB(255, 255, 255) or vbvm2p
+ Lighting.Brightness = state and 3 or vkoi
+ Lighting.OutdoorAmbient = state and Color3.fromRGB(255, 255, 255) or vbvm2p
+end)
+vc5wi(vnuj, "Remove Fog", false, function(state)
+ vytj.nofog = state
+ Lighting.FogEnd = state and 9e9 or vptx6
+ Lighting.FogStart = state and -9e9 or v64c
+end)
+vc5wi(vnuj, "Custom Crosshair", false, function(state)
+ vytj.crosshair = state
+end)
+ve9vift(vp87wx, "НАСТРОЙКИ")
+v7kzorq(vp87wx, "Camera FOV", 70, 120, 70, function(val)
+ vytj.fov = val
+ local vm35ixo = viujv()
+ if vm35ixo then vm35ixo.FieldOfView = val end
+end)
+vh2vlp(vp87wx, "FPS Booster", function()
+ for _, obj in ipairs(Workspace:GetDescendants()) do
+ if obj:IsA("BasePart") then pcall(function() obj.Material = Enum.Material.SmoothPlastic; obj.CastShadow = false end)
+ elseif obj:IsA("ParticleEmitter") then pcall(function() obj.Rate = 0 end) end
+ end
+ Lighting.GlobalShadows = false
+ vq5u("Performance", "Качество снижено", "solar:bolt-bold")
+end)
+vh2vlp(vp87wx, "Disable Global Shadows", function()
+ Lighting.GlobalShadows = false
+ vq5u("Lighting", "Тени отключены", "solar:bolt-bold")
+end)
+vh2vlp(vp87wx, "Mute Game Audio", function()
+ vytj.muted = not vytj.muted
+ if vytj.muted then
+ v3d8w3z = {}
+ for _, obj in ipairs(Workspace:GetDescendants()) do
+ if obj:IsA("Sound") then v3d8w3z[obj] = obj.Volume; pcall(function() obj.Volume = 0 end) end
+ end
+ vq5u("Audio", "Звук выключен", "solar:volume-cross-bold")
+ else
+ for obj, vol in pairs(v3d8w3z) do
+ if obj and obj.Parent then pcall(function() obj.Volume = vol end) end
+ end
+ v3d8w3z = {}
+ vq5u("Audio", "Звук включён", "solar:volume-bold")
+ end
+end)
+vc5wi(vp87wx, "Anti-AFK", false, function(state)
+ vytj.antiAfk = state
+end)
+vc5wi(vp87wx, "Click TP (Ctrl + Click)", false, function(state)
+ vytj.clickTP = state
+end)
+vh2vlp(vp87wx, "Rejoin Server", function()
+ pcall(function() TeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId, LocalPlayer) end)
+end)
+vh2vlp(vp87wx, "Unload UI", function()
+ vp0j43d:Destroy()
+ vq5u("Lua Hub", "Скрипт выгружен", "solar:close-vy41i-bold")
+end)
+local v871yzo = nil
+do
+ local vvqjt7y = Instance.new("ScreenGui")
+ vvqjt7y.Name = "LuaHub_ESP_BZ"
+ vvqjt7y.ResetOnSpawn = false
+ vvqjt7y.IgnoreGuiInset = true
+ vvqjt7y.DisplayOrder = 1000
+ pcall(function() vvqjt7y.Parent = game:GetService("CoreGui") end)
+ if not vvqjt7y.Parent then vvqjt7y.Parent = LocalPlayer:WaitForChild("PlayerGui") end
+ v871yzo = vvqjt7y
+end
+local va7tz0y = {}
+local v4ve92 = {}
+local v4v30t = {}
+local vyxr2 = nil
+local function vgsxw71(v3o18, color)
+ local vj9tz = va7tz0y[v3o18]
+ if vj9tz and vj9tz.Parent then return vj9tz end
+ local v84u8 = Instance.new("Highlight")
+ v84u8.Name = "BZEspHighlight"; v84u8.FillColor = color
+ v84u8.OutlineColor = Color3.fromRGB(255, 255, 255)
+ v84u8.FillTransparency = 0.5; v84u8.OutlineTransparency = 0.1
+ v84u8.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+ v84u8.Parent = v3o18
+ va7tz0y[v3o18] = v84u8
+ return v84u8
+end
+local function vt026rj(v3o18, text, color)
+ local vj9tz = v4ve92[v3o18]
+ local vlztgxn = (v3o18:IsA("BasePart") and v3o18) or v3o18:FindFirstChild("Head") or v3o18:FindFirstChild("HumanoidRootPart") or v3o18:FindFirstChildWhichIsA("BasePart")
+ if not vlztgxn then return end
+ if vj9tz and vj9tz.Parent then
+ local vcvs4f = vj9tz:FindFirstChild("TextLabel")
+ if vcvs4f then vcvs4f.Text = text; vcvs4f.TextColor3 = color end
+ return
+ end
+ local vsj6bw = Instance.new("BillboardGui")
+ vsj6bw.Name = "BZEspLabel"; vsj6bw.Adornee = vlztgxn
+ vsj6bw.Size = UDim2.fromOffset(150, 34); vsj6bw.StudsOffset = Vector3.new(0, 2.6, 0)
+ vsj6bw.AlwaysOnTop = true; vsj6bw.MaxDistance = 5000; vsj6bw.Parent = v871yzo
+ local vcvs4f = Instance.new("TextLabel")
+ vcvs4f.Name = "TextLabel"; vcvs4f.Size = UDim2.fromScale(1, 1)
+ vcvs4f.BackgroundTransparency = 1; vcvs4f.Text = text; vcvs4f.TextColor3 = color
+ vcvs4f.TextSize = 13; vcvs4f.Font = Enum.Font.GothamBold
+ vcvs4f.TextStrokeTransparency = 0.35; vcvs4f.Parent = vsj6bw
+ v4ve92[v3o18] = vsj6bw
+end
+local function vchj(v3o18)
+ if va7tz0y[v3o18] then va7tz0y[v3o18]:Destroy(); va7tz0y[v3o18] = nil end
+ if v4ve92[v3o18] then v4ve92[v3o18]:Destroy(); v4ve92[v3o18] = nil end
+ if v4v30t[v3o18] then v4v30t[v3o18]:Destroy(); v4v30t[v3o18] = nil end
+end
+local function v5a0l()
+ for v3o18 in pairs(va7tz0y) do vchj(v3o18) end
+ for v3o18 in pairs(v4ve92) do vchj(v3o18) end
+ for v3o18 in pairs(v4v30t) do vchj(v3o18) end
+ va7tz0y = {}; v4ve92 = {}; v4v30t = {}
+end
+local v55nf4 = nil
+local function vckw5ng()
+ if v55nf4 then return v55nf4 end
+ v55nf4 = Instance.new("Frame")
+ v55nf4.Name = "BZCrosshair"
+ v55nf4.Size = UDim2.new(0, 20, 0, 20)
+ v55nf4.Position = UDim2.new(0.5, -10, 0.5, -10)
+ v55nf4.BackgroundTransparency = 1
+ v55nf4.Parent = v871yzo
+ local function vtn7s55(w, h, x, y)
+ local v7hzio = Instance.new("Frame"); v7hzio.Size = UDim2.fromOffset(w, h); v7hzio.Position = UDim2.fromOffset(x, y)
+ v7hzio.BackgroundColor3 = Color3.fromRGB(255, 60, 60); v7hzio.BorderSizePixel = 0; v7hzio.Parent = v55nf4
+ local v9mx = Instance.new("UICorner"); v9mx.CornerRadius = UDim.new(1, 0); v9mx.Parent = v7hzio
+ end
+ vtn7s55(2, 8, 9, 0); vtn7s55(2, 8, 9, 12); vtn7s55(8, 2, 0, 9); vtn7s55(8, 2, 12, 9)
+ local vtxcxa = Instance.new("Frame"); vtxcxa.Size = UDim2.fromOffset(2, 2); vtxcxa.Position = UDim2.fromOffset(9, 9)
+ vtxcxa.BackgroundColor3 = Color3.fromRGB(255, 255, 255); vtxcxa.BorderSizePixel = 0; vtxcxa.Parent = v55nf4
+ local vs280 = Instance.new("UICorner"); vs280.CornerRadius = UDim.new(1, 0); vs280.Parent = vtxcxa
+ return v55nf4
+end
+local vn9er14 = {
+ Aim = false,
+ LastAimTarget = nil,
+ LastMouseMode = nil,
+ LastOriginX = nil,
+ LastOriginY = nil,
+ AcquiringFrames = 0
+}
+local vjjeget = {
+ ["Aim/AimLock"] = true,
+ ["Aim/AlwaysEnabled"] = true,
+ ["Aim/ShowAssistDots"] = false,
+ ["Aim/TeamCheck"] = false,
+ ["Aim/VisibilityCheck"] = false,
+ ["Aim/AttractionStrength"] = 200,
+ ["Aim/FOV/Radius"] = 200,
+ ["Aim/FOV/ShowCircle"] = true,
+ ["Aim/Dampening"] = true,
+ ["Aim/Dampening/Threshold"] = 5,
+ ["Aim/Dampening/Strength"] = 5,
+ ["Aim/Priority"] = "Head",
+}
+local v2oc = {}
+local function v4uf(player)
+ if not player then return nil end
+ local vbdivuz = v2oc[player]
+ if vbdivuz then
+ local char = vbdivuz.Char
+ local v91zdfk = vbdivuz.Root
+ if char and char.Parent and char == player.Character and v91zdfk and v91zdfk.Parent then
+ if vbdivuz.Humanoid then
+ if vbdivuz.Humanoid.Health > 0 then
+ return char, v91zdfk
+ end
+ return nil
+ else
+ return char, v91zdfk
+ end
+ else
+ vbdivuz.Char = nil
+ vbdivuz.Root = nil
+ vbdivuz.Humanoid = nil
+ vbdivuz.Head = nil
+ end
+ end
+ local v7hv3iz = player.Character
+ if not v7hv3iz or not v7hv3iz.Parent then return nil end
+ local vqpgb7 = v7hv3iz:FindFirstChild("HumanoidRootPart") or v7hv3iz.PrimaryPart
+ if not vqpgb7 then return nil end
+ local vk8ut = v7hv3iz:FindFirstChildOfClass("Humanoid")
+ v2oc[player] = {
+ Char = v7hv3iz,
+ Root = vqpgb7,
+ Humanoid = vk8ut,
+ Head = v7hv3iz:FindFirstChild("Head"),
+ }
+ if vk8ut and vk8ut.Health <= 0 then return nil end
+ return v7hv3iz, vqpgb7
+end
+local function vpqkoj(v4cc)
+ if not Camera then
+ Camera = Workspace.CurrentCamera
+ end
+ if not Camera then
+ return nil, nil, false
+ end
+ local vkrt0 = Camera.ViewportSize
+ if v4cc == Enum.MouseBehavior.LockCenter then
+ return vkrt0.X * 0.5, vkrt0.Y * 0.5, true
+ end
+ local vuhz = UserInputService:GetMouseLocation()
+ local veiy = vuhz.X
+ local vk8p4q0 = vuhz.Y
+ if veiy ~= veiy or vk8p4q0 ~= vk8p4q0 then
+ return nil, nil, false
+ end
+ if veiy < 0 or vk8p4q0 < 0 or veiy > vkrt0.X or vk8p4q0 > vkrt0.Y then
+ return nil, nil, false
+ end
+ return veiy, vk8p4q0, true
+end
+local function vrtp0l(worldPos)
+ local screenPos, onScreen = Camera:WorldToViewportPoint(worldPos)
+ return screenPos, onScreen
+end
+local function vk83tql(resetMouseMode)
+ vn9er14.LastAimTarget = nil
+ vn9er14.LastOriginX = nil
+ vn9er14.LastOriginY = nil
+ vn9er14.AcquiringFrames = 0
+ if resetMouseMode then
+ vn9er14.LastMouseMode = nil
+ end
+end
+local function vvg0(Hitbox)
+ if not Hitbox then
+ vk83tql(false)
+ return
+ end
+ local vq0y9do = (type(mousemoverel) == "function")
+ local vdp5 = Hitbox[3]
+ if not vdp5 or not vdp5.Parent then
+ vk83tql(false)
+ return
+ end
+ local vecruyf = UserInputService.MouseBehavior
+ if vecruyf ~= vn9er14.LastMouseMode then
+ vn9er14.LastMouseMode = vecruyf
+ vn9er14.LastOriginX = nil
+ vn9er14.LastOriginY = nil
+ end
+ local vwnnhj7 = Hitbox[1]
+ if vwnnhj7 ~= vn9er14.LastAimTarget then
+ vn9er14.LastAimTarget = vwnnhj7
+ vn9er14.LastOriginX = nil
+ vn9er14.LastOriginY = nil
+ end
+ local vkkv = vdp5.Position
+ local v6hi = Camera.CFrame
+ local vhr5xf = v6hi.Position
+ local vepq85 = (vkkv - vhr5xf).Magnitude
+ if vepq85 < 1 then
+ return
+ end
+ local ScreenPosition, OnScreen = vrtp0l(vkkv)
+ if not OnScreen or ScreenPosition.Z <= 0 then
+ return
+ end
+ local vkrt0 = Camera.ViewportSize
+ local originX, originY, originValid = vpqkoj(vecruyf)
+ if not originValid then
+ return
+ end
+ local v41n = vn9er14.LastOriginX
+ local vy6d = vn9er14.LastOriginY
+ vn9er14.LastOriginX = originX
+ vn9er14.LastOriginY = originY
+ local targetX, targetY = ScreenPosition.X, ScreenPosition.Y
+ local dx, dy = targetX - originX, targetY - originY
+ local v2h2 = math.sqrt(dx * dx + dy * dy)
+ if v2h2 > vjjeget["Aim/FOV/Radius"] then
+ return
+ end
+ local vdrc = vjjeget["Aim/AttractionStrength"] / 100
+ if vjjeget["Aim/Dampening"] then
+ local vwkta = vjjeget["Aim/Dampening/Threshold"]
+ if v2h2 < vwkta then
+ local vrbsv = math.max(vjjeget["Aim/Dampening/Strength"] / 100, v2h2 / vwkta)
+ vdrc = vdrc * vrbsv
+ end
+ end
+ local vjvzh = 0.2
+ local viwqy = dx * vjvzh * vdrc
+ local vyqk94d = dy * vjvzh * vdrc
+ if viwqy ~= viwqy or vyqk94d ~= vyqk94d then
+ return
+ end
+ local ve153a = vkrt0.X * 0.5
+ local vpioyg = vkrt0.Y * 0.5
+ viwqy = math.clamp(viwqy, -ve153a, ve153a)
+ vyqk94d = math.clamp(vyqk94d, -vpioyg, vpioyg)
+ if vq0y9do then
+ pcall(function() mousemoverel(math.floor(viwqy + 0.5), math.floor(vyqk94d + 0.5)) end)
+ else
+ local vpv60va = CFrame.new(vhr5xf, vkkv)
+ Camera.CFrame = Camera.CFrame:Lerp(vpv60va, 0.3)
+ end
+end
+local v93kmk = {}
+local voldfo = 0
+local vtpac56 = 15
+local function v4i3()
+ local vw2pc = Camera.CFrame.Position
+ local v4cc = UserInputService.MouseBehavior
+ local veiy, vk8p4q0, crosshairValid = vpqkoj(v4cc)
+ if not crosshairValid then return nil end
+ voldfo = 0
+ local vkxw = nil
+ local v7ko = math.huge
+ local v5ps = Players:GetPlayers()
+ for _, Player in ipairs(v5ps) do
+ if Player ~= LocalPlayer then
+ local char, v91zdfk = v4uf(Player)
+ if char and v91zdfk then
+ local vk8ut = char:FindFirstChildOfClass("Humanoid")
+ if vk8ut and vk8ut.Health > 0 then
+ local vdp5 = nil
+ if vytj.aimbotTarget == "Head" then
+ vdp5 = char:FindFirstChild("Head")
+ else
+ vdp5 = char:FindFirstChild("HumanoidRootPart") or char:FindFirstChild("Torso") or char:FindFirstChild("Head")
+ end
+ if vdp5 then
+ local v5qrl1n = vdp5.Position
+ if vytj.visCheck and not vusgio(v5qrl1n, char) then
+ else
+ local ScreenPosition, OnScreen = vrtp0l(v5qrl1n)
+ if OnScreen and ScreenPosition.Z > 0 then
+ local screenX, screenY = ScreenPosition.X, ScreenPosition.Y
+ local dx, dy = screenX - veiy, screenY - vk8p4q0
+ local Magnitude = math.sqrt(dx * dx + dy * dy)
+ if Magnitude < vjjeget["Aim/FOV/Radius"] then
+ local vepq85 = (vdp5.Position - Camera.CFrame.Position).Magnitude
+ if vepq85 <= vytj.aimbotDistance then
+ if Magnitude < v7ko then
+ v7ko = Magnitude
+ vkxw = {Player, char, vdp5}
+ end
+ end
+ end
+ end
+ end
+ end
+ end
+ end
+ end
+ end
+ return vkxw
+end
+local function v3fb9()
+ if not vytj.aimbot then
+ vk83tql(false)
+ return
+ end
+ local v3o18 = v4i3()
+ if v3o18 then
+ vvg0(v3o18)
+ else
+ vk83tql(false)
+ end
+end
+local v81sdw = nil
+local function vb2k()
+ local v18h = vytj.aimbot and vytj.aimbotFOVCircle
+ if not v18h then
+ if v81sdw then
+ v81sdw.Visible = false
+ end
+ return
+ end
+ local vrmjk = v871yzo
+ if not vrmjk then
+ if v81sdw then v81sdw.Visible = false end
+ return
+ end
+ if not v81sdw or v81sdw.Parent ~= vrmjk then
+ if v81sdw then pcall(function() v81sdw:Destroy() end) end
+ v81sdw = Instance.new("Frame")
+ v81sdw.Name = "FOVCircle"
+ v81sdw.AnchorPoint = Vector2.new(0.5, 0.5)
+ v81sdw.BorderSizePixel = 0
+ v81sdw.BackgroundTransparency = 1
+ v81sdw.ZIndex = 100
+ v81sdw.Parent = vrmjk
+ local vy41i = Instance.new("UIStroke")
+ vy41i.Color = Color3.fromRGB(255, 255, 255)
+ vy41i.Thickness = 1
+ vy41i.Transparency = 0.5
+ vy41i.Parent = v81sdw
+ local vkk4c = Instance.new("UICorner")
+ vkk4c.CornerRadius = UDim.new(1, 0)
+ vkk4c.Parent = v81sdw
+ end
+ local pos
+ if vcoto then
+ pos = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+ else
+ pos = UserInputService:GetMouseLocation()
+ end
+ local vmyx44 = vytj.aimbotFOV or 200
+ v81sdw.Position = UDim2.fromOffset(pos.X, pos.Y)
+ v81sdw.Size = UDim2.fromOffset(vmyx44 * 2, vmyx44 * 2)
+ v81sdw.Visible = true
+end
+RunService.RenderStepped:Connect(function()
+ vjjeget["Aim/AimLock"] = vytj.aimbot
+ vjjeget["Aim/AlwaysEnabled"] = vytj.aimbot
+ vjjeget["Aim/FOV/Radius"] = vytj.aimbotFOV
+ vjjeget["Aim/FOV/ShowCircle"] = vytj.aimbotFOVCircle
+ pcall(vb2k)
+ if vytj.aimbot then
+ v3fb9()
+ else
+ vk83tql(false)
+ end
+end)
+local vwir = 0
+local vbik = 0
+RunService.RenderStepped:Connect(function(dt)
+ local v91zdfk = vjcit()
+ local vk8ut = vaf58c2()
+ local vm35ixo = viujv()
+ if vk8ut and v91zdfk then
+ if vk8ut.WalkSpeed ~= vytj.walkspeed then vk8ut.WalkSpeed = vytj.walkspeed end
+ if vytj.jumppower ~= 50 then
+ vk8ut.UseJumpPower = true
+ if vk8ut.JumpPower ~= vytj.jumppower then vk8ut.JumpPower = vytj.jumppower end
+ end
+ end
+ if vytj.infjump and UserInputService:IsKeyDown(Enum.KeyCode.Space) then
+ if vk8ut and vk8ut.FloorMaterial ~= Enum.Material.Air then vk8ut:ChangeState(Enum.HumanoidStateType.Jumping) end
+ end
+ if vytj.bhop and UserInputService:IsKeyDown(Enum.KeyCode.Space) then
+ if vk8ut and vk8ut.FloorMaterial ~= Enum.Material.Air then vk8ut:ChangeState(Enum.HumanoidStateType.Jumping) end
+ end
+ if vytj.fly and v91zdfk and vm35ixo then
+ local vaji = Vector3.zero
+ if UserInputService:IsKeyDown(Enum.KeyCode.W) then vaji = vaji + vm35ixo.CFrame.LookVector end
+ if UserInputService:IsKeyDown(Enum.KeyCode.S) then vaji = vaji - vm35ixo.CFrame.LookVector end
+ if UserInputService:IsKeyDown(Enum.KeyCode.D) then vaji = vaji + vm35ixo.CFrame.RightVector end
+ if UserInputService:IsKeyDown(Enum.KeyCode.A) then vaji = vaji - vm35ixo.CFrame.RightVector end
+ if UserInputService:IsKeyDown(Enum.KeyCode.Space) then vaji = vaji + Vector3.new(0, 1, 0) end
+ if UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) then vaji = vaji - Vector3.new(0, 1, 0) end
+ if vaji.Magnitude > 0 then v91zdfk.AssemblyLinearVelocity = vaji.Unit * vaqvk.FlySpeed else v91zdfk.AssemblyLinearVelocity = Vector3.zero end
+ end
+ if vytj.lowgravity then Workspace.Gravity = 35 else Workspace.Gravity = vr56fao end
+ if vytj.noScreenShake then
+ if vk8ut then pcall(function() vk8ut.CameraOffset = Vector3.zero end) end
+ if vm35ixo then pcall(function() vm35ixo.CameraOffset = Vector3.zero end) end
+ end
+ if vytj.fov and vm35ixo then
+ if vm35ixo.FieldOfView ~= vytj.fov then vm35ixo.FieldOfView = vytj.fov end
+ end
+ if vytj.clickTP and Mouse and Mouse.Hit and v91zdfk then
+ end
+ if vytj.crosshair and not v55nf4 then vckw5ng() end
+ if v55nf4 then v55nf4.Visible = vytj.crosshair end
+ vwir = vwir + dt
+ if vwir >= 0.5 then
+ vwir = 0
+ if vytj.espPlayers or vytj.espPotato then
+ local v14m2j = vjcit()
+ local vzkl = {}
+ if vytj.espPlayers then
+ for _, plr in ipairs(vrixa11()) do
+ if plr.Character then vzkl[plr.Character] = { Color = Color3.fromRGB(80, 200, 255), Kind = "player" } end
+ end
+ end
+ for v3o18 in pairs(va7tz0y) do
+ if not vzkl[v3o18] then vchj(v3o18) end
+ end
+ for v3o18, info in pairs(vzkl) do
+ local v84u8 = vgsxw71(v3o18, info.Color)
+ v84u8.FillColor = info.Color
+ if v14m2j then
+ local vo7uu = v3o18:FindFirstChild("HumanoidRootPart") or v3o18:FindFirstChildWhichIsA("BasePart")
+ if vo7uu then
+ local vepq85 = math.floor((vo7uu.Position - v14m2j.Position).Magnitude)
+ local vcfl0 = v3o18:FindFirstChildOfClass("Humanoid")
+ local vertj = ""
+ if vcfl0 then vertj = "\n" .. math.floor(vcfl0.Health) .. " HP" end
+ vt026rj(v3o18, "PLAYER [" .. vepq85 .. " studs]" .. vertj, info.Color)
+ end
+ end
+ end
+ end
+ end
+end)
+RunService.Stepped:Connect(function()
+ if not vytj.noclip then return end
+ local char = vw9xa3()
+ if char then
+ for _, vpseim in ipairs(char:GetDescendants()) do
+ if vpseim:IsA("BasePart") then pcall(function() vpseim.CanCollide = false end) end
+ end
+ end
+end)
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+ if vytj.clickTP and not gameProcessed then
+ if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+ if (not vcoto) and (UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) or UserInputService:IsKeyDown(Enum.KeyCode.RightControl)) then
+ local v91zdfk = vjcit()
+ if v91zdfk and Mouse and Mouse.Hit then v91zdfk.CFrame = CFrame.new(Mouse.Hit.Position + Vector3.new(0, 3, 0)) end
+ elseif vcoto then
+ local v91zdfk = vjcit()
+ if v91zdfk and Mouse and Mouse.Hit then v91zdfk.CFrame = CFrame.new(Mouse.Hit.Position + Vector3.new(0, 3, 0)) end
+ end
+ end
+ end
+end)
+RunService.Heartbeat:Connect(function(dt)
+ vbik = vbik + dt
+ if vbik < 0.2 then return end
+ vbik = 0
+ local vk8ut = vaf58c2(); local v91zdfk = vjcit(); local char = vw9xa3(); local vm35ixo = viujv()
+ if vytj.noRecoil then
+ local vqj7y = LocalPlayer.Character and LocalPlayer.Character:FindFirstChildOfClass("Tool")
+ if vqj7y then
+ for _, obj in ipairs(vqj7y:GetDescendants()) do
+ if obj:IsA("NumberValue") or obj:IsA("IntValue") then
+ local v53lc5 = string.lower(obj.Name)
+ if string.find(v53lc5, "recoil", 1, true) or string.find(v53lc5, "kick", 1, true) or
+ string.find(v53lc5, "shake", 1, true) or string.find(v53lc5, "bounce", 1, true) or
+ string.find(v53lc5, "climb", 1, true) then
+ pcall(function() obj.Value = 0 end)
+ end
+ elseif obj:IsA("Vector3Value") then
+ local v53lc5 = string.lower(obj.Name)
+ if string.find(v53lc5, "recoil", 1, true) or string.find(v53lc5, "kick", 1, true) then
+ pcall(function() obj.Value = Vector3.zero end)
+ end
+ end
+ end
+ for _, attr in ipairs({"Recoil", "Kick", "RecoilMultiplier", "Kickback"}) do
+ pcall(function() vqj7y:SetAttribute(attr, 0) end)
+ end
+ end
+ local vm35ixo = viujv()
+ if vm35ixo then
+ pcall(function() vm35ixo.CFrame = vm35ixo.CFrame end)
+ end
+ end
+ if vytj.noSpread then
+ local vqj7y = LocalPlayer.Character and LocalPlayer.Character:FindFirstChildOfClass("Tool")
+ if vqj7y then
+ for _, obj in ipairs(vqj7y:GetDescendants()) do
+ if obj:IsA("NumberValue") or obj:IsA("IntValue") then
+ local v53lc5 = string.lower(obj.Name)
+ if string.find(v53lc5, "spread", 1, true) or string.find(v53lc5, "accuracy", 1, true) or
+ string.find(v53lc5, "bloom", 1, true) or string.find(v53lc5, "deviation", 1, true) or
+ string.find(v53lc5, "cone", 1, true) or string.find(v53lc5, "inaccuracy", 1, true) then
+ pcall(function() obj.Value = 0 end)
+ end
+ elseif obj:IsA("Vector3Value") then
+ local v53lc5 = string.lower(obj.Name)
+ if string.find(v53lc5, "spread", 1, true) or string.find(v53lc5, "deviation", 1, true) then
+ pcall(function() obj.Value = Vector3.zero end)
+ end
+ end
+ end
+ for _, attr in ipairs({"Spread", "Accuracy", "Bloom", "Deviation", "Inaccuracy"}) do
+ pcall(function() vqj7y:SetAttribute(attr, 0) end)
+ end
+ end
+ end
+ if vytj.antiAfk then
+ local vm35ixo = viujv()
+ if vm35ixo then
+ pcall(function() VirtualUser:Button2Down(Vector2.new(0, 0), vm35ixo.CFrame) end)
+ task.wait(0.1)
+ pcall(function() VirtualUser:Button2Up(Vector2.new(0, 0), vm35ixo.CFrame) end)
+ end
+ end
+end)
+local function v60rjiw(v7hv3iz)
+ if not v7hv3iz then return end
+ task.wait(0.5)
+ local vk8ut = v7hv3iz and v7hv3iz:FindFirstChildOfClass("Humanoid")
+ if vk8ut then
+ vk8ut.WalkSpeed = vytj.walkspeed
+ vk8ut.UseJumpPower = true
+ vk8ut.JumpPower = vytj.jumppower
+ end
+end
+LocalPlayer.CharacterAdded:Connect(function(v7hv3iz)
+ v60rjiw(v7hv3iz)
+end)
+if LocalPlayer.Character then task.spawn(v60rjiw, LocalPlayer.Character) end
+LocalPlayer.Idled:Connect(function()
+ if not vytj.antiAfk then return end
+ local vm35ixo = viujv()
+ if not vm35ixo then return end
+ pcall(function() VirtualUser:Button2Down(Vector2.new(0, 0), vm35ixo.CFrame) end)
+ task.wait(1)
+ pcall(function() VirtualUser:Button2Up(Vector2.new(0, 0), vm35ixo.CFrame) end)
+end)
+vb0z3nx:Notify({
+ Title = "Lua Hub — Blood Zone",
+ Content = "Загружено. Удачи в бою! 🩸",
+ Icon = "solar:check-vy41i-bold",
+ Duration = 5,
+})
