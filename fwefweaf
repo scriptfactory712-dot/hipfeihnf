@@ -1,240 +1,240 @@
 --[[ v2.0.0 https://wearedevs.net/obfuscator ]] return(function(...)
-local _s1 = (function() local k = {66,90,50,48,50,54,88} local t = {23,19,113,95,64,88,61,48} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s2 = (function() local k = {66,90,50,48,50,54,88} local t = {97,28,116,4,6,2,108} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s3 = (function() local k = {66,90,50,48,50,54,88} local t = {18,59,64,68,91,85,52,39,31,95,89,70,66,61,48} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s4 = (function() local k = {66,90,50,48,50,54,88} local t = {22,45,87,85,92,101,61,48,44,91,83,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s5 = (function() local k = {66,90,50,48,50,54,88} local t = {16,63,66,92,91,85,57,54,63,86,99,70,89,42,35,61,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s6 = (function() local k = {66,90,50,48,50,54,88} local t = {97,25,5,7,118,112,30} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s7 = (function() local k = {66,90,50,48,50,54,88} local t = {0,0,109,118,125,96,27,43,40,81,92,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s8 = (function() local k = {66,90,50,48,50,54,88} local t = {1127,1049,1032,16,1137,1143,1050,1138,1127,1036,1026,1033,1027,1125,98,1049,1139,1039,1031,1150,1125,1148,123,18,99,91,90,61,44,46,18,113,91,91,120,1026,1130,1027,1038,1136,1030,1133,1024,116} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s9 = (function() local k = {66,90,50,48,50,54,88} local t = {22,63,94,85,66,89,42,54,122,70,95,18,120,61,35,40,87,67,70,22,8,46,59,75,85,64} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s10 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,43,42,51,87,92,86,27,58,45,54,86} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s11 = (function() local k = {66,90,50,48,50,54,88} local t = {11,52,65,68,83,88,59,39} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s12 = (function() local k = {66,90,50,48,50,54,88} local t = {1,54,91,83,89,22,12,18,122,26,115,70,68,52,98,113,18,115,94,95,59,41,115} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s13 = (function() local k = {66,90,50,48,50,54,88} local t = {18,22,115,105,119,100,120,98,1} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s14 = (function() local k = {66,90,50,48,50,54,88} local t = {48,63,81,95,91,90} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s15 = (function() local k = {66,90,50,48,50,54,88} local t = {97,28,116,6,112,0,26} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s16 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,116,121,14,109,8,83,84,91,67,43} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s17 = (function() local k = {66,90,50,48,50,54,88} local t = {17,51,94,85,92,66,120,3,51,95,16,126,95,53,43,46,18,24,1030,1030,1123,1038,1127,1036,1137,1136,1146,113} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s18 = (function() local k = {66,90,50,48,50,54,88} local t = {4,21,100,16,26,1142,1128,1142,1122,1137,1137,27} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s19 = (function() local k = {66,90,50,48,50,54,88} local t = {0,0,119,67,66,122,57,32,63,94} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s20 = (function() local k = {66,90,50,48,50,54,88} local t = {1,54,93,67,87,69,44} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s21 = (function() local k = {66,90,50,48,50,54,88} local t = {33,54,91,93,80} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s22 = (function() local k = {66,90,50,48,50,54,88} local t = {15,47,70,85,18,113,57,47,63,18,113,71,82,49,45} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s23 = (function() local k = {66,90,50,48,50,54,88} local t = {17,51,94,85,92,66,120,3,51,95,16,1024,1149,1122,1145,1044,1141,1029,1039} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s24 = (function() local k = {66,90,50,48,50,54,88} local t = {6,59,64,91} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s25 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,82,93,66,120,17,55,93,95,70,94,120,106,1051,1032,1038,1138,1032,1049,1024,1046,18,1037,1026,1028,1126,1142,1120,1034,25} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s26 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,59,46,53,65,85,31,90,45,122,111,3,66,80,27,58,45,54,86} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s27 = (function() local k = {66,90,50,48,50,54,88} local t = {0,59,65,85,98,87,42,54} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s28 = (function() local k = {66,90,50,48,50,54,88} local t = {32,53,71,94,81,83} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s29 = (function() local k = {66,90,50,48,50,54,88} local t = {0,54,93,84,104,89,54,39} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s30 = (function() local k = {66,90,50,48,50,54,88} local t = {1119,1098,1043,1042,1042,1064,1089,1112,1090} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s31 = (function() local k = {66,90,50,48,50,54,88} local t = {1117,1050,1036,1026,1031,1142,1120,1024,1046,18,1141,1137,1036} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s32 = (function() local k = {66,90,50,48,50,54,88} local t = {15,59,81} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s33 = (function() local k = {66,90,50,48,50,54,88} local t = {17,51,94,85,92,66,120,3,51,95,16,26,115,54,35,56,94,85,86,31} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s34 = (function() local k = {66,90,50,48,50,54,88} local t = {1,53,64,85,117,67,49} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s35 = (function() local k = {66,90,50,48,50,54,88} local t = {1120,1135,1039,1032,18,1032,1050,1144,1121,1148,1143,1031,1035,1043} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s36 = (function() local k = {66,90,50,48,50,54,88} local t = {7,9,98} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s37 = (function() local k = {66,90,50,48,50,54,88} local t = {1122,1135,1028,1032,1038,12,120,1,54,93,67,87,69,44,98,114,1027,1035,1034,1024,1128,1147,1042,1034,1033,27} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s38 = (function() local k = {66,90,50,48,50,54,88} local t = {17,63,70,68,91,88,63,49} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s39 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,118,87,53,50,63,92,89,92,81,119,17,46,64,85,92,81,44,42} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s40 = (function() local k = {66,90,50,48,50,54,88} local t = {23,52,94,95,83,82,120,23,19} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s41 = (function() local k = {66,90,50,48,50,54,88} local t = {16,47,92,99,87,68,46,43,57,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s42 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,115,95,53,14,53,81,91} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s43 = (function() local k = {66,90,50,48,50,54,88} local t = {49,42,64,85,83,82} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s44 = (function() local k = {66,90,50,48,50,54,88} local t = {11,52,83,83,81,67,42,35,57,75} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s45 = (function() local k = {66,90,50,48,50,54,88} local t = {1114,1129,1138,1038,1032,22,1125,1143,122,1039,1024,1035,1026,1133,1151} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s46 = (function() local k = {66,90,50,48,50,54,88} local t = {4,10,97,16,112,89,55,49,46,87,66} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s47 = (function() local k = {66,90,50,48,50,54,88} local t = {10,46,70,64,97,83,42,52,51,81,85} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s48 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,59,42,63,81,91,31,90,45,122,111,3,66,80,27,58,45,54,86} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s49 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,115,66,44,48,59,81,68,91,89,54,17,46,64,85,92,81,44,42} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s50 = (function() local k = {66,90,50,48,50,54,88} local t = {9,51,81,91} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s51 = (function() local k = {66,90,50,48,50,54,88} local t = {14,47,83,120,71,84,7,7,9,98,111,112,108} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s52 = (function() local k = {66,90,50,48,50,54,88} local t = {30,52} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s53 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,58,45,54,70,29,80,89,52,38} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s54 = (function() local k = {66,90,50,48,50,54,88} local t = {4,21,100,16,113,95,42,33,54,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s55 = (function() local k = {66,90,50,48,50,54,88} local t = {4,21,100} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s56 = (function() local k = {66,90,50,48,50,54,88} local t = {11,52,70,102,83,90,45,39} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s57 = (function() local k = {66,90,50,48,50,54,88} local t = {17,53,71,94,86} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s58 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,115,90,47,35,35,65,117,92,87,58,46,63,86} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s59 = (function() local k = {66,90,50,48,50,54,88} local t = {22,40,83,83,87,68,43,98,114,1033,1032,1039,1038,1120,98,1120,18,1032,1025,1142,1126,1144,1130,1038,25} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s60 = (function() local k = {66,90,50,48,50,54,88} local t = {1,53,95,82,83,66} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s61 = (function() local k = {66,90,50,48,50,54,88} local t = {20,63,81,68,93,68,107,20,59,94,69,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s62 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,98,68,49,45,40,91,68,75} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s63 = (function() local k = {66,90,50,48,50,54,88} local t = {14,47,83,16,122,67,58,98,8270,18,114,94,89,55,38,122,104,95,92,83} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s64 = (function() local k = {66,90,50,48,50,54,88} local t = {4,47,94,92,80,68,49,37,50,70} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s65 = (function() local k = {66,90,50,48,50,54,88} local t = {98,18,98} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s66 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,118,87,53,50,63,92,89,92,81} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s67 = (function() local k = {66,90,50,48,50,54,88} local t = {6,51,65,81,80,90,61,98,29,94,95,80,87,52,98,9,90,81,86,89,47,49} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s68 = (function() local k = {66,90,50,48,50,54,88} local t = {11,55,95,69,92,83} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s69 = (function() local k = {66,90,50,48,50,54,88} local t = {21,59,94,92,80,87,54,37,122,26,1137,1136,1142,1133,1145,1045,1136,1148,18,1137,1133,1026,1135,1029,16,1139,1140,1133,1151,1041,27} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s70 = (function() local k = {66,90,50,48,50,54,88} local t = {9,51,81,91,80,87,59,41} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s71 = (function() local k = {66,90,50,48,50,54,88} local t = {6,63,68,89,83,66,49,45,52} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s72 = (function() local k = {66,90,50,48,50,54,88} local t = {54,53,85,87,94,83} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s73 = (function() local k = {66,90,50,48,50,54,88} local t = {3,19,127,114,125,98} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s74 = (function() local k = {66,90,50,48,50,54,88} local t = {3,52,70,89,31,119,30,9} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s75 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,116,121,14,109,9,90,95,69,117,49,48,57,94,85} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s76 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,118,87,53,50,63,92,89,92,81,119,22,50,64,85,65,94,55,46,62} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s77 = (function() local k = {66,90,50,48,50,54,88} local t = {10,47,95,81,92,89,49,38,8,93,95,70,102,57,48,46} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s78 = (function() local k = {66,90,50,48,50,54,88} local t = {0,0,113,66,93,69,43,42,59,91,66} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s79 = (function() local k = {66,90,50,48,50,54,88} local t = {25,22,71,81,18,126,45,32,7,18,1071,1138,1032,1052,1146,1121,1150,16,1039,1030,1134,1138,1048} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s80 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,60,35,52,85,85,64,27,58,45,54,86} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s81 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,52,46,104,6,94,84,85,111,111,56,93,92,86} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s82 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,82,93,66} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s83 = (function() local k = {66,90,50,48,50,54,88} local t = {14,47,83,16,122,67,58,98,8270,18,114,94,89,55,38,122,104,95,92,83,120,129594} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s84 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,82,93,66,120,4,21,100,16,26,1142,1128,1142,1122,1137,1137,18,1035,1128,98,1047,1032,1136,1026,1035,1133,107} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s85 = (function() local k = {66,90,50,48,50,54,88} local t = {3,47,86,89,93} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s86 = (function() local k = {66,90,50,48,50,54,88} local t = {1,47,65,68,93,91,120,1,40,93,67,65,94,57,43,40} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s87 = (function() local k = {66,90,50,48,50,54,88} local t = {12,53,18,98,87,85,55,43,54,18,24,1027,1027,1135,98,1124,1136,1028,1026,1137,1120,107} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s88 = (function() local k = {66,90,50,48,50,54,88} local t = {50,54,83,73,87,68} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s89 = (function() local k = {66,90,50,48,50,54,88} local t = {4,51,64,85,97,83,42,52,63,64} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s90 = (function() local k = {66,90,50,48,50,54,88} local t = {1,59,95,85,64,87,120,4,21,100} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s91 = (function() local k = {66,90,50,48,50,54,88} local t = {0,0,119,67,66,126,49,37,50,94,89,85,94,44} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s92 = (function() local k = {66,90,50,48,50,54,88} local t = {5,47,92,120,91,66} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s93 = (function() local k = {66,90,50,48,50,54,88} local t = {12,53,18,99,66,68,61,35,62,18,24,1027,1027,1135,98,1050,1026,1031,1027,1142,1126,1027,1130,27} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s94 = (function() local k = {66,90,50,48,50,54,88} local t = {42,46,70,64,65,12,119,109,40,83,71,28,81,49,54,50,71,82,71,69,61,48,57,93,94,70,83,54,54,116,81,95,95,25,30,45,53,70,81,85,83,43,55,41,29,92,93,85,43,56,32,71,88,29,91,57,43,52,29,92,84,67,63,52,57,80,70,29,91,57,43,52,28,92,71,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s95 = (function() local k = {66,90,50,48,50,54,88} local t = {3,57,81,69,64,87,59,59} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s96 = (function() local k = {66,90,50,48,50,54,88} local t = {49,50,83,91,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s97 = (function() local k = {66,90,50,48,50,54,88} local t = {49,54,91,84,87,68} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s98 = (function() local k = {66,90,50,48,50,54,88} local t = {1127,1049,1032,16,1071,1059,120,1025,1051,1136,1024,1039,1032,1130,1145,1135,1039,30,18,115,32,39,57,71,68,93,68,120,1151,1135,18,1039,1036,1026,1132,1143,1050,1028,1032,1024,1030,1133,1024,122,90,95,93,93,53,39,46,83,93,87,66,48,45,62,28} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s99 = (function() local k = {66,90,50,48,50,54,88} local t = {12,47,95,82,87,68,14,35,54,71,85} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s100 = (function() local k = {66,90,50,48,50,54,88} local t = {4,40,83,93,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s101 = (function() local k = {66,90,50,48,50,54,88} local t = {16,63,88,95,91,88,120,17,63,64,70,87,68} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s102 = (function() local k = {66,90,50,48,50,54,88} local t = {29,5,92,81,95,83,59,35,54,94} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s103 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,62,45,54,86,85,64,27,106,111,56,93,92,86,27,60,55,53,70,95,92,83} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s104 = (function() local k = {66,90,50,48,50,54,88} local t = {14,51,85,88,70,95,54,37} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s105 = (function() local k = {66,90,50,48,50,54,88} local t = {0,51,94,92,80,89,57,48,62,117,69,91} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s106 = (function() local k = {66,90,50,48,50,54,88} local t = {1114,1129,1138,1038,1032,1038,120,1151,1135,18,1037,1026,1039,1132,1143,1127,1145} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s107 = (function() local k = {66,90,50,48,50,54,88} local t = {18,53,65,89,70,95,55,44} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s108 = (function() local k = {66,90,50,48,50,54,88} local t = {22,63,94,85,66,89,42,54,9,87,66,68,95,59,39} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s109 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,97,94,55,53,27,65,67,91,69,44,6,53,70,67} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s110 = (function() local k = {66,90,50,48,50,54,88} local t = {10,63,83,84} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s111 = (function() local k = {66,90,50,48,50,54,88} local t = {1123,1120,1138,1032,1037,1140,120,1136,1041,1025,1136,1137,1024,1133,1151} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s112 = (function() local k = {66,90,50,48,50,54,88} local t = {1104,1090,1061,1043,1058,1069} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s113 = (function() local k = {66,90,50,48,50,54,88} local t = {22,53,93,92} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s114 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,82,93,66,120,6,51,65,68,83,88,59,39,122,26,1028,1026,1037,1044,1151,1124,1139,1138,1150,22,1130,98,1051,1136,1024,1030,1030,1053,107} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s115 = (function() local k = {66,90,50,48,50,54,88} local t = {22,59,64,87,87,66,98,98,28,125,102,18,30,1129,1145,1122,1028,1024,1035,1150,1120,1147,122,1032,16,1140,1027,1125,1024,1050,1137,25} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s116 = (function() local k = {66,90,50,48,50,54,88} local t = {1120,1103,1065,1061,1069,1064,1144,1120} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s117 = (function() local k = {66,90,50,48,50,54,88} local t = {25,22,71,81,18,126,45,32,7,18,1069,1031,22,1051,1142,1130,1033,1038,1139,1146,120,1141,1130,1025,1136,1137,1025,1120,1024,1046,18,92,93,85,43,56,32,71,88,28} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s118 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,82,93,66,120,4,21,100,16,113,95,42,33,54,87,16,26,1036,1048,1025,1129,18,1037,1026,22,1045,1144,1050,1026,1037,1031,31} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s119 = (function() local k = {66,90,50,48,50,54,88} local t = {36,47,92,83,70,95,55,44} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s120 = (function() local k = {66,90,50,48,50,54,88} local t = {20,51,64,68,71,87,52,23,41,87,66} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s121 = (function() local k = {66,90,50,48,50,54,88} local t = {23,19,97,68,64,89,51,39} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s122 = (function() local k = {66,90,50,48,50,54,88} local t = {17,43,71,81,64,83} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s123 = (function() local k = {66,90,50,48,50,54,88} local t = {33,53,92,85} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s124 = (function() local k = {66,90,50,48,50,54,88} local t = {18,54,83,73,87,68,43} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s125 = (function() local k = {66,90,50,48,50,54,88} local t = {41,51,81,91} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s126 = (function() local k = {66,90,50,48,50,54,88} local t = {17,53,71,94,86,101,61,48,44,91,83,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s127 = (function() local k = {66,90,50,48,50,54,88} local t = {22,53,64,67,93} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s128 = (function() local k = {66,90,50,48,50,54,88} local t = {97,28,116,0,2,6,104} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s129 = (function() local k = {66,90,50,48,50,54,88} local t = {35,57,81,69,64,87,59,59} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s130 = (function() local k = {66,90,50,48,50,54,88} local t = {32,54,93,95,95} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s131 = (function() local k = {66,90,50,48,50,54,88} local t = {14,47,83,16,122,67,58} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s132 = (function() local k = {66,90,50,48,50,54,88} local t = {1116,1146,1041,1062,1066,1059} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s133 = (function() local k = {66,90,50,48,50,54,88} local t = {13,42,87,94,18,122,45,35,122,122,69,80} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s134 = (function() local k = {66,90,50,48,50,54,88} local t = {1109,1130,1025,1136,1137,1024,1133,1151,1124,28,16,1041,1026,1128,1029,1122,18,1026,18,1031,1126,1036,123,18,129608} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s135 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,46,45,54,71,93,87,27,59,48,53,65,67,31,84,55,46,62} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s136 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,61,59,63,31,82,93,90,60} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s137 = (function() local k = {66,90,50,48,50,54,88} local t = {18,63,64,86,93,68,53,35,52,81,85} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s138 = (function() local k = {66,90,50,48,50,54,88} local t = {22,63,74,68,126,87,58,39,54} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s139 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,100,95,43,43,56,91,92,91,66,33,1,50,87,83,89} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s140 = (function() local k = {66,90,50,48,50,54,88} local t = {18,54,83,73,87,68,31,55,51} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s141 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,102,83,57,47,25,90,85,81,93} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s142 = (function() local k = {66,90,50,48,50,54,88} local t = {38,63,68,89,83,66,49,45,52} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s143 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,46,45,54,71,93,87,27,58,45,54,86} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s144 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,16,83,66,120,10,63,83,84,18,30,1120,1151,1130,1141,1029,18,98,55,48,41,93,25} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s145 = (function() local k = {66,90,50,48,50,54,88} local t = {0,54,93,95,95} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s146 = (function() local k = {66,90,50,48,50,54,88} local t = {17,51,94,85,92,66,120,3,51,95,16,1024,1036,1123,1036,1053,1123,1037} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s147 = (function() local k = {66,90,50,48,50,54,88} local t = {1116,1147,1071,1070,1056,1067,1094,1111} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s148 = (function() local k = {66,90,50,48,50,54,88} local t = {1120,1135,1033,1029,1037,1032,1048,1024,122,1032,16} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s149 = (function() local k = {66,90,50,48,50,54,88} local t = {1122,1135,1028,1032,1038,12,120,4,21,100,16,26,1031,1123,1146,1132,1026,1033,1146,1038,1121,98,1120,18,1039,1138,1038,1054,1143,1121,1137,25} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s150 = (function() local k = {66,90,50,48,50,54,88} local t = {20,51,65,69,83,90,43,98,124,18,117,97,102} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s151 = (function() local k = {66,90,50,48,50,54,88} local t = {22,27,96,119,119,98,120,15,31,102,120,125,114} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s152 = (function() local k = {66,90,50,48,50,54,88} local t = {1109,1130,18,1137,1037,1038,1125,1025,122} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s153 = (function() local k = {66,90,50,48,50,54,88} local t = {1114,1095,1046,1070} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s154 = (function() local k = {66,90,50,48,50,54,88} local t = {22,59,64,87,87,66,98,98,25,94,95,65,83,43,54} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s155 = (function() local k = {66,90,50,48,50,54,88} local t = {16,63,81,95,91,90,21,55,54,70,89,66,90,49,39,40} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s156 = (function() local k = {66,90,50,48,50,54,88} local t = {18,54,83,73,87,68,120,7,9,98,16,26,1038,1124,1037,118,18,120,98,26,120,1142,1122,1139,1138,1026,1035,1054,1146,1045,27} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s157 = (function() local k = {66,90,50,48,50,54,88} local t = {16,63,81,95,91,90} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s158 = (function() local k = {66,90,50,48,50,54,88} local t = {98,41,70,69,86,69,5} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s159 = (function() local k = {66,90,50,48,50,54,88} local t = {10,47,95,81,92,89,49,38} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s160 = (function() local k = {66,90,50,48,50,54,88} local t = {32,47,70,68,93,88} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s161 = (function() local k = {66,90,50,48,50,54,88} local t = {17,42,64,85,83,82} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s162 = (function() local k = {66,90,50,48,50,54,88} local t = {23,41,87,66,123,88,40,55,46,97,85,64,64,49,33,63} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s163 = (function() local k = {66,90,50,48,50,54,88} local t = {1109,1128,1137,1034,18,1028,1122,1145,1044,1141,1121,1039} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s164 = (function() local k = {66,90,50,48,50,54,88} local t = {1104,1120,1033,1150,1141,1127,1125,98,8270,18,1037,1026,1028,1126,1142,1122,1136,1137,1149,22,1125,1138,122,1027,1035,1034,1024,1128,1147,1042,1031,1027,1036,22,1122,98,1120,1137,1136,1139,1032,1048,1025} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s165 = (function() local k = {66,90,50,48,50,54,88} local t = {17,46,83,66,70,83,42,5,47,91} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s166 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,82,93,66,120,106,1127,1026,1026,1036,1026,1122,1138,122,1039,1024,18,1031,1123,1146,1132,1026,1033,1146,1027,1131,1148,115} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s167 = (function() local k = {66,90,50,48,50,54,88} local t = {32,35,18,124,71,87,120,10,47,80} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s168 = (function() local k = {66,90,50,48,50,54,88} local t = {49,46,64,89,92,81} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s169 = (function() local k = {66,90,50,48,50,54,88} local t = {14,47,83,120,71,84,7,0,54,93,95,86,108,55,44,63} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s170 = (function() local k = {66,90,50,48,50,54,88} local t = {0,54,93,84,104,89,54,39,122,115,89,95,84,55,54} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s171 = (function() local k = {66,90,50,48,50,54,88} local t = {17,51,94,85,92,66,120,3,51,95,16,26,1033,1051,1145,1122,18,1035,1031,1140,1047,1024,122,1024,16,1140,1027,1123,1038,115} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s172 = (function() local k = {66,90,50,48,50,54,88} local t = {4,21,100,16,113,94,61,33,49} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s173 = (function() local k = {66,90,50,48,50,54,88} local t = {10,51,85,88,94,95,63,42,46} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s174 = (function() local k = {66,90,50,48,50,54,88} local t = {17,57,64,85,87,88,31,55,51} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s175 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,58,39,54,94,29,80,89,52,38} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s176 = (function() local k = {66,90,50,48,50,54,88} local t = {97,28,116,8,113,2,106} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s177 = (function() local k = {66,90,50,48,50,54,88} local t = {16,63,95,95,68,83,120,4,53,85} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s178 = (function() local k = {66,90,50,48,50,54,88} local t = {1109,1128,1137,1034,18,1028,1043,1144,1121,1148,1143,1031,1035} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s179 = (function() local k = {66,90,50,48,50,54,88} local t = {43,52,83,83,81,67,42,35,57,75} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s180 = (function() local k = {66,90,50,48,50,54,88} local t = {22,63,94,85,66,89,42,54,122,112,85,90,95,54,38,122,98,92,83,79,61,48} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s181 = (function() local k = {66,90,50,48,50,54,88} local t = {21,53,64,91,65,70,57,33,63} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s182 = (function() local k = {66,90,50,48,50,54,88} local t = {1112,1130,1141,1029,1139,1140,1130,1148,122,1139,1037,1034,1024,1133,1151,1124} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s183 = (function() local k = {66,90,50,48,50,54,88} local t = {22,63,94,85,66,89,42,54} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s184 = (function() local k = {66,90,50,48,50,54,88} local t = {4,21,100,115,91,68,59,46,63} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
-local _s185 = (function() local k = {66,90,50,48,50,54,88} local t = {20,51,65,89,80,95,52,43,46,75,16,113,94,61,33,49,18,24,1039,1027,120,1029,1135,1138,1029,1029,22,1049,1024,1135,1039,1147,27} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s1 = (function() local k = {66,90,50,48,50,54,88} local t = {1,54,91,83,89,22,12,18,122,26,115,70,68,52,98,113,18,115,94,95,59,41,115} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s2 = (function() local k = {66,90,50,48,50,54,88} local t = {4,21,100} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s3 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,118,87,53,50,63,92,89,92,81,119,17,46,64,85,92,81,44,42} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s4 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,58,39,54,94,29,80,89,52,38} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s5 = (function() local k = {66,90,50,48,50,54,88} local t = {97,28,116,6,112,0,26} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s6 = (function() local k = {66,90,50,48,50,54,88} local t = {21,59,94,92,80,87,54,37,122,26,1137,1136,1142,1133,1145,1045,1136,1148,18,1137,1133,1026,1135,1029,16,1139,1140,1133,1151,1041,27} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s7 = (function() local k = {66,90,50,48,50,54,88} local t = {54,53,85,87,94,83} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s8 = (function() local k = {66,90,50,48,50,54,88} local t = {29,5,92,81,95,83,59,35,54,94} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s9 = (function() local k = {66,90,50,48,50,54,88} local t = {1114,1129,1138,1038,1032,1038,120,1151,1135,18,1037,1026,1039,1132,1143,1127,1145} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s10 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,60,35,52,85,85,64,27,58,45,54,86} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s11 = (function() local k = {66,90,50,48,50,54,88} local t = {20,51,65,69,83,90,43,98,124,18,117,97,102} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s12 = (function() local k = {66,90,50,48,50,54,88} local t = {10,46,70,64,97,83,42,52,51,81,85} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s13 = (function() local k = {66,90,50,48,50,54,88} local t = {16,63,95,95,68,83,120,4,53,85} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s14 = (function() local k = {66,90,50,48,50,54,88} local t = {35,57,81,69,64,87,59,59} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s15 = (function() local k = {66,90,50,48,50,54,88} local t = {3,57,81,69,64,87,59,59} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s16 = (function() local k = {66,90,50,48,50,54,88} local t = {0,51,94,92,80,89,57,48,62,117,69,91} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s17 = (function() local k = {66,90,50,48,50,54,88} local t = {49,42,64,85,83,82} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s18 = (function() local k = {66,90,50,48,50,54,88} local t = {10,63,83,84} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s19 = (function() local k = {66,90,50,48,50,54,88} local t = {18,63,64,86,93,68,53,35,52,81,85} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s20 = (function() local k = {66,90,50,48,50,54,88} local t = {17,46,83,66,70,83,42,5,47,91} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s21 = (function() local k = {66,90,50,48,50,54,88} local t = {22,53,64,67,93} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s22 = (function() local k = {66,90,50,48,50,54,88} local t = {49,50,83,91,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s23 = (function() local k = {66,90,50,48,50,54,88} local t = {1114,1095,1046,1070} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s24 = (function() local k = {66,90,50,48,50,54,88} local t = {16,63,81,95,91,90,21,55,54,70,89,66,90,49,39,40} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s25 = (function() local k = {66,90,50,48,50,54,88} local t = {32,54,93,95,95} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s26 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,118,87,53,50,63,92,89,92,81} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s27 = (function() local k = {66,90,50,48,50,54,88} local t = {5,47,92,120,91,66} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s28 = (function() local k = {66,90,50,48,50,54,88} local t = {1109,1130,1025,1136,1137,1024,1133,1151,1124,28,16,1041,1026,1128,1029,1122,18,1026,18,1031,1126,1036,123,18,129608} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s29 = (function() local k = {66,90,50,48,50,54,88} local t = {1123,1120,1138,1032,1037,1140,120,1136,1041,1025,1136,1137,1024,1133,1151} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s30 = (function() local k = {66,90,50,48,50,54,88} local t = {9,51,81,91,80,87,59,41} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s31 = (function() local k = {66,90,50,48,50,54,88} local t = {16,63,81,95,91,90} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s32 = (function() local k = {66,90,50,48,50,54,88} local t = {1114,1129,1138,1038,1032,22,1125,1143,122,1039,1024,1035,1026,1133,1151} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s33 = (function() local k = {66,90,50,48,50,54,88} local t = {10,51,85,88,94,95,63,42,46} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s34 = (function() local k = {66,90,50,48,50,54,88} local t = {11,55,95,69,92,83} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s35 = (function() local k = {66,90,50,48,50,54,88} local t = {18,53,65,89,70,95,55,44} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s36 = (function() local k = {66,90,50,48,50,54,88} local t = {3,19,127,114,125,98} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s37 = (function() local k = {66,90,50,48,50,54,88} local t = {6,63,68,89,83,66,49,45,52} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s38 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,16,83,66,120,10,63,83,84,18,30,1120,1151,1130,1141,1029,18,98,55,48,41,93,25} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s39 = (function() local k = {66,90,50,48,50,54,88} local t = {1122,1135,1028,1032,1038,12,120,4,21,100,16,26,1031,1123,1146,1132,1026,1033,1146,1038,1121,98,1120,18,1039,1138,1038,1054,1143,1121,1137,25} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s40 = (function() local k = {66,90,50,48,50,54,88} local t = {23,41,87,66,123,88,40,55,46,97,85,64,64,49,33,63} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s41 = (function() local k = {66,90,50,48,50,54,88} local t = {97,25,5,7,118,112,30} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s42 = (function() local k = {66,90,50,48,50,54,88} local t = {0,54,93,95,95} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s43 = (function() local k = {66,90,50,48,50,54,88} local t = {1,53,95,82,83,66} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s44 = (function() local k = {66,90,50,48,50,54,88} local t = {22,59,64,87,87,66,98,98,28,125,102,18,30,1129,1145,1122,1028,1024,1035,1150,1120,1147,122,1032,16,1140,1027,1125,1024,1050,1137,25} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s45 = (function() local k = {66,90,50,48,50,54,88} local t = {97,28,116,4,6,2,108} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s46 = (function() local k = {66,90,50,48,50,54,88} local t = {1,54,93,67,87,69,44} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s47 = (function() local k = {66,90,50,48,50,54,88} local t = {14,47,83,16,122,67,58,98,8270,18,114,94,89,55,38,122,104,95,92,83,120,129594} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s48 = (function() local k = {66,90,50,48,50,54,88} local t = {12,53,18,98,87,85,55,43,54,18,24,1027,1027,1135,98,1124,1136,1028,1026,1137,1120,107} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s49 = (function() local k = {66,90,50,48,50,54,88} local t = {17,63,70,68,91,88,63,49} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s50 = (function() local k = {66,90,50,48,50,54,88} local t = {17,51,94,85,92,66,120,3,51,95,16,26,1033,1051,1145,1122,18,1035,1031,1140,1047,1024,122,1024,16,1140,1027,1123,1038,115} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s51 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,116,121,14,109,8,83,84,91,67,43} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s52 = (function() local k = {66,90,50,48,50,54,88} local t = {18,54,83,73,87,68,43} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s53 = (function() local k = {66,90,50,48,50,54,88} local t = {1116,1147,1071,1070,1056,1067,1094,1111} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s54 = (function() local k = {66,90,50,48,50,54,88} local t = {23,19,113,95,64,88,61,48} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s55 = (function() local k = {66,90,50,48,50,54,88} local t = {0,54,93,84,104,89,54,39} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s56 = (function() local k = {66,90,50,48,50,54,88} local t = {46,105,7,81,67,78,61,114,43,18,117,97,102,120,106,1122,1038,1151,30,22,16,18,118,18,1028,1034,1143,1050,1138,1127,1140,1032,1149,31} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s57 = (function() local k = {66,90,50,48,50,54,88} local t = {22,63,94,85,66,89,42,54} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s58 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,97,94,55,53,27,65,67,91,69,44,6,53,70,67} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s59 = (function() local k = {66,90,50,48,50,54,88} local t = {1120,1135,1039,1032,18,1032,1050,1144,1121,1148,1143,1031,1035,1043} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s60 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,102,83,57,47,25,90,85,81,93} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s61 = (function() local k = {66,90,50,48,50,54,88} local t = {18,54,83,73,87,68,31,55,51} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s62 = (function() local k = {66,90,50,48,50,54,88} local t = {22,53,93,92} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s63 = (function() local k = {66,90,50,48,50,54,88} local t = {9,51,81,91} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s64 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,52,38,107,75,87,90,85,117,32,53,94,84} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s65 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,115,66,44,48,59,81,68,91,89,54,17,46,64,85,92,81,44,42} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s66 = (function() local k = {66,90,50,48,50,54,88} local t = {13,42,87,94,18,122,45,35,122,122,69,80} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s67 = (function() local k = {66,90,50,48,50,54,88} local t = {1,53,64,85,117,67,49} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s68 = (function() local k = {66,90,50,48,50,54,88} local t = {4,10,97,16,112,89,55,49,46,87,66} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s69 = (function() local k = {66,90,50,48,50,54,88} local t = {32,35,18,124,71,87,120,10,47,80} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s70 = (function() local k = {66,90,50,48,50,54,88} local t = {25,22,71,81,18,126,45,32,7,18,1071,1138,1032,1052,1146,1121,1150,16,1039,1030,1134,1138,1048} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s71 = (function() local k = {66,90,50,48,50,54,88} local t = {22,59,64,87,87,66,98,98,25,94,95,65,83,43,54} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s72 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,100,95,43,43,56,91,92,91,66,33,1,50,87,83,89} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s73 = (function() local k = {66,90,50,48,50,54,88} local t = {16,63,66,92,91,85,57,54,63,86,99,70,89,42,35,61,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s74 = (function() local k = {66,90,50,48,50,54,88} local t = {16,63,88,95,91,88,120,17,63,64,70,87,68} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s75 = (function() local k = {66,90,50,48,50,54,88} local t = {6,59,64,91} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s76 = (function() local k = {66,90,50,48,50,54,88} local t = {48,63,81,95,91,90} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s77 = (function() local k = {66,90,50,48,50,54,88} local t = {15,59,81} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s78 = (function() local k = {66,90,50,48,50,54,88} local t = {1122,1135,1028,1032,1038,12,120,1,54,93,67,87,69,44,98,114,1027,1035,1034,1024,1128,1147,1042,1034,1033,27} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s79 = (function() local k = {66,90,50,48,50,54,88} local t = {14,51,85,88,70,95,54,37} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s80 = (function() local k = {66,90,50,48,50,54,88} local t = {1112,1130,1141,1029,1139,1140,1130,1148,122,1139,1037,1034,1024,1133,1151,1124} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s81 = (function() local k = {66,90,50,48,50,54,88} local t = {11,52,65,68,83,88,59,39} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s82 = (function() local k = {66,90,50,48,50,54,88} local t = {4,40,83,93,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s83 = (function() local k = {66,90,50,48,50,54,88} local t = {4,51,64,85,97,83,42,52,63,64} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s84 = (function() local k = {66,90,50,48,50,54,88} local t = {17,53,71,94,86} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s85 = (function() local k = {66,90,50,48,50,54,88} local t = {0,0,119,67,66,122,57,32,63,94} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s86 = (function() local k = {66,90,50,48,50,54,88} local t = {25,22,71,81,18,126,45,32,7,18,1069,1031,22,1051,1142,1130,1033,1038,1139,1146,120,1141,1130,1025,1136,1137,1025,1120,1024,1046,18,92,70,66,63,38,56,86,92,93,24} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s87 = (function() local k = {66,90,50,48,50,54,88} local t = {11,52,70,102,83,90,45,39} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s88 = (function() local k = {66,90,50,48,50,54,88} local t = {12,53,18,99,66,68,61,35,62,18,24,1027,1027,1135,98,1050,1026,1031,1027,1142,1126,1027,1130,27} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s89 = (function() local k = {66,90,50,48,50,54,88} local t = {14,47,83,16,122,67,58} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s90 = (function() local k = {66,90,50,48,50,54,88} local t = {17,51,94,85,92,66,120,3,51,95,16,126,95,53,43,46,18,24,1030,1030,1123,1038,1127,1036,1137,1136,1146,113} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s91 = (function() local k = {66,90,50,48,50,54,88} local t = {20,63,81,68,93,68,107,20,59,94,69,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s92 = (function() local k = {66,90,50,48,50,54,88} local t = {4,21,100,115,91,68,59,46,63} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s93 = (function() local k = {66,90,50,48,50,54,88} local t = {1109,1130,18,1137,1037,1038,1125,1025,122} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s94 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,118,87,53,50,63,92,89,92,81,119,22,50,64,85,65,94,55,46,62} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s95 = (function() local k = {66,90,50,48,50,54,88} local t = {17,51,94,85,92,66,120,3,51,95,16,26,115,54,35,56,94,85,86,31} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s96 = (function() local k = {66,90,50,48,50,54,88} local t = {97,28,116,8,113,2,106} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s97 = (function() local k = {66,90,50,48,50,54,88} local t = {17,57,64,85,87,88,31,55,51} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s98 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,59,46,53,65,85,31,90,53,113,34,81,83,64,27,58,45,54,86} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s99 = (function() local k = {66,90,50,48,50,54,88} local t = {0,54,93,84,104,89,54,39,122,115,89,95,84,55,54} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s100 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,115,95,53,14,53,81,91} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s101 = (function() local k = {66,90,50,48,50,54,88} local t = {0,0,119,67,66,126,49,37,50,94,89,85,94,44} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s102 = (function() local k = {66,90,50,48,50,54,88} local t = {22,45,87,85,92,101,61,48,44,91,83,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s103 = (function() local k = {66,90,50,48,50,54,88} local t = {1120,1103,1065,1061,1069,1064,1144,1120} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s104 = (function() local k = {66,90,50,48,50,54,88} local t = {22,40,83,83,87,68,43,98,114,1033,1032,1039,1038,1120,98,1120,18,1032,1025,1142,1126,1144,1130,1038,25} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s105 = (function() local k = {66,90,50,48,50,54,88} local t = {3,47,86,89,93} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s106 = (function() local k = {66,90,50,48,50,54,88} local t = {22,27,96,119,119,98,120,15,31,102,120,125,114} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s107 = (function() local k = {66,90,50,48,50,54,88} local t = {22,63,74,68,126,87,58,39,54} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s108 = (function() local k = {66,90,50,48,50,54,88} local t = {38,63,68,89,83,66,49,45,52} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s109 = (function() local k = {66,90,50,48,50,54,88} local t = {0,0,109,118,125,96,27,43,40,81,92,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s110 = (function() local k = {66,90,50,48,50,54,88} local t = {17,51,94,85,92,66,120,3,51,95,16,1024,1036,1123,1036,1053,1123,1037} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s111 = (function() local k = {66,90,50,48,50,54,88} local t = {4,21,100,16,26,1142,1128,1142,1122,1137,1137,27} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s112 = (function() local k = {66,90,50,48,50,54,88} local t = {14,47,83,120,71,84,7,7,9,98,111,112,108} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s113 = (function() local k = {66,90,50,48,50,54,88} local t = {20,51,65,89,80,95,52,43,46,75,16,113,94,61,33,49,18,24,1039,1027,120,1029,1135,1138,1029,1029,22,1049,1024,1135,1039,1147,27} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s114 = (function() local k = {66,90,50,48,50,54,88} local t = {98,41,70,69,86,69,5} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s115 = (function() local k = {66,90,50,48,50,54,88} local t = {15,47,70,85,18,113,57,47,63,18,113,71,82,49,45} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s116 = (function() local k = {66,90,50,48,50,54,88} local t = {22,63,94,85,66,89,42,54,122,70,95,18,120,61,35,40,87,67,70,22,52,113,111,83,65,74,83,104,51} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s117 = (function() local k = {66,90,50,48,50,54,88} local t = {46,111,71,64,69,64,61} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s118 = (function() local k = {66,90,50,48,50,54,88} local t = {1104,1090,1061,1043,1058,1069} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s119 = (function() local k = {66,90,50,48,50,54,88} local t = {1117,1050,1036,1026,1031,1142,1120,1024,1046,18,1141,1137,1036} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s120 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,116,121,14,109,9,90,95,69,117,49,48,57,94,85} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s121 = (function() local k = {66,90,50,48,50,54,88} local t = {0,0,113,66,93,69,43,42,59,91,66} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s122 = (function() local k = {66,90,50,48,50,54,88} local t = {32,53,71,94,81,83} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s123 = (function() local k = {66,90,50,48,50,54,88} local t = {10,47,95,81,92,89,49,38,8,93,95,70,102,57,48,46} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s124 = (function() local k = {66,90,50,48,50,54,88} local t = {4,21,100,16,113,94,61,33,49} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s125 = (function() local k = {66,90,50,48,50,54,88} local t = {49,54,91,84,87,68} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s126 = (function() local k = {66,90,50,48,50,54,88} local t = {23,19,97,68,64,89,51,39} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s127 = (function() local k = {66,90,50,48,50,54,88} local t = {30,52} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s128 = (function() local k = {66,90,50,48,50,54,88} local t = {22,63,94,85,66,89,42,54,9,87,66,68,95,59,39} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s129 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,82,93,66} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s130 = (function() local k = {66,90,50,48,50,54,88} local t = {1109,1128,1137,1034,18,1028,1043,1144,1121,1148,1143,1031,1035} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s131 = (function() local k = {66,90,50,48,50,54,88} local t = {14,47,83,120,71,84,7,0,54,93,95,86,108,55,44,63} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s132 = (function() local k = {66,90,50,48,50,54,88} local t = {12,47,95,82,87,68,14,35,54,71,85} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s133 = (function() local k = {66,90,50,48,50,54,88} local t = {42,46,70,64,65,12,119,109,40,83,71,28,81,49,54,50,71,82,71,69,61,48,57,93,94,70,83,54,54,116,81,95,95,25,30,45,53,70,81,85,83,43,55,41,29,92,70,66,63,38,56,86,92,93,25,53,35,51,92,31,94,81,52,35,41,2,31,95,87,49,44,116,94,69,83} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s134 = (function() local k = {66,90,50,48,50,54,88} local t = {20,51,64,68,71,87,52,23,41,87,66} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s135 = (function() local k = {66,90,50,48,50,54,88} local t = {1127,1049,1032,16,1137,1143,1050,1138,1127,1036,1026,1033,1027,1125,98,1049,1139,1039,1031,1150,1125,1148,123,18,99,91,90,61,44,46,18,113,91,91,120,1026,1130,1027,1038,1136,1030,1133,1024,116} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s136 = (function() local k = {66,90,50,48,50,54,88} local t = {18,59,64,68,91,85,52,39,31,95,89,70,66,61,48} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s137 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,46,45,54,71,93,87,27,58,45,54,86} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s138 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,98,68,49,45,40,91,68,75} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s139 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,82,93,66,120,6,51,65,68,83,88,59,39,122,26,1028,1026,1037,1044,1151,1124,1139,1138,1150,22,1130,98,1051,1136,1024,1030,1030,1053,107} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s140 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,82,93,66,120,106,1127,1026,1026,1036,1026,1122,1138,122,1039,1024,18,1031,1123,1146,1132,1026,1033,1146,1027,1131,1148,115} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s141 = (function() local k = {66,90,50,48,50,54,88} local t = {1109,1128,1137,1034,18,1028,1122,1145,1044,1141,1121,1039} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s142 = (function() local k = {66,90,50,48,50,54,88} local t = {33,54,91,93,80} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s143 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,31,115,90,47,35,35,65,117,92,87,58,46,63,86} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s144 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,62,45,54,86,85,64,27,106,111,56,93,92,86,27,60,55,53,70,95,92,83} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s145 = (function() local k = {66,90,50,48,50,54,88} local t = {14,47,83,16,122,67,58,98,8270,18,114,94,89,55,38,122,104,95,92,83} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s146 = (function() local k = {66,90,50,48,50,54,88} local t = {41,51,81,91} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s147 = (function() local k = {66,90,50,48,50,54,88} local t = {36,47,92,83,70,95,55,44} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s148 = (function() local k = {66,90,50,48,50,54,88} local t = {1,47,65,68,93,91,120,1,40,93,67,65,94,57,43,40} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s149 = (function() local k = {66,90,50,48,50,54,88} local t = {4,21,100,16,113,95,42,33,54,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s150 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,58,45,54,70,29,80,89,52,38} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s151 = (function() local k = {66,90,50,48,50,54,88} local t = {17,42,64,85,83,82} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s152 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,43,42,51,87,92,86,27,58,45,54,86} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s153 = (function() local k = {66,90,50,48,50,54,88} local t = {3,52,70,89,31,119,30,9} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s154 = (function() local k = {66,90,50,48,50,54,88} local t = {18,22,115,105,119,100,120,98,1} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s155 = (function() local k = {66,90,50,48,50,54,88} local t = {32,47,70,68,93,88} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s156 = (function() local k = {66,90,50,48,50,54,88} local t = {6,51,65,81,80,90,61,98,29,94,95,80,87,52,98,9,90,81,86,89,47,49} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s157 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,82,93,66,120,4,21,100,16,113,95,42,33,54,87,16,26,1036,1048,1025,1129,18,1037,1026,22,1045,1144,1050,1026,1037,1031,31} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s158 = (function() local k = {66,90,50,48,50,54,88} local t = {1120,1135,1033,1029,1037,1032,1048,1024,122,1032,16} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s159 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,46,45,54,71,93,87,27,59,48,53,65,67,31,84,55,46,62} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s160 = (function() local k = {66,90,50,48,50,54,88} local t = {49,46,64,89,92,81} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s161 = (function() local k = {66,90,50,48,50,54,88} local t = {7,9,98} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s162 = (function() local k = {66,90,50,48,50,54,88} local t = {1,59,95,85,64,87,120,4,21,100} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s163 = (function() local k = {66,90,50,48,50,54,88} local t = {10,47,95,81,92,89,49,38} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s164 = (function() local k = {66,90,50,48,50,54,88} local t = {23,52,94,95,83,82,120,23,19} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s165 = (function() local k = {66,90,50,48,50,54,88} local t = {1104,1120,1033,1150,1141,1127,1125,98,8270,18,1037,1026,1028,1126,1142,1122,1136,1137,1149,22,1125,1138,122,1027,1035,1034,1024,1128,1147,1042,1031,1027,1036,22,1122,98,1120,1137,1136,1139,1032,1048,1025} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s166 = (function() local k = {66,90,50,48,50,54,88} local t = {17,51,94,85,92,66,120,3,51,95,16,1024,1149,1122,1145,1044,1141,1029,1039} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s167 = (function() local k = {66,90,50,48,50,54,88} local t = {98,18,98} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s168 = (function() local k = {66,90,50,48,50,54,88} local t = {97,28,116,0,2,6,104} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s169 = (function() local k = {66,90,50,48,50,54,88} local t = {1119,1098,1043,1042,1042,1064,1089,1112,1090} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s170 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,59,42,63,81,91,31,90,53,113,34,81,83,64,27,58,45,54,86} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s171 = (function() local k = {66,90,50,48,50,54,88} local t = {17,43,71,81,64,83} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s172 = (function() local k = {66,90,50,48,50,54,88} local t = {43,52,83,83,81,67,42,35,57,75} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s173 = (function() local k = {66,90,50,48,50,54,88} local t = {21,53,64,91,65,70,57,33,63} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s174 = (function() local k = {66,90,50,48,50,54,88} local t = {22,63,94,85,66,89,42,54,122,112,85,90,95,54,38,122,94,3,7,87,41,58,63,2,65} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s175 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,82,93,66,120,4,21,100,16,26,1142,1128,1142,1122,1137,1137,18,1035,1128,98,1047,1032,1136,1026,1035,1133,107} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s176 = (function() local k = {66,90,50,48,50,54,88} local t = {0,59,65,85,98,87,42,54} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s177 = (function() local k = {66,90,50,48,50,54,88} local t = {33,53,92,85} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s178 = (function() local k = {66,90,50,48,50,54,88} local t = {4,47,94,92,80,68,49,37,50,70} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s179 = (function() local k = {66,90,50,48,50,54,88} local t = {3,51,95,82,93,66,120,17,55,93,95,70,94,120,106,1051,1032,1038,1138,1032,1049,1024,1046,18,1037,1026,1028,1126,1142,1120,1034,25} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s180 = (function() local k = {66,90,50,48,50,54,88} local t = {17,53,71,94,86,101,61,48,44,91,83,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s181 = (function() local k = {66,90,50,48,50,54,88} local t = {1116,1146,1041,1062,1066,1059} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s182 = (function() local k = {66,90,50,48,50,54,88} local t = {16,47,92,99,87,68,46,43,57,87} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s183 = (function() local k = {66,90,50,48,50,54,88} local t = {11,52,83,83,81,67,42,35,57,75} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s184 = (function() local k = {66,90,50,48,50,54,88} local t = {49,53,94,81,64,12,61,59,63,31,82,93,90,60} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
+local _s185 = (function() local k = {66,90,50,48,50,54,88} local t = {1127,1049,1032,16,1071,1059,120,1025,1051,1136,1024,1039,1032,1130,1145,1135,1039,30,18,115,32,39,57,71,68,93,68,120,1151,1135,18,1039,1036,1026,1132,1143,1050,1028,1032,1024,1030,1133,1024,122,90,95,93,93,53,39,46,83,93,87,66,48,45,62,28} local r = '' for i = 1, #t do r = r .. string.char((bit32 and bit32.bxor or function(a,b) return a ~ b end)(t[i], k[(i-1) % #k + 1])) end return r end)()
 
-if type(loadchar) ~= _s119 then loadchar = function() end end
-if type(loadcharacter) ~= _s119 then loadcharacter = function() end end
+if type(loadchar) ~= _s147 then loadchar = function() end end
+if type(loadcharacter) ~= _s147 then loadcharacter = function() end end
 do
- local l4wbwyxi = (type(mouse1click) == _s119) and mouse1click or nil
+ local l2tk7y = (type(mouse1click) == _s147) and mouse1click or nil
  mouse1click = function(...)
- if l4wbwyxi then pcall(l4wbwyxi) end
+ if l2tk7y then pcall(l2tk7y) end
  end
 end
-local locszzuh = nil
-local l7ssmq6x = pcall(function()
- locszzuh = loadstring(game:HttpGet(_s94))()
+local lttgdbdlo = nil
+local lz5bmv = pcall(function()
+ lttgdbdlo = loadstring(game:HttpGet(_s133))()
 end)
-if not l7ssmq6x or not locszzuh then
- warn(_s117)
+if not lz5bmv or not lttgdbdlo then
+ warn(_s86)
  return
 end
-local Players = game:GetService(_s124)
-local TweenService = game:GetService(_s4)
-local UserInputService = game:GetService(_s162)
-local Lighting = game:GetService(_s104)
-local Workspace = game:GetService(_s181)
-local RunService = game:GetService(_s41)
-local TeleportService = game:GetService(_s108)
-local VirtualUser = game:GetService(_s120)
-local HttpService = game:GetService(_s47)
-local StarterGui = game:GetService(_s165)
-local ReplicatedStorage = game:GetService(_s5)
-local SoundService = game:GetService(_s126)
+local Players = game:GetService(_s52)
+local TweenService = game:GetService(_s102)
+local UserInputService = game:GetService(_s40)
+local Lighting = game:GetService(_s79)
+local Workspace = game:GetService(_s173)
+local RunService = game:GetService(_s182)
+local TeleportService = game:GetService(_s128)
+local VirtualUser = game:GetService(_s134)
+local HttpService = game:GetService(_s12)
+local StarterGui = game:GetService(_s20)
+local ReplicatedStorage = game:GetService(_s73)
+local SoundService = game:GetService(_s180)
 local LocalPlayer = Players.LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local Camera = Workspace.CurrentCamera
-local lzsvm7l = (type(getgenv) == _s119 and getgenv()) or _G
-local function l5w8lfoy(path, data)
- if type(writefile) == _s119 then pcall(function() writefile(path, data) end) end
+local lfugvcbv = (type(getgenv) == _s147 and getgenv()) or _G
+local function lns7zv(lpk8emq3, l3s1k5)
+ if type(writefile) == _s147 then pcall(function() writefile(lpk8emq3, l3s1k5) end) end
 end
-local function lx2wvqd(path)
- if type(readfile) == _s119 then
- local ok, data = pcall(function() return readfile(path) end)
- if ok and type(data) == _s168 then return data end
+local function lg4j5bx9b(lpk8emq3)
+ if type(readfile) == _s147 then
+ local ok, l3s1k5 = pcall(function() return readfile(lpk8emq3) end)
+ if ok and type(l3s1k5) == _s160 then return l3s1k5 end
  end
  return nil
 end
-local l509x8qx = {
- NotifyDuration = (11 - 7),
- FlySpeed = (83 - 3),
- AimbotRadius = (207 - 7),
+local lf7zrkbdp = {
+ NotifyDuration = (8 / 2),
+ FlySpeed = (160 / 2),
+ AimbotRadius = (203 - 3),
 }
-local lbr0lwzy = {
+local ldd0nsmn6 = {
  walkspeed = (32 / 2),
- jumppower = (100 / 2),
+ jumppower = (57 - 7),
  infjump = false,
  fly = false,
  noclip = false,
@@ -249,12 +249,12 @@ local lbr0lwzy = {
  aimbot = false,
  silentAim = false,
  aimbotFOV = (207 - 7),
- aimbotSmooth = (10 / 2),
- aimbotDistance = (1000 / 2),
+ aimbotSmooth = (8 - 3),
+ aimbotDistance = (507 - 7),
  noRecoil = false,
  noSpread = false,
  aimbotFOVCircle = false,
- aimbotTarget = _s110, 
+ aimbotTarget = _s18, 
  visCheck = true,
  fullbright = false,
  nofog = false,
@@ -262,241 +262,241 @@ local lbr0lwzy = {
  noScreenShake = false,
  antiAfk = false,
  clickTP = false,
- fov = (77 - 7),
+ fov = (140 / 2),
  muted = false,
 }
-local lvjwie11l = Workspace.Gravity
-local ld1yghc = Lighting.Ambient
-local lfxt44j5w = Lighting.FogEnd
-local l2u8bus0 = Lighting.FogStart
-local l2fnxk7 = Lighting.Brightness
-local lucjj9wgi = Lighting.GlobalShadows
-local l465qy9ly = {}
-local function lglas0() return Workspace.CurrentCamera or Camera end
-local function lle1h6() return LocalPlayer.Character end
-local function la988uz()
- local lud2jtj = lle1h6()
- if not lud2jtj then return nil end
- return lud2jtj:FindFirstChildOfClass(_s159)
+local lapi0he = Workspace.Gravity
+local lvjwie11l = Lighting.Ambient
+local l6gqm83d = Lighting.FogEnd
+local lh5j9oe = Lighting.FogStart
+local lylr5oo = Lighting.Brightness
+local lud2jtj = Lighting.GlobalShadows
+local lz2dy5 = {}
+local function lbpa0d() return Workspace.CurrentCamera or Camera end
+local function ll8gar() return LocalPlayer.Character end
+local function l9fmzl6xc()
+ local lgqt60 = ll8gar()
+ if not lgqt60 then return nil end
+ return lgqt60:FindFirstChildOfClass(_s163)
 end
-local function l6913br8()
- local lud2jtj = lle1h6()
- if not lud2jtj then return nil end
- return lud2jtj:FindFirstChild(_s77) or lud2jtj:FindFirstChild(_s127)
+local function l2fnxk7()
+ local lgqt60 = ll8gar()
+ if not lgqt60 then return nil end
+ return lgqt60:FindFirstChild(_s123) or lgqt60:FindFirstChild(_s21)
 end
-local function lmb4su7()
- local lvycxuy = {}
- for _, plr in ipairs(Players:GetPlayers()) do
- if plr ~= LocalPlayer and plr.Character then
- table.insert(lvycxuy, plr)
+local function laz7r7q()
+ local l5dw2t = {}
+ for lp6erp, l1iiixbd in ipairs(Players:GetPlayers()) do
+ if l1iiixbd ~= LocalPlayer and l1iiixbd.Character then
+ table.insert(l5dw2t, l1iiixbd)
  end
  end
- return lvycxuy
+ return l5dw2t
 end
-local function l5o4c38d(plr)
- if not plr or not plr.Character then return nil end
- return plr.Character:FindFirstChild(_s77) or plr.Character:FindFirstChild(_s127)
+local function lwdwiwi(l1iiixbd)
+ if not l1iiixbd or not l1iiixbd.Character then return nil end
+ return l1iiixbd.Character:FindFirstChild(_s123) or l1iiixbd.Character:FindFirstChild(_s21)
 end
-local function lqzbiaqs2(plr)
- if not plr or not plr.Character then return nil end
- return plr.Character:FindFirstChildOfClass(_s159)
+local function lfd69qpvw(l1iiixbd)
+ if not l1iiixbd or not l1iiixbd.Character then return nil end
+ return l1iiixbd.Character:FindFirstChildOfClass(_s163)
 end
-local function l2tk7y(plr)
- if not plr or not plr.Character then return false end
- local l1yua3xln = plr.Character:FindFirstChildOfClass(_s159)
- return l1yua3xln and l1yua3xln.Health > 0
+local function lg7f9m(l1iiixbd)
+ if not l1iiixbd or not l1iiixbd.Character then return false end
+ local ltuszkl = l1iiixbd.Character:FindFirstChildOfClass(_s163)
+ return ltuszkl and ltuszkl.Health > 0
 end
-local function l3rhr5(l2c4pto6d, l6rlpqrc)
- if not lbr0lwzy.visCheck then return true end
- local labnyff = Camera.CFrame.Position
- local lhyy1j = l2c4pto6d - labnyff
- local la0yr36e = RaycastParams.new()
- la0yr36e.FilterType = Enum.RaycastFilterType.Exclude
- la0yr36e.FilterDescendantsInstances = {LocalPlayer.Character, l6rlpqrc}
- local ltsgwu9vp = Workspace:Raycast(labnyff, lhyy1j, la0yr36e)
- if ltsgwu9vp then
+local function lpfbqpz8u(lj8udb1, l3mjxa7)
+ if not ldd0nsmn6.visCheck then return true end
+ local lvycxuy = Camera.CFrame.Position
+ local likwtr = lj8udb1 - lvycxuy
+ local l8vs2hz0 = RaycastParams.new()
+ l8vs2hz0.FilterType = Enum.RaycastFilterType.Exclude
+ l8vs2hz0.FilterDescendantsInstances = {LocalPlayer.Character, l3mjxa7}
+ local lzlgc3 = Workspace:Raycast(lvycxuy, likwtr, l8vs2hz0)
+ if lzlgc3 then
  return false
  end
  return true
 end
-local function lyxcj3()
- local lh5j9oe, closestDist = nil, math.huge
- local lz2dy5 = ltn98rbj and Vector2.new(Camera.ViewportSize.X / (4 / 2), Camera.ViewportSize.Y / (4 / 2)) or UserInputService:GetMouseLocation()
- for _, plr in ipairs(lmb4su7()) do
- if l2tk7y(plr) then
- local lqyaq8txf = l5o4c38d(plr)
- if lqyaq8txf then
- local screenPos, onScreen = Camera:WorldToViewportPoint(lqyaq8txf.Position)
+local function ltsgwu9vp()
+ local l1o9vhn5, closestDist = nil, math.huge
+ local l509x8qx = lwe21sxu and Vector2.new(Camera.ViewportSize.X / (5 - 3), Camera.ViewportSize.Y / (4 / 2)) or UserInputService:GetMouseLocation()
+ for lp6erp, l1iiixbd in ipairs(laz7r7q()) do
+ if lg7f9m(l1iiixbd) then
+ local la988uz = lwdwiwi(l1iiixbd)
+ if la988uz then
+ local screenPos, onScreen = Camera:WorldToViewportPoint(la988uz.Position)
  if onScreen then
- local lfugvcbv = (Vector2.new(screenPos.X, screenPos.Y) - lz2dy5).likwtr
- if lfugvcbv < closestDist and lfugvcbv < l509x8qx.AimbotRadius then
- local l6fcy4 = plr.Character and plr.Character:FindFirstChild(_s110)
- local l2c4pto6d = l6fcy4 and l6fcy4.Position or lqyaq8txf.Position
- if l3rhr5(l2c4pto6d, plr.Character) then
- closestDist = lfugvcbv
- lh5j9oe = plr
+ local lglas0 = (Vector2.new(screenPos.X, screenPos.Y) - l509x8qx).l6wqlu8x
+ if lglas0 < closestDist and lglas0 < lf7zrkbdp.AimbotRadius then
+ local lwfftc = l1iiixbd.Character and l1iiixbd.Character:FindFirstChild(_s18)
+ local lj8udb1 = lwfftc and lwfftc.Position or la988uz.Position
+ if lpfbqpz8u(lj8udb1, l1iiixbd.Character) then
+ closestDist = lglas0
+ l1o9vhn5 = l1iiixbd
  end
  end
  end
  end
  end
  end
- return lh5j9oe
+ return l1o9vhn5
 end
-local function l5i8dqy(title, text, icon)
- locszzuh:Notify({
- Title = title,
- Content = text,
- Icon = icon or _s175,
- Duration = (7 - 3),
+local function l82woo(lmh6yd, lkz4xm8, ll9wgsl6)
+ lttgdbdlo:Notify({
+ Title = lmh6yd,
+ Content = lkz4xm8,
+ Icon = ll9wgsl6 or _s4,
+ Duration = (8 / 2),
  })
 end
-local ltn98rbj = UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled
-local l4y2n2nx = locszzuh:CreateWindow({
- Title = _s83,
- Author = _s167,
- Folder = _s169,
- Icon = _s103,
- Size = ltn98rbj and UDim2.fromOffset((800 / 2), (640 / 2)) or UDim2.fromOffset((653 - 3), (960 / 2)),
- Theme = _s24,
+local lwe21sxu = UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled
+local l68qw7ur = lttgdbdlo:CreateWindow({
+ Title = _s47,
+ Author = _s69,
+ Folder = _s131,
+ Icon = _s144,
+ Size = lwe21sxu and UDim2.fromOffset((407 - 7), (323 - 3)) or UDim2.fromOffset((653 - 3), (483 - 3)),
+ Theme = _s75,
  HideSearchBar = false,
  OpenButton = {
- Title = _s133,
+ Title = _s66,
  CornerRadius = UDim.new(1, 0),
- StrokeThickness = (10 - 7),
+ StrokeThickness = (6 / 2),
  Enabled = true,
  Draggable = true,
  OnlyMobile = false,
  Scale = 0.5,
  Color = ColorSequence.new(
- Color3.fromHex(_s2),
- Color3.fromHex(_s176)
+ Color3.fromHex(_s45),
+ Color3.fromHex(_s96)
  ),
  },
  Topbar = {
  Height = (47 - 3),
- ButtonsType = _s32,
+ ButtonsType = _s77,
  },
  User = {
  Enabled = true,
  Anonymous = true,
- Callback = function() print(_s79) end,
+ Callback = function() print(_s70) end,
  },
 })
-local ldq2krgi = l4y2n2nx:Tab({ Title = _s60, Icon = _s81, IconColor = Color3.fromHex(_s2), IconShape = _s122, Border = true })
-local l2fvnlx1 = l4y2n2nx:Tab({ Title = _s170, Icon = _s81, IconColor = Color3.fromHex(_s128), IconShape = _s122, Border = true })
-local l9fmzl6xc = l4y2n2nx:Tab({ Title = _s150, Icon = _s136, IconColor = Color3.fromHex(_s15), IconShape = _s122, Border = true })
-local lz5bmv = l4y2n2nx:Tab({ Title = _s38, Icon = _s10, IconColor = Color3.fromHex(_s6), IconShape = _s122, Border = true })
-local l91f5si60 = {}
-local function lg7f9m(tab, title)
- tab:Section({ Title = title })
+local lnp6uek = l68qw7ur:Tab({ Title = _s43, Icon = _s64, IconColor = Color3.fromHex(_s45), IconShape = _s171, Border = true })
+local l8j4jcwc5 = l68qw7ur:Tab({ Title = _s99, Icon = _s64, IconColor = Color3.fromHex(_s168), IconShape = _s171, Border = true })
+local lgsinn = l68qw7ur:Tab({ Title = _s11, Icon = _s184, IconColor = Color3.fromHex(_s5), IconShape = _s171, Border = true })
+local lc62l4g = l68qw7ur:Tab({ Title = _s49, Icon = _s152, IconColor = Color3.fromHex(_s41), IconShape = _s171, Border = true })
+local lhdiompst = {}
+local function lly20nk(lxfn8i0k8, lmh6yd)
+ lxfn8i0k8:Section({ Title = lmh6yd })
 end
-local function lxyh0o(tab, title, default, callback, key)
- local l5dw2t = tab:Toggle({
- Title = title,
- Value = default or false,
- Callback = function(state)
- task.spawn(callback, state)
+local function l0ko74eer(lxfn8i0k8, lmh6yd, lbef22zgz, lxyh0o, l344luz)
+ local lhx0q5u = lxfn8i0k8:Toggle({
+ Title = lmh6yd,
+ Value = lbef22zgz or false,
+ Callback = function(ldq2krgi)
+ task.spawn(lxyh0o, ldq2krgi)
  end,
  })
- table.insert(l91f5si60, { Type = _s72, Element = l5dw2t, Key = key })
- return l5dw2t
+ table.insert(lhdiompst, { Type = _s7, Element = lhx0q5u, Key = l344luz })
+ return lhx0q5u
 end
-local function lbe7cbg(tab, title, min, max, default, callback, key)
- local l5dw2t = tab:Slider({
- Title = title,
+local function lb1rxs(lxfn8i0k8, lmh6yd, lmhjktec6, lecobxhu, lbef22zgz, lxyh0o, l344luz)
+ local lhx0q5u = lxfn8i0k8:Slider({
+ Title = lmh6yd,
  Step = 1,
- Value = { Min = min, Max = max, Default = default or min },
- Callback = function(value)
- task.spawn(callback, value)
+ Value = { Min = lmhjktec6, Max = lecobxhu, Default = lbef22zgz or lmhjktec6 },
+ Callback = function(lbed62p2i)
+ task.spawn(lxyh0o, lbed62p2i)
  end,
  })
- table.insert(l91f5si60, { Type = _s97, Element = l5dw2t, Key = key })
- return l5dw2t
+ table.insert(lhdiompst, { Type = _s125, Element = lhx0q5u, Key = l344luz })
+ return lhx0q5u
 end
-local function lejt6z(tab, title, callback)
- local l5dw2t = tab:Button({
- Title = title,
+local function laxo9g5(lxfn8i0k8, lmh6yd, lxyh0o)
+ local lhx0q5u = lxfn8i0k8:Button({
+ Title = lmh6yd,
  Callback = function()
- task.spawn(callback)
+ task.spawn(lxyh0o)
  end,
  })
- table.insert(l91f5si60, { Type = _s160, Element = l5dw2t })
- return l5dw2t
+ table.insert(lhdiompst, { Type = _s155, Element = lhx0q5u })
+ return lhx0q5u
 end
-lg7f9m(ldq2krgi, _s73)
-lxyh0o(ldq2krgi, _s166, false, function(state)
- lbr0lwzy.aimbot = state
- if state then l5i8dqy(_s82, _s164, _s81) end
+lly20nk(lnp6uek, _s36)
+l0ko74eer(lnp6uek, _s140, false, function(ldq2krgi)
+ ldd0nsmn6.aimbot = ldq2krgi
+ if ldq2krgi then l82woo(_s129, _s165, _s64) end
 end)
-lbe7cbg(ldq2krgi, _s84, (100 / 2), (507 - 7), (207 - 7), function(val)
- lbr0lwzy.aimbotFOV = val
- l509x8qx.AimbotRadius = val
+lb1rxs(lnp6uek, _s175, (53 - 3), (507 - 7), (400 / 2), function(lf9jvkx)
+ ldd0nsmn6.aimbotFOV = lf9jvkx
+ lf7zrkbdp.AimbotRadius = lf9jvkx
 end)
-lbe7cbg(ldq2krgi, _s114, (57 - 7), 1000, (507 - 7), function(val)
- lbr0lwzy.aimbotDistance = val
+lb1rxs(lnp6uek, _s139, (100 / 2), 1000, (1000 / 2), function(lf9jvkx)
+ ldd0nsmn6.aimbotDistance = lf9jvkx
 end)
-lbe7cbg(ldq2krgi, _s25, 1, (27 - 7), (10 / 2), function(val)
- lbr0lwzy.aimbotSmooth = val
+lb1rxs(lnp6uek, _s179, 1, (40 / 2), (8 - 3), function(lf9jvkx)
+ ldd0nsmn6.aimbotSmooth = lf9jvkx
 end)
-lxyh0o(ldq2krgi, _s171, false, function(state)
- lbr0lwzy.silentAim = state
+l0ko74eer(lnp6uek, _s50, false, function(ldq2krgi)
+ ldd0nsmn6.silentAim = ldq2krgi
 end)
-lxyh0o(ldq2krgi, _s118, false, function(state)
- lbr0lwzy.aimbotFOVCircle = state
+l0ko74eer(lnp6uek, _s157, false, function(ldq2krgi)
+ ldd0nsmn6.aimbotFOVCircle = ldq2krgi
 end)
-lxyh0o(ldq2krgi, _s144, true, function(state)
- lbr0lwzy.aimbotTarget = state and _s110 or _s127
+l0ko74eer(lnp6uek, _s38, true, function(ldq2krgi)
+ ldd0nsmn6.aimbotTarget = ldq2krgi and _s18 or _s21
 end)
-lxyh0o(ldq2krgi, _s185, false, function(state)
- lbr0lwzy.visCheck = state
+l0ko74eer(lnp6uek, _s113, false, function(ldq2krgi)
+ ldd0nsmn6.visCheck = ldq2krgi
 end)
-lg7f9m(ldq2krgi, _s132)
-lxyh0o(ldq2krgi, _s87, false, function(state)
- lbr0lwzy.noRecoil = state
+lly20nk(lnp6uek, _s181)
+l0ko74eer(lnp6uek, _s48, false, function(ldq2krgi)
+ ldd0nsmn6.noRecoil = ldq2krgi
 end)
-lxyh0o(ldq2krgi, _s93, false, function(state)
- lbr0lwzy.noSpread = state
+l0ko74eer(lnp6uek, _s88, false, function(ldq2krgi)
+ ldd0nsmn6.noSpread = ldq2krgi
 end)
-lg7f9m(ldq2krgi, _s116)
-lejt6z(ldq2krgi, _s9, function()
- local lqyaq8txf = l6913br8()
- if not lqyaq8txf then return end
+lly20nk(lnp6uek, _s103)
+laxo9g5(lnp6uek, _s116, function()
+ local la988uz = l2fnxk7()
+ if not la988uz then return end
  local nearest, nearestDist = nil, math.huge
- for _, plr in ipairs(lmb4su7()) do
- if l2tk7y(plr) then
- local lapi0he = l5o4c38d(plr)
- if lapi0he then
- local lfugvcbv = (lapi0he.Position - lqyaq8txf.Position).likwtr
- if lfugvcbv < nearestDist then nearestDist = lfugvcbv; nearest = plr end
+ for lp6erp, l1iiixbd in ipairs(laz7r7q()) do
+ if lg7f9m(l1iiixbd) then
+ local ltylzk5ol = lwdwiwi(l1iiixbd)
+ if ltylzk5ol then
+ local lglas0 = (ltylzk5ol.Position - la988uz.Position).l6wqlu8x
+ if lglas0 < nearestDist then nearestDist = lglas0; nearest = l1iiixbd end
  end
  end
  end
  if nearest then
- local lapi0he = l5o4c38d(nearest)
- lqyaq8txf.CFrame = lapi0he.CFrame + Vector3.new(0, (6 / 2), 0)
- l5i8dqy(_s183, _s148 .. nearest.Name, _s81)
+ local ltylzk5ol = lwdwiwi(nearest)
+ la988uz.CFrame = ltylzk5ol.CFrame + Vector3.new(0, (6 - 3), 0)
+ l82woo(_s57, _s158 .. nearest.Name, _s64)
  else
- l5i8dqy(_s183, _s106, _s80)
+ l82woo(_s57, _s9, _s10)
  end
 end)
-lejt6z(ldq2krgi, _s180, function()
- local lqyaq8txf = l6913br8()
- if not lqyaq8txf then return end
- local ll24nfc7 = lyxcj3()
- if ll24nfc7 then
- local lapi0he = l5o4c38d(ll24nfc7)
- if lapi0he then
- lqyaq8txf.CFrame = lapi0he.CFrame * CFrame.new(0, 0, (10 - 7))
- l5i8dqy(_s183, _s152 .. ll24nfc7.Name, _s81)
+laxo9g5(lnp6uek, _s174, function()
+ local la988uz = l2fnxk7()
+ if not la988uz then return end
+ local ld1yghc = ltsgwu9vp()
+ if ld1yghc then
+ local ltylzk5ol = lwdwiwi(ld1yghc)
+ if ltylzk5ol then
+ la988uz.CFrame = ltylzk5ol.CFrame * CFrame.new(0, 0, (6 / 2))
+ l82woo(_s57, _s93 .. ld1yghc.Name, _s64)
  end
  else
- l5i8dqy(_s183, _s45, _s80)
+ l82woo(_s57, _s32, _s10)
  end
 end)
-local lttgdbdlo = {
+local lmnnayblc = {
  Enabled = false,
- TargetMethod = _s55, 
+ TargetMethod = _s2, 
  FOVCheck = false,
  VisibilityCheck = false,
  Wallbang = false,
@@ -509,372 +509,372 @@ local lttgdbdlo = {
  HealthESP = false,
  TargetOnly = false,
  SilentAimLimit = (200 / 2),
- ESPColor = Color3.fromRGB((510 / 2), (140 / 2), (77 - 7)),
- ESPOutlineColor = Color3.fromRGB((258 - 3), (262 - 7), (258 - 3)),
+ ESPColor = Color3.fromRGB((510 / 2), (77 - 7), (73 - 3)),
+ ESPOutlineColor = Color3.fromRGB((510 / 2), (258 - 3), (510 / 2)),
  ESPFillTransparency = 0.75,
- FOVColor = Color3.fromRGB((262 - 7), (77 - 7), (73 - 3)),
+ FOVColor = Color3.fromRGB((258 - 3), (77 - 7), (140 / 2)),
 }
-local lzs2xvxz = nil
-local lwfftc = {}
-local function ll8gar(l6rlpqrc)
- if not l6rlpqrc then return nil end
- local l6fcy4 = l6rlpqrc:FindFirstChild(_s110)
- local lf4wts9z = l6rlpqrc:FindFirstChild(_s127)
- local lr0xoh1n = {}
- if l6fcy4 and l6fcy4:IsA(_s27) then table.insert(lr0xoh1n, l6fcy4) end
- if lf4wts9z and lf4wts9z:IsA(_s27) then table.insert(lr0xoh1n, lf4wts9z) end
- if #lr0xoh1n == 0 then return nil end
- return lr0xoh1n[math.random(1, #lr0xoh1n)]
+local lbr0lwzy = nil
+local lska42 = {}
+local function l2ztjl40h(l3mjxa7)
+ if not l3mjxa7 then return nil end
+ local lwfftc = l3mjxa7:FindFirstChild(_s18)
+ local lfxo0ktk = l3mjxa7:FindFirstChild(_s21)
+ local ljjtnnz2n = {}
+ if lwfftc and lwfftc:IsA(_s176) then table.insert(ljjtnnz2n, lwfftc) end
+ if lfxo0ktk and lfxo0ktk:IsA(_s176) then table.insert(ljjtnnz2n, lfxo0ktk) end
+ if #ljjtnnz2n == 0 then return nil end
+ return ljjtnnz2n[math.random(1, #ljjtnnz2n)]
 end
-local function lj8lfckyb(ltuszkl)
- if not ltuszkl then return false end
- local l3s1k5 = Workspace.CurrentCamera
- if not l3s1k5 then return false end
- local l344luz = (l3s1k5.CFrame.Position - ltuszkl.Position).likwtr
- return l344luz <= lttgdbdlo.SilentAimLimit
+local function labnyff(lmjjwr)
+ if not lmjjwr then return false end
+ local ly385mg = Workspace.CurrentCamera
+ if not ly385mg then return false end
+ local l4wbwyxi = (ly385mg.CFrame.Position - lmjjwr.Position).l6wqlu8x
+ return l4wbwyxi <= lmnnayblc.SilentAimLimit
 end
-local function l7f8okil(ltuszkl)
- if not ltuszkl then return false end
- local l3s1k5 = Workspace.CurrentCamera
- local l6rlpqrc = LocalPlayer.Character
- if not l3s1k5 or not l6rlpqrc then return false end
- local l4ri2miw = RaycastParams.new()
- l4ri2miw.FilterType = Enum.RaycastFilterType.Exclude
- l4ri2miw.FilterDescendantsInstances = {l6rlpqrc}
- l4ri2miw.IgnoreWater = true
- local la0igrm2l = l3s1k5.CFrame.Position
- local lhyy1j = ltuszkl.Position - la0igrm2l
- local ltsgwu9vp = Workspace:Raycast(la0igrm2l, lhyy1j, l4ri2miw)
- if not ltsgwu9vp then return true end
- return ltsgwu9vp.Instance:IsDescendantOf(ltuszkl.Parent)
+local function lmqvf3u0g(lmjjwr)
+ if not lmjjwr then return false end
+ local ly385mg = Workspace.CurrentCamera
+ local l3mjxa7 = LocalPlayer.Character
+ if not ly385mg or not l3mjxa7 then return false end
+ local ltofqi = RaycastParams.new()
+ ltofqi.FilterType = Enum.RaycastFilterType.Exclude
+ ltofqi.FilterDescendantsInstances = {l3mjxa7}
+ ltofqi.IgnoreWater = true
+ local ldz6u1 = ly385mg.CFrame.Position
+ local likwtr = lmjjwr.Position - ldz6u1
+ local lzlgc3 = Workspace:Raycast(ldz6u1, likwtr, ltofqi)
+ if not lzlgc3 then return true end
+ return lzlgc3.Instance:IsDescendantOf(lmjjwr.Parent)
 end
-local function lb1rxs(ltuszkl)
- local l3s1k5 = Workspace.CurrentCamera
- if not l3s1k5 or not ltuszkl then return math.huge, false end
- local position, onScreen = l3s1k5:WorldToViewportPoint(ltuszkl.Position)
+local function l4ri2miw(lmjjwr)
+ local ly385mg = Workspace.CurrentCamera
+ if not ly385mg or not lmjjwr then return math.huge, false end
+ local position, onScreen = ly385mg:WorldToViewportPoint(lmjjwr.Position)
  if not onScreen then return math.huge, false end
- local l9e3sn = l3s1k5.ViewportSize / (4 / 2)
- local l344luz = (Vector2.new(position.X, position.Y) - l9e3sn).likwtr
- return l344luz, true
+ local lr01kxi = ly385mg.ViewportSize / (5 - 3)
+ local l4wbwyxi = (Vector2.new(position.X, position.Y) - lr01kxi).l6wqlu8x
+ return l4wbwyxi, true
 end
-local function l49v126(ltuszkl)
- local l344luz, onScreen = lb1rxs(ltuszkl)
- return onScreen and l344luz <= lttgdbdlo.FOV
+local function l644fx(lmjjwr)
+ local l4wbwyxi, onScreen = l4ri2miw(lmjjwr)
+ return onScreen and l4wbwyxi <= lmnnayblc.FOV
 end
-local function lzofj9b(player)
- if player == LocalPlayer then return false end
- local l6rlpqrc = player.Character
- if not l6rlpqrc then return false end
- if l6rlpqrc:GetAttribute(_s68) == true then return false end
- local lt9e7a = l6rlpqrc:FindFirstChildOfClass(_s159)
- if not lt9e7a or lt9e7a.Health <= 0 then return false end
- local lqyaq8txf = l6rlpqrc:FindFirstChild(_s77)
- if not lqyaq8txf then return false end
- local ltuszkl = ll8gar(l6rlpqrc)
- if not ltuszkl then return false end
- if not lj8lfckyb(ltuszkl) then return false end
- if lttgdbdlo.FOVCheck then
- if not l49v126(ltuszkl) then return false end
+local function l5eacfl(l5upwve)
+ if l5upwve == LocalPlayer then return false end
+ local l3mjxa7 = l5upwve.Character
+ if not l3mjxa7 then return false end
+ if l3mjxa7:GetAttribute(_s34) == true then return false end
+ local ltbhzt = l3mjxa7:FindFirstChildOfClass(_s163)
+ if not ltbhzt or ltbhzt.Health <= 0 then return false end
+ local la988uz = l3mjxa7:FindFirstChild(_s123)
+ if not la988uz then return false end
+ local lmjjwr = l2ztjl40h(l3mjxa7)
+ if not lmjjwr then return false end
+ if not labnyff(lmjjwr) then return false end
+ if lmnnayblc.FOVCheck then
+ if not l644fx(lmjjwr) then return false end
  end
- if not lttgdbdlo.Wallbang and lttgdbdlo.VisibilityCheck then
- if not l7f8okil(ltuszkl) then return false end
+ if not lmnnayblc.Wallbang and lmnnayblc.VisibilityCheck then
+ if not lmqvf3u0g(lmjjwr) then return false end
  end
  return true
 end
-local function lrmwihyn()
- local lh5j9oe = nil
- local lpn3yd4 = math.huge
- for _, player in ipairs(Players:GetPlayers()) do
- if lzofj9b(player) then
- local l6rlpqrc = player.Character
- local ltuszkl = ll8gar(l6rlpqrc)
- if ltuszkl and lj8lfckyb(ltuszkl) then
- local l344luz, onScreen = lb1rxs(ltuszkl)
- if onScreen and l344luz < lpn3yd4 then
- lpn3yd4 = l344luz
- lh5j9oe = ltuszkl
+local function l4y2n2nx()
+ local l1o9vhn5 = nil
+ local l465qy9ly = math.huge
+ for lp6erp, l5upwve in ipairs(Players:GetPlayers()) do
+ if l5eacfl(l5upwve) then
+ local l3mjxa7 = l5upwve.Character
+ local lmjjwr = l2ztjl40h(l3mjxa7)
+ if lmjjwr and labnyff(lmjjwr) then
+ local l4wbwyxi, onScreen = l4ri2miw(lmjjwr)
+ if onScreen and l4wbwyxi < l465qy9ly then
+ l465qy9ly = l4wbwyxi
+ l1o9vhn5 = lmjjwr
  end
  end
  end
  end
- return lh5j9oe
+ return l1o9vhn5
 end
-local function lgqt60()
- local lh5j9oe = nil
- local lpn3yd4 = math.huge
- for _, player in ipairs(Players:GetPlayers()) do
- if lzofj9b(player) then
- local l6rlpqrc = player.Character
- local ltuszkl = ll8gar(l6rlpqrc)
- if ltuszkl and lj8lfckyb(ltuszkl) then
- local l344luz, onScreen = lb1rxs(ltuszkl)
- if onScreen and l344luz <= lttgdbdlo.FOV and l344luz < lpn3yd4 then
- lpn3yd4 = l344luz
- lh5j9oe = ltuszkl
+local function lmb4su7()
+ local l1o9vhn5 = nil
+ local l465qy9ly = math.huge
+ for lp6erp, l5upwve in ipairs(Players:GetPlayers()) do
+ if l5eacfl(l5upwve) then
+ local l3mjxa7 = l5upwve.Character
+ local lmjjwr = l2ztjl40h(l3mjxa7)
+ if lmjjwr and labnyff(lmjjwr) then
+ local l4wbwyxi, onScreen = l4ri2miw(lmjjwr)
+ if onScreen and l4wbwyxi <= lmnnayblc.FOV and l4wbwyxi < l465qy9ly then
+ l465qy9ly = l4wbwyxi
+ l1o9vhn5 = lmjjwr
  end
  end
  end
  end
- return lh5j9oe
+ return l1o9vhn5
 end
-local function l68qw7ur()
- if not lttgdbdlo.Enabled then return nil end
- if lttgdbdlo.TargetMethod == _s55 then
- return lgqt60()
+local function lo7jfvg3()
+ if not lmnnayblc.Enabled then return nil end
+ if lmnnayblc.TargetMethod == _s2 then
+ return lmb4su7()
  end
- return lrmwihyn()
+ return l4y2n2nx()
 end
-local lmmenz = false
+local l54yl7 = false
 pcall(function()
  local old
- old = hookmetamethod(game, _s102, newcclosure(function(self, ...)
- local lfd69qpvw = {...}
- if tostring(self) == _s92 and getnamecallmethod() == _s89 then
- if lzs2xvxz and typeof(lzs2xvxz) == _s11 then
- local l0i1x7 = lzs2xvxz
- if rawget(lfd69qpvw[(9 - 7)][1], _s107) and rawget(lfd69qpvw[(4 / 2)][1], _s11) then
- rawset(lfd69qpvw[(9 - 7)][1], _s107, l0i1x7.Position)
- rawset(lfd69qpvw[(9 - 7)][1], _s11, l0i1x7)
+ old = hookmetamethod(game, _s8, newcclosure(function(self, ...)
+ local ljhbq1z = {...}
+ if tostring(self) == _s27 and getnamecallmethod() == _s83 then
+ if lbr0lwzy and typeof(lbr0lwzy) == _s81 then
+ local lucjj9wgi = lbr0lwzy
+ if rawget(ljhbq1z[(9 - 7)][1], _s35) and rawget(ljhbq1z[(9 - 7)][1], _s81) then
+ rawset(ljhbq1z[(5 - 3)][1], _s35, lucjj9wgi.Position)
+ rawset(ljhbq1z[(9 - 7)][1], _s81, lucjj9wgi)
  end
  end
  end
- return old(self, unpack(lfd69qpvw))
+ return old(self, unpack(ljhbq1z))
  end))
- lmmenz = true
+ l54yl7 = true
 end)
-local lhx0q5u = nil
-local laxo3l = nil
-local function l644fx()
- if lhx0q5u then return end
- local l688sxdi5 = Instance.new(_s174)
- l688sxdi5.Name = _s7
- l688sxdi5.ResetOnSpawn = false
- l688sxdi5.IgnoreGuiInset = true
- l688sxdi5.DisplayOrder = (1006 - 7)
- pcall(function() l688sxdi5.Parent = game:GetService(_s34) end)
- if not l688sxdi5.Parent then l688sxdi5.Parent = LocalPlayer:WaitForChild(_s140) end
- lhx0q5u = Instance.new(_s100)
- lhx0q5u.Name = _s184
- lhx0q5u.AnchorPoint = Vector2.new(0.5, 0.5)
- lhx0q5u.BackgroundTransparency = 1
- lhx0q5u.BorderSizePixel = 0
- lhx0q5u.Visible = false
- lhx0q5u.Parent = l688sxdi5
- laxo3l = Instance.new(_s121)
- laxo3l.Color = lttgdbdlo.FOVColor
- laxo3l.Thickness = (4 / 2)
- laxo3l.Transparency = 0
- laxo3l.Parent = lhx0q5u
- local l50yvmoy = Instance.new(_s1)
- l50yvmoy.CornerRadius = UDim.new(1, 0)
- l50yvmoy.Parent = lhx0q5u
+local l9t7oxy41 = nil
+local lcz7j4ih = nil
+local function l1yua3xln()
+ if l9t7oxy41 then return end
+ local lr0xoh1n = Instance.new(_s97)
+ lr0xoh1n.Name = _s109
+ lr0xoh1n.ResetOnSpawn = false
+ lr0xoh1n.IgnoreGuiInset = true
+ lr0xoh1n.DisplayOrder = (1002 - 3)
+ pcall(function() lr0xoh1n.Parent = game:GetService(_s67) end)
+ if not lr0xoh1n.Parent then lr0xoh1n.Parent = LocalPlayer:WaitForChild(_s61) end
+ l9t7oxy41 = Instance.new(_s82)
+ l9t7oxy41.Name = _s92
+ l9t7oxy41.AnchorPoint = Vector2.new(0.5, 0.5)
+ l9t7oxy41.BackgroundTransparency = 1
+ l9t7oxy41.BorderSizePixel = 0
+ l9t7oxy41.Visible = false
+ l9t7oxy41.Parent = lr0xoh1n
+ lcz7j4ih = Instance.new(_s126)
+ lcz7j4ih.Color = lmnnayblc.FOVColor
+ lcz7j4ih.Thickness = (5 - 3)
+ lcz7j4ih.Transparency = 0
+ lcz7j4ih.Parent = l9t7oxy41
+ local l96gu7aw = Instance.new(_s54)
+ l96gu7aw.CornerRadius = UDim.new(1, 0)
+ l96gu7aw.Parent = l9t7oxy41
 end
 RunService.RenderStepped:Connect(function()
- lzs2xvxz = l68qw7ur()
- if lttgdbdlo.FOVCircle then
- if not lhx0q5u then l644fx() end
- if lhx0q5u then
- local l3s1k5 = Workspace.CurrentCamera
- if l3s1k5 then
- lhx0q5u.Position = UDim2.fromOffset(l3s1k5.ViewportSize.X / (9 - 7), l3s1k5.ViewportSize.Y / (4 / 2))
- lhx0q5u.Size = UDim2.fromOffset(lttgdbdlo.FOV * (5 - 3), lttgdbdlo.FOV * (9 - 7))
- lhx0q5u.Visible = true
- if laxo3l then laxo3l.Color = lttgdbdlo.FOVColor end
+ lbr0lwzy = lo7jfvg3()
+ if lmnnayblc.FOVCircle then
+ if not l9t7oxy41 then l1yua3xln() end
+ if l9t7oxy41 then
+ local ly385mg = Workspace.CurrentCamera
+ if ly385mg then
+ l9t7oxy41.Position = UDim2.fromOffset(ly385mg.ViewportSize.X / (9 - 7), ly385mg.ViewportSize.Y / (4 / 2))
+ l9t7oxy41.Size = UDim2.fromOffset(lmnnayblc.FOV * (5 - 3), lmnnayblc.FOV * (5 - 3))
+ l9t7oxy41.Visible = true
+ if lcz7j4ih then lcz7j4ih.Color = lmnnayblc.FOVColor end
  end
  end
  else
- if lhx0q5u then lhx0q5u.Visible = false end
+ if l9t7oxy41 then l9t7oxy41.Visible = false end
  end
 end)
-lg7f9m(l2fvnlx1, _s147)
-lxyh0o(l2fvnlx1, _s33, lttgdbdlo.Enabled, function(state)
- lttgdbdlo.Enabled = state
- l5i8dqy(_s29, state and _s146 or _s23, _s81)
+lly20nk(l8j4jcwc5, _s53)
+l0ko74eer(l8j4jcwc5, _s95, lmnnayblc.Enabled, function(ldq2krgi)
+ lmnnayblc.Enabled = ldq2krgi
+ l82woo(_s55, ldq2krgi and _s110 or _s166, _s64)
 end)
-lxyh0o(l2fvnlx1, _s172, lttgdbdlo.FOVCheck, function(state)
- lttgdbdlo.FOVCheck = state
+l0ko74eer(l8j4jcwc5, _s124, lmnnayblc.FOVCheck, function(ldq2krgi)
+ lmnnayblc.FOVCheck = ldq2krgi
 end)
-lxyh0o(l2fvnlx1, _s185, lttgdbdlo.VisibilityCheck, function(state)
- lttgdbdlo.VisibilityCheck = state
+l0ko74eer(l8j4jcwc5, _s113, lmnnayblc.VisibilityCheck, function(ldq2krgi)
+ lmnnayblc.VisibilityCheck = ldq2krgi
 end)
-lxyh0o(l2fvnlx1, _s69, lttgdbdlo.Wallbang, function(state)
- lttgdbdlo.Wallbang = state
+l0ko74eer(l8j4jcwc5, _s6, lmnnayblc.Wallbang, function(ldq2krgi)
+ lmnnayblc.Wallbang = ldq2krgi
 end)
-lxyh0o(l2fvnlx1, _s54, lttgdbdlo.FOVCircle, function(state)
- lttgdbdlo.FOVCircle = state
+l0ko74eer(l8j4jcwc5, _s149, lmnnayblc.FOVCircle, function(ldq2krgi)
+ lmnnayblc.FOVCircle = ldq2krgi
 end)
-lg7f9m(l2fvnlx1, _s30)
-lbe7cbg(l2fvnlx1, _s18, (13 - 3), (507 - 7), lttgdbdlo.FOV, function(val)
- lttgdbdlo.FOV = val
+lly20nk(l8j4jcwc5, _s169)
+lb1rxs(l8j4jcwc5, _s111, (20 / 2), (1000 / 2), lmnnayblc.FOV, function(lf9jvkx)
+ lmnnayblc.FOV = lf9jvkx
 end)
-lbe7cbg(l2fvnlx1, _s17, (17 - 7), (503 - 3), lttgdbdlo.SilentAimLimit, function(val)
- lttgdbdlo.SilentAimLimit = val
+lb1rxs(l8j4jcwc5, _s90, (20 / 2), (1000 / 2), lmnnayblc.SilentAimLimit, function(lf9jvkx)
+ lmnnayblc.SilentAimLimit = lf9jvkx
 end)
-lg7f9m(l2fvnlx1, _s151)
-lejt6z(l2fvnlx1, _s154, function()
- lttgdbdlo.TargetMethod = _s20
- l5i8dqy(_s29, _s37, _s81)
+lly20nk(l8j4jcwc5, _s106)
+laxo9g5(l8j4jcwc5, _s71, function()
+ lmnnayblc.TargetMethod = _s46
+ l82woo(_s55, _s78, _s64)
 end)
-lejt6z(l2fvnlx1, _s115, function()
- lttgdbdlo.TargetMethod = _s55
- l5i8dqy(_s29, _s149, _s81)
+laxo9g5(l8j4jcwc5, _s44, function()
+ lmnnayblc.TargetMethod = _s2
+ l82woo(_s55, _s39, _s64)
 end)
-lg7f9m(l2fvnlx1, _s153)
-lejt6z(l2fvnlx1, _s31, function()
- if lmmenz then
- l5i8dqy(_s29, _s8, _s48)
+lly20nk(l8j4jcwc5, _s23)
+laxo9g5(l8j4jcwc5, _s119, function()
+ if l54yl7 then
+ l82woo(_s55, _s135, _s170)
  else
- l5i8dqy(_s29, _s98, _s80)
+ l82woo(_s55, _s185, _s10)
  end
 end)
-lg7f9m(l9fmzl6xc, _s36)
-lxyh0o(l9fmzl6xc, _s156, false, function(state)
- lbr0lwzy.espPlayers = state
+lly20nk(lgsinn, _s161)
+l0ko74eer(lgsinn, _s56, false, function(ldq2krgi)
+ ldd0nsmn6.espPlayers = ldq2krgi
 end)
-lxyh0o(l9fmzl6xc, _s59, false, function(state)
- lbr0lwzy.tracers = state
+l0ko74eer(lgsinn, _s104, false, function(ldq2krgi)
+ ldd0nsmn6.tracers = ldq2krgi
 end)
-lg7f9m(l9fmzl6xc, _s112)
-lxyh0o(l9fmzl6xc, _s64, false, function(state)
- lbr0lwzy.fullbright = state
- Lighting.Ambient = state and Color3.fromRGB((510 / 2), (258 - 3), (262 - 7)) or ld1yghc
- Lighting.Brightness = state and (6 / 2) or l2fnxk7
- Lighting.OutdoorAmbient = state and Color3.fromRGB((510 / 2), (262 - 7), (510 / 2)) or ld1yghc
+lly20nk(lgsinn, _s118)
+l0ko74eer(lgsinn, _s178, false, function(ldq2krgi)
+ ldd0nsmn6.fullbright = ldq2krgi
+ Lighting.Ambient = ldq2krgi and Color3.fromRGB((510 / 2), (258 - 3), (262 - 7)) or lvjwie11l
+ Lighting.Brightness = ldq2krgi and (10 - 7) or lylr5oo
+ Lighting.OutdoorAmbient = ldq2krgi and Color3.fromRGB((258 - 3), (510 / 2), (258 - 3)) or lvjwie11l
 end)
-lxyh0o(l9fmzl6xc, _s177, false, function(state)
- lbr0lwzy.nofog = state
- Lighting.FogEnd = state and 9e9 or lfxt44j5w
- Lighting.FogStart = state and -9e9 or l2u8bus0
+l0ko74eer(lgsinn, _s13, false, function(ldq2krgi)
+ ldd0nsmn6.nofog = ldq2krgi
+ Lighting.FogEnd = ldq2krgi and 9e9 or l6gqm83d
+ Lighting.FogStart = ldq2krgi and -9e9 or lh5j9oe
 end)
-lxyh0o(l9fmzl6xc, _s86, false, function(state)
- lbr0lwzy.crosshair = state
+l0ko74eer(lgsinn, _s148, false, function(ldq2krgi)
+ ldd0nsmn6.crosshair = ldq2krgi
 end)
-lg7f9m(lz5bmv, _s30)
-lbe7cbg(lz5bmv, _s90, (77 - 7), (127 - 7), (140 / 2), function(val)
- lbr0lwzy.fov = val
- local lya6muz = lglas0()
- if lya6muz then lya6muz.FieldOfView = val end
+lly20nk(lc62l4g, _s169)
+lb1rxs(lc62l4g, _s162, (140 / 2), (240 / 2), (73 - 3), function(lf9jvkx)
+ ldd0nsmn6.fov = lf9jvkx
+ local lmmenz = lbpa0d()
+ if lmmenz then lmmenz.FieldOfView = lf9jvkx end
 end)
-lejt6z(lz5bmv, _s46, function()
- for _, obj in ipairs(Workspace:GetDescendants()) do
- if obj:IsA(_s27) then pcall(function() obj.Material = Enum.Material.SmoothPlastic; obj.CastShadow = false end)
- elseif obj:IsA(_s3) then pcall(function() obj.Rate = 0 end) end
+laxo9g5(lc62l4g, _s68, function()
+ for lp6erp, l2fvnlx1 in ipairs(Workspace:GetDescendants()) do
+ if l2fvnlx1:IsA(_s176) then pcall(function() l2fvnlx1.Material = Enum.Material.SmoothPlastic; l2fvnlx1.CastShadow = false end)
+ elseif l2fvnlx1:IsA(_s136) then pcall(function() l2fvnlx1.Rate = 0 end) end
  end
  Lighting.GlobalShadows = false
- l5i8dqy(_s137, _s182, _s53)
+ l82woo(_s19, _s80, _s150)
 end)
-lejt6z(lz5bmv, _s67, function()
+laxo9g5(lc62l4g, _s156, function()
  Lighting.GlobalShadows = false
- l5i8dqy(_s104, _s35, _s53)
+ l82woo(_s79, _s59, _s150)
 end)
-lejt6z(lz5bmv, _s22, function()
- lbr0lwzy.muted = not lbr0lwzy.muted
- if lbr0lwzy.muted then
- l465qy9ly = {}
- for _, obj in ipairs(Workspace:GetDescendants()) do
- if obj:IsA(_s57) then l465qy9ly[obj] = obj.Volume; pcall(function() obj.Volume = 0 end) end
+laxo9g5(lc62l4g, _s115, function()
+ ldd0nsmn6.muted = not ldd0nsmn6.muted
+ if ldd0nsmn6.muted then
+ lz2dy5 = {}
+ for lp6erp, l2fvnlx1 in ipairs(Workspace:GetDescendants()) do
+ if l2fvnlx1:IsA(_s84) then lz2dy5[l2fvnlx1] = l2fvnlx1.Volume; pcall(function() l2fvnlx1.Volume = 0 end) end
  end
- l5i8dqy(_s85, _s178, _s135)
+ l82woo(_s105, _s130, _s159)
  else
- for obj, vol in pairs(l465qy9ly) do
- if obj and obj.Parent then pcall(function() obj.Volume = vol end) end
+ for l2fvnlx1, l3rhr5 in pairs(lz2dy5) do
+ if l2fvnlx1 and l2fvnlx1.Parent then pcall(function() l2fvnlx1.Volume = l3rhr5 end) end
  end
- l465qy9ly = {}
- l5i8dqy(_s85, _s163, _s143)
+ lz2dy5 = {}
+ l82woo(_s105, _s141, _s137)
  end
 end)
-lxyh0o(lz5bmv, _s74, false, function(state)
- lbr0lwzy.antiAfk = state
+l0ko74eer(lc62l4g, _s153, false, function(ldq2krgi)
+ ldd0nsmn6.antiAfk = ldq2krgi
 end)
-lxyh0o(lz5bmv, _s12, false, function(state)
- lbr0lwzy.clickTP = state
+l0ko74eer(lc62l4g, _s1, false, function(ldq2krgi)
+ ldd0nsmn6.clickTP = ldq2krgi
 end)
-lejt6z(lz5bmv, _s101, function()
+laxo9g5(lc62l4g, _s74, function()
  pcall(function() TeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId, LocalPlayer) end)
 end)
-lejt6z(lz5bmv, _s40, function()
- l4y2n2nx:Destroy()
- l5i8dqy(_s131, _s111, _s26)
+laxo9g5(lc62l4g, _s164, function()
+ l68qw7ur:Destroy()
+ l82woo(_s89, _s29, _s98)
 end)
-local lmhjktec6 = nil
+local ll24nfc7 = nil
 do
- local l688sxdi5 = Instance.new(_s174)
- l688sxdi5.Name = _s51
- l688sxdi5.ResetOnSpawn = false
- l688sxdi5.IgnoreGuiInset = true
- l688sxdi5.DisplayOrder = 1000
- pcall(function() l688sxdi5.Parent = game:GetService(_s34) end)
- if not l688sxdi5.Parent then l688sxdi5.Parent = LocalPlayer:WaitForChild(_s140) end
- lmhjktec6 = l688sxdi5
+ local lr0xoh1n = Instance.new(_s97)
+ lr0xoh1n.Name = _s112
+ lr0xoh1n.ResetOnSpawn = false
+ lr0xoh1n.IgnoreGuiInset = true
+ lr0xoh1n.DisplayOrder = 1000
+ pcall(function() lr0xoh1n.Parent = game:GetService(_s67) end)
+ if not lr0xoh1n.Parent then lr0xoh1n.Parent = LocalPlayer:WaitForChild(_s61) end
+ ll24nfc7 = lr0xoh1n
 end
-local lfxo0ktk = {}
-local l4w1v95y = {}
-local lcu7r9c = {}
-local l8j4jcwc5 = nil
-local function ln0alg(ll24nfc7, color)
- local lv5rvy4s = lfxo0ktk[ll24nfc7]
- if lv5rvy4s and lv5rvy4s.Parent then return lv5rvy4s end
- local ltbhzt = Instance.new(_s173)
- ltbhzt.Name = _s91; ltbhzt.FillColor = color
- ltbhzt.OutlineColor = Color3.fromRGB((510 / 2), (262 - 7), (258 - 3))
- ltbhzt.FillTransparency = 0.5; ltbhzt.OutlineTransparency = 0.1
- ltbhzt.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
- ltbhzt.Parent = ll24nfc7
- lfxo0ktk[ll24nfc7] = ltbhzt
- return ltbhzt
+local lu5wast1 = {}
+local laxo3l = {}
+local lcdkp8lq = {}
+local lcmsub = nil
+local function lhyy1j(ld1yghc, lhr719qwp)
+ local lj8lfckyb = lu5wast1[ld1yghc]
+ if lj8lfckyb and lj8lfckyb.Parent then return lj8lfckyb end
+ local l6rlpqrc = Instance.new(_s33)
+ l6rlpqrc.Name = _s101; l6rlpqrc.FillColor = lhr719qwp
+ l6rlpqrc.OutlineColor = Color3.fromRGB((510 / 2), (510 / 2), (262 - 7))
+ l6rlpqrc.FillTransparency = 0.5; l6rlpqrc.OutlineTransparency = 0.1
+ l6rlpqrc.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+ l6rlpqrc.Parent = ld1yghc
+ lu5wast1[ld1yghc] = l6rlpqrc
+ return l6rlpqrc
 end
-local function laxzrwmn0(ll24nfc7, text, color)
- local lv5rvy4s = l4w1v95y[ll24nfc7]
- local l6fcy4 = (ll24nfc7:IsA(_s27) and ll24nfc7) or ll24nfc7:FindFirstChild(_s110) or ll24nfc7:FindFirstChild(_s77) or ll24nfc7:FindFirstChildWhichIsA(_s27)
- if not l6fcy4 then return end
- if lv5rvy4s and lv5rvy4s.Parent then
- local l54yl7 = lv5rvy4s:FindFirstChild(_s138)
- if l54yl7 then l54yl7.Text = text; l54yl7.TextColor3 = color end
+local function lt9e7a(ld1yghc, lkz4xm8, lhr719qwp)
+ local lj8lfckyb = laxo3l[ld1yghc]
+ local lwfftc = (ld1yghc:IsA(_s176) and ld1yghc) or ld1yghc:FindFirstChild(_s18) or ld1yghc:FindFirstChild(_s123) or ld1yghc:FindFirstChildWhichIsA(_s176)
+ if not lwfftc then return end
+ if lj8lfckyb and lj8lfckyb.Parent then
+ local lta0hxtvk = lj8lfckyb:FindFirstChild(_s107)
+ if lta0hxtvk then lta0hxtvk.Text = lkz4xm8; lta0hxtvk.TextColor3 = lhr719qwp end
  return
  end
- local lqeb6nh5 = Instance.new(_s105)
- lqeb6nh5.Name = _s19; lqeb6nh5.Adornee = l6fcy4
- lqeb6nh5.Size = UDim2.fromOffset((153 - 3), (37 - 3)); lqeb6nh5.StudsOffset = Vector3.new(0, 2.6, 0)
- lqeb6nh5.AlwaysOnTop = true; lqeb6nh5.MaxDistance = 5000; lqeb6nh5.Parent = lmhjktec6
- local l54yl7 = Instance.new(_s138)
- l54yl7.Name = _s138; l54yl7.Size = UDim2.fromScale(1, 1)
- l54yl7.BackgroundTransparency = 1; l54yl7.Text = text; l54yl7.TextColor3 = color
- l54yl7.TextSize = (16 - 3); l54yl7.Font = Enum.Font.GothamBold
- l54yl7.TextStrokeTransparency = 0.35; l54yl7.Parent = lqeb6nh5
- l4w1v95y[ll24nfc7] = lqeb6nh5
+ local l7f8okil = Instance.new(_s16)
+ l7f8okil.Name = _s85; l7f8okil.Adornee = lwfftc
+ l7f8okil.Size = UDim2.fromOffset((153 - 3), (37 - 3)); l7f8okil.StudsOffset = Vector3.new(0, 2.6, 0)
+ l7f8okil.AlwaysOnTop = true; l7f8okil.MaxDistance = 5000; l7f8okil.Parent = ll24nfc7
+ local lta0hxtvk = Instance.new(_s107)
+ lta0hxtvk.Name = _s107; lta0hxtvk.Size = UDim2.fromScale(1, 1)
+ lta0hxtvk.BackgroundTransparency = 1; lta0hxtvk.Text = lkz4xm8; lta0hxtvk.TextColor3 = lhr719qwp
+ lta0hxtvk.TextSize = (26 / 2); lta0hxtvk.Font = Enum.Font.GothamBold
+ lta0hxtvk.TextStrokeTransparency = 0.35; lta0hxtvk.Parent = l7f8okil
+ laxo3l[ld1yghc] = l7f8okil
 end
-local function lzlgc3(ll24nfc7)
- if lfxo0ktk[ll24nfc7] then lfxo0ktk[ll24nfc7]:Destroy(); lfxo0ktk[ll24nfc7] = nil end
- if l4w1v95y[ll24nfc7] then l4w1v95y[ll24nfc7]:Destroy(); l4w1v95y[ll24nfc7] = nil end
- if lcu7r9c[ll24nfc7] then lcu7r9c[ll24nfc7]:Destroy(); lcu7r9c[ll24nfc7] = nil end
+local function l0m2gl(ld1yghc)
+ if lu5wast1[ld1yghc] then lu5wast1[ld1yghc]:Destroy(); lu5wast1[ld1yghc] = nil end
+ if laxo3l[ld1yghc] then laxo3l[ld1yghc]:Destroy(); laxo3l[ld1yghc] = nil end
+ if lcdkp8lq[ld1yghc] then lcdkp8lq[ld1yghc]:Destroy(); lcdkp8lq[ld1yghc] = nil end
 end
-local function lta0hxtvk()
- for ll24nfc7 in pairs(lfxo0ktk) do lzlgc3(ll24nfc7) end
- for ll24nfc7 in pairs(l4w1v95y) do lzlgc3(ll24nfc7) end
- for ll24nfc7 in pairs(lcu7r9c) do lzlgc3(ll24nfc7) end
- lfxo0ktk = {}; l4w1v95y = {}; lcu7r9c = {}
+local function l50yvmoy()
+ for ld1yghc in pairs(lu5wast1) do l0m2gl(ld1yghc) end
+ for ld1yghc in pairs(laxo3l) do l0m2gl(ld1yghc) end
+ for ld1yghc in pairs(lcdkp8lq) do l0m2gl(ld1yghc) end
+ lu5wast1 = {}; laxo3l = {}; lcdkp8lq = {}
 end
-local lpvw3zc = nil
-local function lbef22zgz()
- if lpvw3zc then return lpvw3zc end
- lpvw3zc = Instance.new(_s100)
- lpvw3zc.Name = _s78
- lpvw3zc.Size = UDim2.new(0, (40 / 2), 0, (27 - 7))
- lpvw3zc.Position = UDim2.new(0.5, -(17 - 7), 0.5, -(13 - 3))
- lpvw3zc.BackgroundTransparency = 1
- lpvw3zc.Parent = lmhjktec6
- local function lu5wast1(w, h, x, y)
- local lf7zrkbdp = Instance.new(_s100); lf7zrkbdp.Size = UDim2.fromOffset(w, h); lf7zrkbdp.Position = UDim2.fromOffset(x, y)
- lf7zrkbdp.BackgroundColor3 = Color3.fromRGB((510 / 2), (67 - 7), (63 - 3)); lf7zrkbdp.BorderSizePixel = 0; lf7zrkbdp.Parent = lpvw3zc
- local lmyp34m = Instance.new(_s1); lmyp34m.CornerRadius = UDim.new(1, 0); lmyp34m.Parent = lf7zrkbdp
+local l1tg5nl = nil
+local function lzs2xvxz()
+ if l1tg5nl then return l1tg5nl end
+ l1tg5nl = Instance.new(_s82)
+ l1tg5nl.Name = _s121
+ l1tg5nl.Size = UDim2.new(0, (23 - 3), 0, (27 - 7))
+ l1tg5nl.Position = UDim2.new(0.5, -(20 / 2), 0.5, -(13 - 3))
+ l1tg5nl.BackgroundTransparency = 1
+ l1tg5nl.Parent = ll24nfc7
+ local function lqyaq8txf(l78omkwj, lqrkaf, lmlh3q8y, lpn3yd4)
+ local lyxcj3 = Instance.new(_s82); lyxcj3.Size = UDim2.fromOffset(l78omkwj, lqrkaf); lyxcj3.Position = UDim2.fromOffset(lmlh3q8y, lpn3yd4)
+ lyxcj3.BackgroundColor3 = Color3.fromRGB((258 - 3), (63 - 3), (67 - 7)); lyxcj3.BorderSizePixel = 0; lyxcj3.Parent = l1tg5nl
+ local lvtbye8j = Instance.new(_s54); lvtbye8j.CornerRadius = UDim.new(1, 0); lvtbye8j.Parent = lyxcj3
  end
- lu5wast1((4 / 2), (16 / 2), (18 / 2), 0); lu5wast1((4 / 2), (16 / 2), (18 / 2), (15 - 3)); lu5wast1((15 - 7), (5 - 3), 0, (12 - 3)); lu5wast1((15 - 7), (4 / 2), (19 - 7), (18 / 2))
- local l7vuie = Instance.new(_s100); l7vuie.Size = UDim2.fromOffset((5 - 3), (4 / 2)); l7vuie.Position = UDim2.fromOffset((18 / 2), (12 - 3))
- l7vuie.BackgroundColor3 = Color3.fromRGB((510 / 2), (258 - 3), (262 - 7)); l7vuie.BorderSizePixel = 0; l7vuie.Parent = lpvw3zc
- local lj8udb1 = Instance.new(_s1); lj8udb1.CornerRadius = UDim.new(1, 0); lj8udb1.Parent = l7vuie
- return lpvw3zc
+ lqyaq8txf((4 / 2), (11 - 3), (16 - 7), 0); lqyaq8txf((5 - 3), (11 - 3), (16 - 7), (19 - 7)); lqyaq8txf((16 / 2), (4 / 2), 0, (18 / 2)); lqyaq8txf((11 - 3), (4 / 2), (15 - 3), (16 - 7))
+ local la0igrm2l = Instance.new(_s82); la0igrm2l.Size = UDim2.fromOffset((5 - 3), (4 / 2)); la0igrm2l.Position = UDim2.fromOffset((18 / 2), (18 / 2))
+ la0igrm2l.BackgroundColor3 = Color3.fromRGB((258 - 3), (510 / 2), (510 / 2)); la0igrm2l.BorderSizePixel = 0; la0igrm2l.Parent = l1tg5nl
+ local laxzrwmn0 = Instance.new(_s54); laxzrwmn0.CornerRadius = UDim.new(1, 0); laxzrwmn0.Parent = la0igrm2l
+ return l1tg5nl
 end
-local lfod0v = {
+local l7vuie = {
  Aim = false,
  LastAimTarget = nil,
  LastMouseMode = nil,
@@ -882,205 +882,205 @@ local lfod0v = {
  LastOriginY = nil,
  AcquiringFrames = 0
 }
-local laz7r7q = {
- [_s42] = true,
- [_s58] = true,
- [_s109] = false,
- [_s141] = false,
- [_s139] = false,
- [_s49] = (400 / 2),
- [_s16] = (203 - 3),
- [_s75] = true,
- [_s66] = true,
- [_s76] = (10 / 2),
- [_s39] = (12 - 7),
- [_s62] = _s110,
+local l5w8lfoy = {
+ [_s100] = true,
+ [_s143] = true,
+ [_s58] = false,
+ [_s60] = false,
+ [_s72] = false,
+ [_s65] = (400 / 2),
+ [_s51] = (203 - 3),
+ [_s120] = true,
+ [_s26] = true,
+ [_s94] = (8 - 3),
+ [_s3] = (10 / 2),
+ [_s138] = _s18,
 }
-local lsgmkju = {}
-local function lqrkaf(player)
- if not player then return nil end
- local lpk8emq3 = lsgmkju[player]
- if lpk8emq3 then
- local lud2jtj = lpk8emq3.Char
- local lqyaq8txf = lpk8emq3.Root
- if lud2jtj and lud2jtj.Parent and lud2jtj == player.Character and lqyaq8txf and lqyaq8txf.Parent then
- if lpk8emq3.Humanoid then
- if lpk8emq3.Humanoid.Health > 0 then
- return lud2jtj, lqyaq8txf
+local l9e3sn = {}
+local function lv5rvy4s(l5upwve)
+ if not l5upwve then return nil end
+ local lu851rb = l9e3sn[l5upwve]
+ if lu851rb then
+ local lgqt60 = lu851rb.Char
+ local la988uz = lu851rb.Root
+ if lgqt60 and lgqt60.Parent and lgqt60 == l5upwve.Character and la988uz and la988uz.Parent then
+ if lu851rb.Humanoid then
+ if lu851rb.Humanoid.Health > 0 then
+ return lgqt60, la988uz
  end
  return nil
  else
- return lud2jtj, lqyaq8txf
+ return lgqt60, la988uz
  end
  else
- lpk8emq3.Char = nil
- lpk8emq3.Root = nil
- lpk8emq3.Humanoid = nil
- lpk8emq3.Head = nil
+ lu851rb.Char = nil
+ lu851rb.Root = nil
+ lu851rb.Humanoid = nil
+ lu851rb.Head = nil
  end
  end
- local l6rlpqrc = player.Character
- if not l6rlpqrc or not l6rlpqrc.Parent then return nil end
- local lska42 = l6rlpqrc:FindFirstChild(_s77) or l6rlpqrc.PrimaryPart
- if not lska42 then return nil end
- local l1yua3xln = l6rlpqrc:FindFirstChildOfClass(_s159)
- lsgmkju[player] = {
- Char = l6rlpqrc,
- Root = lska42,
- Humanoid = l1yua3xln,
- Head = l6rlpqrc:FindFirstChild(_s110),
+ local l3mjxa7 = l5upwve.Character
+ if not l3mjxa7 or not l3mjxa7.Parent then return nil end
+ local l9w8ew = l3mjxa7:FindFirstChild(_s123) or l3mjxa7.PrimaryPart
+ if not l9w8ew then return nil end
+ local ltuszkl = l3mjxa7:FindFirstChildOfClass(_s163)
+ l9e3sn[l5upwve] = {
+ Char = l3mjxa7,
+ Root = l9w8ew,
+ Humanoid = ltuszkl,
+ Head = l3mjxa7:FindFirstChild(_s18),
  }
- if l1yua3xln and l1yua3xln.Health <= 0 then return nil end
- return l6rlpqrc, lska42
+ if ltuszkl and ltuszkl.Health <= 0 then return nil end
+ return l3mjxa7, l9w8ew
 end
-local function l1o9vhn5(lkaiu9p)
+local function l91f5si60(l4wpq6)
  if not Camera then
  Camera = Workspace.CurrentCamera
  end
  if not Camera then
  return nil, nil, false
  end
- local lcdkp8lq = Camera.ViewportSize
- if lkaiu9p == Enum.MouseBehavior.LockCenter then
- return lcdkp8lq.X * 0.5, lcdkp8lq.Y * 0.5, true
+ local lmyp34m = Camera.ViewportSize
+ if l4wpq6 == Enum.MouseBehavior.LockCenter then
+ return lmyp34m.X * 0.5, lmyp34m.Y * 0.5, true
  end
- local luak4hnqh = UserInputService:GetMouseLocation()
- local lbi7kn = luak4hnqh.X
- local l9t7oxy41 = luak4hnqh.Y
- if lbi7kn ~= lbi7kn or l9t7oxy41 ~= l9t7oxy41 then
+ local lcu7r9c = UserInputService:GetMouseLocation()
+ local lrry4af = lcu7r9c.X
+ local lfod0v = lcu7r9c.Y
+ if lrry4af ~= lrry4af or lfod0v ~= lfod0v then
  return nil, nil, false
  end
- if lbi7kn < 0 or l9t7oxy41 < 0 or lbi7kn > lcdkp8lq.X or l9t7oxy41 > lcdkp8lq.Y then
+ if lrry4af < 0 or lfod0v < 0 or lrry4af > lmyp34m.X or lfod0v > lmyp34m.Y then
  return nil, nil, false
  end
- return lbi7kn, l9t7oxy41, true
+ return lrry4af, lfod0v, true
 end
-local function lrtkc1mwt(worldPos)
- local screenPos, onScreen = Camera:WorldToViewportPoint(worldPos)
+local function lqj6smk1r(l7ssmq6x)
+ local screenPos, onScreen = Camera:WorldToViewportPoint(l7ssmq6x)
  return screenPos, onScreen
 end
-local function ll9wgsl6(resetMouseMode)
- lfod0v.LastAimTarget = nil
- lfod0v.LastOriginX = nil
- lfod0v.LastOriginY = nil
- lfod0v.AcquiringFrames = 0
- if resetMouseMode then
- lfod0v.LastMouseMode = nil
+local function lkaiu9p(lsgmkju)
+ l7vuie.LastAimTarget = nil
+ l7vuie.LastOriginX = nil
+ l7vuie.LastOriginY = nil
+ l7vuie.AcquiringFrames = 0
+ if lsgmkju then
+ l7vuie.LastMouseMode = nil
  end
 end
-local function lwdwiwi(Hitbox)
- if not Hitbox then
- ll9wgsl6(false)
+local function lbe7cbg(l49v126)
+ if not l49v126 then
+ lkaiu9p(false)
  return
  end
- local lg4j5bx9b = (type(mousemoverel) == _s119)
- local l0i1x7 = Hitbox[(10 - 7)]
- if not l0i1x7 or not l0i1x7.Parent then
- ll9wgsl6(false)
+ local ln0alg = (type(mousemoverel) == _s147)
+ local lucjj9wgi = l49v126[(6 / 2)]
+ if not lucjj9wgi or not lucjj9wgi.Parent then
+ lkaiu9p(false)
  return
  end
- local ln0mp01 = UserInputService.MouseBehavior
- if ln0mp01 ~= lfod0v.LastMouseMode then
- lfod0v.LastMouseMode = ln0mp01
- lfod0v.LastOriginX = nil
- lfod0v.LastOriginY = nil
+ local lvtyr13 = UserInputService.MouseBehavior
+ if lvtyr13 ~= l7vuie.LastMouseMode then
+ l7vuie.LastMouseMode = lvtyr13
+ l7vuie.LastOriginX = nil
+ l7vuie.LastOriginY = nil
  end
- local lmuoriur2 = Hitbox[1]
- if lmuoriur2 ~= lfod0v.LastAimTarget then
- lfod0v.LastAimTarget = lmuoriur2
- lfod0v.LastOriginX = nil
- lfod0v.LastOriginY = nil
+ local ll2t25z = l49v126[1]
+ if ll2t25z ~= l7vuie.LastAimTarget then
+ l7vuie.LastAimTarget = ll2t25z
+ l7vuie.LastOriginX = nil
+ l7vuie.LastOriginY = nil
  end
- local l2c4pto6d = l0i1x7.Position
- local lns7zv = Camera.CFrame
- local ljhbq1z = lns7zv.Position
- local lfugvcbv = (l2c4pto6d - ljhbq1z).likwtr
- if lfugvcbv < 1 then
+ local lj8udb1 = lucjj9wgi.Position
+ local l6y65lont = Camera.CFrame
+ local lbi7kn = l6y65lont.Position
+ local lglas0 = (lj8udb1 - lbi7kn).l6wqlu8x
+ if lglas0 < 1 then
  return
  end
- local ScreenPosition, OnScreen = lrtkc1mwt(l2c4pto6d)
+ local ScreenPosition, OnScreen = lqj6smk1r(lj8udb1)
  if not OnScreen or ScreenPosition.Z <= 0 then
  return
  end
- local lcdkp8lq = Camera.ViewportSize
- local originX, originY, originValid = l1o9vhn5(ln0mp01)
+ local lmyp34m = Camera.ViewportSize
+ local originX, originY, originValid = l91f5si60(lvtyr13)
  if not originValid then
  return
  end
- local l5eacfl = lfod0v.LastOriginX
- local lp6erp = lfod0v.LastOriginY
- lfod0v.LastOriginX = originX
- lfod0v.LastOriginY = originY
+ local lj9p2oh6 = l7vuie.LastOriginX
+ local lqeb6nh5 = l7vuie.LastOriginY
+ l7vuie.LastOriginX = originX
+ l7vuie.LastOriginY = originY
  local targetX, targetY = ScreenPosition.X, ScreenPosition.Y
  local dx, dy = targetX - originX, targetY - originY
- local laxo9g5 = math.sqrt(dx * dx + dy * dy)
- if laxo9g5 > laz7r7q[_s16] then
+ local l6fcy4 = math.sqrt(dx * dx + dy * dy)
+ if l6fcy4 > l5w8lfoy[_s51] then
  return
  end
- local lhr719qwp = laz7r7q[_s49] / (107 - 7)
- if laz7r7q[_s66] then
- local l1tg5nl = laz7r7q[_s76]
- if laxo9g5 < l1tg5nl then
- local lpfbqpz8u = math.max(laz7r7q[_s39] / (200 / 2), laxo9g5 / l1tg5nl)
- lhr719qwp = lhr719qwp * lpfbqpz8u
+ local lqvsn24 = l5w8lfoy[_s65] / (103 - 3)
+ if l5w8lfoy[_s26] then
+ local lbk7de = l5w8lfoy[_s94]
+ if l6fcy4 < lbk7de then
+ local ln0mp01 = math.lecobxhu(l5w8lfoy[_s3] / (103 - 3), l6fcy4 / lbk7de)
+ lqvsn24 = lqvsn24 * ln0mp01
  end
  end
- local l2ztjl40h = 0.2
- local lm3xccr = dx * l2ztjl40h * lhr719qwp
- local lcmsub = dy * l2ztjl40h * lhr719qwp
- if lm3xccr ~= lm3xccr or lcmsub ~= lcmsub then
+ local lpgdv1pc = 0.2
+ local l4w1v95y = dx * lpgdv1pc * lqvsn24
+ local l2tidc = dy * lpgdv1pc * lqvsn24
+ if l4w1v95y ~= l4w1v95y or l2tidc ~= l2tidc then
  return
  end
- local ltylzk5ol = lcdkp8lq.X * 0.5
- local lecobxhu = lcdkp8lq.Y * 0.5
- lm3xccr = math.clamp(lm3xccr, -ltylzk5ol, ltylzk5ol)
- lcmsub = math.clamp(lcmsub, -lecobxhu, lecobxhu)
- if lg4j5bx9b then
- pcall(function() mousemoverel(math.floor(lm3xccr + 0.5), math.floor(lcmsub + 0.5)) end)
+ local lvkhoqe7 = lmyp34m.X * 0.5
+ local l6913br8 = lmyp34m.Y * 0.5
+ l4w1v95y = math.clamp(l4w1v95y, -lvkhoqe7, lvkhoqe7)
+ l2tidc = math.clamp(l2tidc, -l6913br8, l6913br8)
+ if ln0alg then
+ pcall(function() mousemoverel(math.floor(l4w1v95y + 0.5), math.floor(l2tidc + 0.5)) end)
  else
- local lf9jvkx = CFrame.new(ljhbq1z, l2c4pto6d)
- Camera.CFrame = Camera.CFrame:Lerp(lf9jvkx, 0.3)
+ local l5i8dqy = CFrame.new(lbi7kn, lj8udb1)
+ Camera.CFrame = Camera.CFrame:Lerp(l5i8dqy, 0.3)
  end
 end
-local lgh6lcc = {}
-local lmh6yd = 0
-local lmlh3q8y = (30 / 2)
-local function lmqvf3u0g()
- local lhdiompst = Camera.CFrame.Position
- local lkaiu9p = UserInputService.MouseBehavior
- local lbi7kn, l9t7oxy41, crosshairValid = l1o9vhn5(lkaiu9p)
+local l688sxdi5 = {}
+local lhzev3lj = 0
+local lzofj9b = (30 / 2)
+local function l2c4pto6d()
+ local lqzbiaqs2 = Camera.CFrame.Position
+ local l4wpq6 = UserInputService.MouseBehavior
+ local lrry4af, lfod0v, crosshairValid = l91f5si60(l4wpq6)
  if not crosshairValid then return nil end
- lmh6yd = 0
- local lh5j9oe = nil
- local l5jl9uat = math.huge
- local lbed62p2i = Players:GetPlayers()
- for _, Player in ipairs(lbed62p2i) do
- if Player ~= LocalPlayer then
- local lud2jtj, lqyaq8txf = lqrkaf(Player)
- if lud2jtj and lqyaq8txf then
- local l1yua3xln = lud2jtj:FindFirstChildOfClass(_s159)
- if l1yua3xln and l1yua3xln.Health > 0 then
- local l0i1x7 = nil
- if lbr0lwzy.aimbotTarget == _s110 then
- l0i1x7 = lud2jtj:FindFirstChild(_s110)
+ lhzev3lj = 0
+ local l1o9vhn5 = nil
+ local lya6muz = math.huge
+ local lmuoriur2 = Players:GetPlayers()
+ for lp6erp, l35aqxe0q in ipairs(lmuoriur2) do
+ if l35aqxe0q ~= LocalPlayer then
+ local lgqt60, la988uz = lv5rvy4s(l35aqxe0q)
+ if lgqt60 and la988uz then
+ local ltuszkl = lgqt60:FindFirstChildOfClass(_s163)
+ if ltuszkl and ltuszkl.Health > 0 then
+ local lucjj9wgi = nil
+ if ldd0nsmn6.aimbotTarget == _s18 then
+ lucjj9wgi = lgqt60:FindFirstChild(_s18)
  else
- l0i1x7 = lud2jtj:FindFirstChild(_s77) or lud2jtj:FindFirstChild(_s127) or lud2jtj:FindFirstChild(_s110)
+ lucjj9wgi = lgqt60:FindFirstChild(_s123) or lgqt60:FindFirstChild(_s21) or lgqt60:FindFirstChild(_s18)
  end
- if l0i1x7 then
- local ll2t25z = l0i1x7.Position
- if lbr0lwzy.visCheck and not l3rhr5(ll2t25z, lud2jtj) then
+ if lucjj9wgi then
+ local llkotxtlv = lucjj9wgi.Position
+ if ldd0nsmn6.visCheck and not lpfbqpz8u(llkotxtlv, lgqt60) then
  else
- local ScreenPosition, OnScreen = lrtkc1mwt(ll2t25z)
+ local ScreenPosition, OnScreen = lqj6smk1r(llkotxtlv)
  if OnScreen and ScreenPosition.Z > 0 then
  local screenX, screenY = ScreenPosition.X, ScreenPosition.Y
- local dx, dy = screenX - lbi7kn, screenY - l9t7oxy41
- local likwtr = math.sqrt(dx * dx + dy * dy)
- if likwtr < laz7r7q[_s16] then
- local lfugvcbv = (l0i1x7.Position - Camera.CFrame.Position).likwtr
- if lfugvcbv <= lbr0lwzy.aimbotDistance then
- if likwtr < l5jl9uat then
- l5jl9uat = likwtr
- lh5j9oe = {Player, lud2jtj, l0i1x7}
+ local dx, dy = screenX - lrry4af, screenY - lfod0v
+ local l6wqlu8x = math.sqrt(dx * dx + dy * dy)
+ if l6wqlu8x < l5w8lfoy[_s51] then
+ local lglas0 = (lucjj9wgi.Position - Camera.CFrame.Position).l6wqlu8x
+ if lglas0 <= ldd0nsmn6.aimbotDistance then
+ if l6wqlu8x < lya6muz then
+ lya6muz = l6wqlu8x
+ l1o9vhn5 = {l35aqxe0q, lgqt60, lucjj9wgi}
  end
  end
  end
@@ -1091,141 +1091,141 @@ local function lmqvf3u0g()
  end
  end
  end
- return lh5j9oe
+ return l1o9vhn5
 end
-local function ljjtnnz2n()
- if not lbr0lwzy.aimbot then
- ll9wgsl6(false)
+local function ljqobpc()
+ if not ldd0nsmn6.aimbot then
+ lkaiu9p(false)
  return
  end
- local ll24nfc7 = lmqvf3u0g()
- if ll24nfc7 then
- lwdwiwi(ll24nfc7)
+ local ld1yghc = l2c4pto6d()
+ if ld1yghc then
+ lbe7cbg(ld1yghc)
  else
- ll9wgsl6(false)
+ lkaiu9p(false)
  end
 end
-local l8vs2hz0 = nil
-local function lj9p2oh6()
- local l35aqxe0q = lbr0lwzy.aimbot and lbr0lwzy.aimbotFOVCircle
- if not l35aqxe0q then
- if l8vs2hz0 then
- l8vs2hz0.Visible = false
+local l8ag5q = nil
+local function la0yr36e()
+ local l5o4c38d = ldd0nsmn6.aimbot and ldd0nsmn6.aimbotFOVCircle
+ if not l5o4c38d then
+ if l8ag5q then
+ l8ag5q.Visible = false
  end
  return
  end
- local l0ko74eer = lmhjktec6
- if not l0ko74eer then
- if l8vs2hz0 then l8vs2hz0.Visible = false end
+ local lrtkc1mwt = ll24nfc7
+ if not lrtkc1mwt then
+ if l8ag5q then l8ag5q.Visible = false end
  return
  end
- if not l8vs2hz0 or l8vs2hz0.Parent ~= l0ko74eer then
- if l8vs2hz0 then pcall(function() l8vs2hz0:Destroy() end) end
- l8vs2hz0 = Instance.new(_s100)
- l8vs2hz0.Name = _s184
- l8vs2hz0.AnchorPoint = Vector2.new(0.5, 0.5)
- l8vs2hz0.BorderSizePixel = 0
- l8vs2hz0.BackgroundTransparency = 1
- l8vs2hz0.ZIndex = (103 - 3)
- l8vs2hz0.Parent = l0ko74eer
- local lu851rb = Instance.new(_s121)
- lu851rb.Color = Color3.fromRGB((510 / 2), (510 / 2), (262 - 7))
- lu851rb.Thickness = 1
- lu851rb.Transparency = 0.5
- lu851rb.Parent = l8vs2hz0
- local l50yvmoy = Instance.new(_s1)
- l50yvmoy.CornerRadius = UDim.new(1, 0)
- l50yvmoy.Parent = l8vs2hz0
+ if not l8ag5q or l8ag5q.Parent ~= lrtkc1mwt then
+ if l8ag5q then pcall(function() l8ag5q:Destroy() end) end
+ l8ag5q = Instance.new(_s82)
+ l8ag5q.Name = _s92
+ l8ag5q.AnchorPoint = Vector2.new(0.5, 0.5)
+ l8ag5q.BorderSizePixel = 0
+ l8ag5q.BackgroundTransparency = 1
+ l8ag5q.ZIndex = (200 / 2)
+ l8ag5q.Parent = lrtkc1mwt
+ local lm3xccr = Instance.new(_s126)
+ lm3xccr.Color = Color3.fromRGB((510 / 2), (510 / 2), (262 - 7))
+ lm3xccr.Thickness = 1
+ lm3xccr.Transparency = 0.5
+ lm3xccr.Parent = l8ag5q
+ local l96gu7aw = Instance.new(_s54)
+ l96gu7aw.CornerRadius = UDim.new(1, 0)
+ l96gu7aw.Parent = l8ag5q
  end
  local pos
- if ltn98rbj then
- pos = Vector2.new(Camera.ViewportSize.X / (9 - 7), Camera.ViewportSize.Y / (4 / 2))
+ if lwe21sxu then
+ pos = Vector2.new(Camera.ViewportSize.X / (5 - 3), Camera.ViewportSize.Y / (5 - 3))
  else
  pos = UserInputService:GetMouseLocation()
  end
- local l6wqlu8x = lbr0lwzy.aimbotFOV or (207 - 7)
- l8vs2hz0.Position = UDim2.fromOffset(pos.X, pos.Y)
- l8vs2hz0.Size = UDim2.fromOffset(l6wqlu8x * (5 - 3), l6wqlu8x * (5 - 3))
- l8vs2hz0.Visible = true
+ local lrmwihyn = ldd0nsmn6.aimbotFOV or (400 / 2)
+ l8ag5q.Position = UDim2.fromOffset(pos.X, pos.Y)
+ l8ag5q.Size = UDim2.fromOffset(lrmwihyn * (9 - 7), lrmwihyn * (4 / 2))
+ l8ag5q.Visible = true
 end
 RunService.RenderStepped:Connect(function()
- laz7r7q[_s42] = lbr0lwzy.aimbot
- laz7r7q[_s58] = lbr0lwzy.aimbot
- laz7r7q[_s16] = lbr0lwzy.aimbotFOV
- laz7r7q[_s75] = lbr0lwzy.aimbotFOVCircle
- pcall(lj9p2oh6)
- if lbr0lwzy.aimbot then
- ljjtnnz2n()
+ l5w8lfoy[_s100] = ldd0nsmn6.aimbot
+ l5w8lfoy[_s143] = ldd0nsmn6.aimbot
+ l5w8lfoy[_s51] = ldd0nsmn6.aimbotFOV
+ l5w8lfoy[_s120] = ldd0nsmn6.aimbotFOVCircle
+ pcall(la0yr36e)
+ if ldd0nsmn6.aimbot then
+ ljqobpc()
  else
- ll9wgsl6(false)
+ lkaiu9p(false)
  end
 end)
-local lrry4af = 0
-local l3mjxa7 = 0
-RunService.RenderStepped:Connect(function(dt)
- local lqyaq8txf = l6913br8()
- local l1yua3xln = la988uz()
- local lya6muz = lglas0()
- if l1yua3xln and lqyaq8txf then
- if l1yua3xln.WalkSpeed ~= lbr0lwzy.walkspeed then l1yua3xln.WalkSpeed = lbr0lwzy.walkspeed end
- if lbr0lwzy.jumppower ~= (57 - 7) then
- l1yua3xln.UseJumpPower = true
- if l1yua3xln.JumpPower ~= lbr0lwzy.jumppower then l1yua3xln.JumpPower = lbr0lwzy.jumppower end
+local lfxt44j5w = 0
+local lx2wvqd = 0
+RunService.RenderStepped:Connect(function(lle1h6)
+ local la988uz = l2fnxk7()
+ local ltuszkl = l9fmzl6xc()
+ local lmmenz = lbpa0d()
+ if ltuszkl and la988uz then
+ if ltuszkl.WalkSpeed ~= ldd0nsmn6.walkspeed then ltuszkl.WalkSpeed = ldd0nsmn6.walkspeed end
+ if ldd0nsmn6.jumppower ~= (100 / 2) then
+ ltuszkl.UseJumpPower = true
+ if ltuszkl.JumpPower ~= ldd0nsmn6.jumppower then ltuszkl.JumpPower = ldd0nsmn6.jumppower end
  end
  end
- if lbr0lwzy.infjump and UserInputService:IsKeyDown(Enum.KeyCode.Space) then
- if l1yua3xln and l1yua3xln.FloorMaterial ~= Enum.Material.Air then l1yua3xln:ChangeState(Enum.HumanoidStateType.Jumping) end
+ if ldd0nsmn6.infjump and UserInputService:IsKeyDown(Enum.KeyCode.Space) then
+ if ltuszkl and ltuszkl.FloorMaterial ~= Enum.Material.Air then ltuszkl:ChangeState(Enum.HumanoidStateType.Jumping) end
  end
- if lbr0lwzy.bhop and UserInputService:IsKeyDown(Enum.KeyCode.Space) then
- if l1yua3xln and l1yua3xln.FloorMaterial ~= Enum.Material.Air then l1yua3xln:ChangeState(Enum.HumanoidStateType.Jumping) end
+ if ldd0nsmn6.bhop and UserInputService:IsKeyDown(Enum.KeyCode.Space) then
+ if ltuszkl and ltuszkl.FloorMaterial ~= Enum.Material.Air then ltuszkl:ChangeState(Enum.HumanoidStateType.Jumping) end
  end
- if lbr0lwzy.fly and lqyaq8txf and lya6muz then
- local l6y65lont = Vector3.zero
- if UserInputService:IsKeyDown(Enum.KeyCode.W) then l6y65lont = l6y65lont + lya6muz.CFrame.LookVector end
- if UserInputService:IsKeyDown(Enum.KeyCode.S) then l6y65lont = l6y65lont - lya6muz.CFrame.LookVector end
- if UserInputService:IsKeyDown(Enum.KeyCode.D) then l6y65lont = l6y65lont + lya6muz.CFrame.RightVector end
- if UserInputService:IsKeyDown(Enum.KeyCode.A) then l6y65lont = l6y65lont - lya6muz.CFrame.RightVector end
- if UserInputService:IsKeyDown(Enum.KeyCode.Space) then l6y65lont = l6y65lont + Vector3.new(0, 1, 0) end
- if UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) then l6y65lont = l6y65lont - Vector3.new(0, 1, 0) end
- if l6y65lont.likwtr > 0 then lqyaq8txf.AssemblyLinearVelocity = l6y65lont.Unit * l509x8qx.FlySpeed else lqyaq8txf.AssemblyLinearVelocity = Vector3.zero end
+ if ldd0nsmn6.fly and la988uz and lmmenz then
+ local ls46fb97n = Vector3.zero
+ if UserInputService:IsKeyDown(Enum.KeyCode.W) then ls46fb97n = ls46fb97n + lmmenz.CFrame.LookVector end
+ if UserInputService:IsKeyDown(Enum.KeyCode.S) then ls46fb97n = ls46fb97n - lmmenz.CFrame.LookVector end
+ if UserInputService:IsKeyDown(Enum.KeyCode.D) then ls46fb97n = ls46fb97n + lmmenz.CFrame.RightVector end
+ if UserInputService:IsKeyDown(Enum.KeyCode.A) then ls46fb97n = ls46fb97n - lmmenz.CFrame.RightVector end
+ if UserInputService:IsKeyDown(Enum.KeyCode.Space) then ls46fb97n = ls46fb97n + Vector3.new(0, 1, 0) end
+ if UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) then ls46fb97n = ls46fb97n - Vector3.new(0, 1, 0) end
+ if ls46fb97n.l6wqlu8x > 0 then la988uz.AssemblyLinearVelocity = ls46fb97n.Unit * lf7zrkbdp.FlySpeed else la988uz.AssemblyLinearVelocity = Vector3.zero end
  end
- if lbr0lwzy.lowgravity then Workspace.Gravity = (38 - 3) else Workspace.Gravity = lvjwie11l end
- if lbr0lwzy.noScreenShake then
- if l1yua3xln then pcall(function() l1yua3xln.CameraOffset = Vector3.zero end) end
- if lya6muz then pcall(function() lya6muz.CameraOffset = Vector3.zero end) end
+ if ldd0nsmn6.lowgravity then Workspace.Gravity = (70 / 2) else Workspace.Gravity = lapi0he end
+ if ldd0nsmn6.noScreenShake then
+ if ltuszkl then pcall(function() ltuszkl.CameraOffset = Vector3.zero end) end
+ if lmmenz then pcall(function() lmmenz.CameraOffset = Vector3.zero end) end
  end
- if lbr0lwzy.fov and lya6muz then
- if lya6muz.FieldOfView ~= lbr0lwzy.fov then lya6muz.FieldOfView = lbr0lwzy.fov end
+ if ldd0nsmn6.fov and lmmenz then
+ if lmmenz.FieldOfView ~= ldd0nsmn6.fov then lmmenz.FieldOfView = ldd0nsmn6.fov end
  end
- if lbr0lwzy.clickTP and Mouse and Mouse.Hit and lqyaq8txf then
+ if ldd0nsmn6.clickTP and Mouse and Mouse.Hit and la988uz then
  end
- if lbr0lwzy.crosshair and not lpvw3zc then lbef22zgz() end
- if lpvw3zc then lpvw3zc.Visible = lbr0lwzy.crosshair end
- lrry4af = lrry4af + dt
- if lrry4af >= 0.5 then
- lrry4af = 0
- if lbr0lwzy.espPlayers or lbr0lwzy.espPotato then
- local lbpa0d = l6913br8()
- local l2tidc = {}
- if lbr0lwzy.espPlayers then
- for _, plr in ipairs(lmb4su7()) do
- if plr.Character then l2tidc[plr.Character] = { Color = Color3.fromRGB((160 / 2), (207 - 7), (262 - 7)), Kind = _s88 } end
+ if ldd0nsmn6.crosshair and not l1tg5nl then lzs2xvxz() end
+ if l1tg5nl then l1tg5nl.Visible = ldd0nsmn6.crosshair end
+ lfxt44j5w = lfxt44j5w + lle1h6
+ if lfxt44j5w >= 0.5 then
+ lfxt44j5w = 0
+ if ldd0nsmn6.espPlayers or ldd0nsmn6.espPotato then
+ local locszzuh = l2fnxk7()
+ local ltn98rbj = {}
+ if ldd0nsmn6.espPlayers then
+ for lp6erp, l1iiixbd in ipairs(laz7r7q()) do
+ if l1iiixbd.Character then ltn98rbj[l1iiixbd.Character] = { Color = Color3.fromRGB((87 - 7), (400 / 2), (510 / 2)), Kind = _s117 } end
  end
  end
- for ll24nfc7 in pairs(lfxo0ktk) do
- if not l2tidc[ll24nfc7] then lzlgc3(ll24nfc7) end
+ for ld1yghc in pairs(lu5wast1) do
+ if not ltn98rbj[ld1yghc] then l0m2gl(ld1yghc) end
  end
- for ll24nfc7, info in pairs(l2tidc) do
- local ltbhzt = ln0alg(ll24nfc7, info.Color)
- ltbhzt.FillColor = info.Color
- if lbpa0d then
- local lbk7de = ll24nfc7:FindFirstChild(_s77) or ll24nfc7:FindFirstChildWhichIsA(_s27)
- if lbk7de then
- local lfugvcbv = math.floor((lbk7de.Position - lbpa0d.Position).likwtr)
- local lmnnayblc = ll24nfc7:FindFirstChildOfClass(_s159)
- local l5upwve = ""
- if lmnnayblc then l5upwve = _s52 .. math.floor(lmnnayblc.Health) .. _s65 end
- laxzrwmn0(ll24nfc7, _s13 .. lfugvcbv .. _s158 .. l5upwve, info.Color)
+ for ld1yghc, lgh6lcc in pairs(ltn98rbj) do
+ local l6rlpqrc = lhyy1j(ld1yghc, lgh6lcc.Color)
+ l6rlpqrc.FillColor = lgh6lcc.Color
+ if locszzuh then
+ local l0i1x7 = ld1yghc:FindFirstChild(_s123) or ld1yghc:FindFirstChildWhichIsA(_s176)
+ if l0i1x7 then
+ local lglas0 = math.floor((l0i1x7.Position - locszzuh.Position).l6wqlu8x)
+ local l5jl9uat = ld1yghc:FindFirstChildOfClass(_s163)
+ local l2u8bus0 = ""
+ if l5jl9uat then l2u8bus0 = _s127 .. math.floor(l5jl9uat.Health) .. _s167 end
+ lt9e7a(ld1yghc, _s154 .. lglas0 .. _s114 .. l2u8bus0, lgh6lcc.Color)
  end
  end
  end
@@ -1233,117 +1233,117 @@ RunService.RenderStepped:Connect(function(dt)
  end
 end)
 RunService.Stepped:Connect(function()
- if not lbr0lwzy.noclip then return end
- local lud2jtj = lle1h6()
- if lud2jtj then
- for _, ltuszkl in ipairs(lud2jtj:GetDescendants()) do
- if ltuszkl:IsA(_s27) then pcall(function() ltuszkl.CanCollide = false end) end
+ if not ldd0nsmn6.noclip then return end
+ local lgqt60 = ll8gar()
+ if lgqt60 then
+ for lp6erp, lmjjwr in ipairs(lgqt60:GetDescendants()) do
+ if lmjjwr:IsA(_s176) then pcall(function() lmjjwr.CanCollide = false end) end
  end
  end
 end)
-UserInputService.InputBegan:Connect(function(input, gameProcessed)
- if lbr0lwzy.clickTP and not gameProcessed then
- if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
- if (not ltn98rbj) and (UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) or UserInputService:IsKeyDown(Enum.KeyCode.RightControl)) then
- local lqyaq8txf = l6913br8()
- if lqyaq8txf and Mouse and Mouse.Hit then lqyaq8txf.CFrame = CFrame.new(Mouse.Hit.Position + Vector3.new(0, (10 - 7), 0)) end
- elseif ltn98rbj then
- local lqyaq8txf = l6913br8()
- if lqyaq8txf and Mouse and Mouse.Hit then lqyaq8txf.CFrame = CFrame.new(Mouse.Hit.Position + Vector3.new(0, (6 / 2), 0)) end
+UserInputService.InputBegan:Connect(function(lejt6z, lbahh5mij)
+ if ldd0nsmn6.clickTP and not lbahh5mij then
+ if lejt6z.UserInputType == Enum.UserInputType.MouseButton1 or lejt6z.UserInputType == Enum.UserInputType.Touch then
+ if (not lwe21sxu) and (UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) or UserInputService:IsKeyDown(Enum.KeyCode.RightControl)) then
+ local la988uz = l2fnxk7()
+ if la988uz and Mouse and Mouse.Hit then la988uz.CFrame = CFrame.new(Mouse.Hit.Position + Vector3.new(0, (6 / 2), 0)) end
+ elseif lwe21sxu then
+ local la988uz = l2fnxk7()
+ if la988uz and Mouse and Mouse.Hit then la988uz.CFrame = CFrame.new(Mouse.Hit.Position + Vector3.new(0, (6 / 2), 0)) end
  end
  end
  end
 end)
-RunService.Heartbeat:Connect(function(dt)
- l3mjxa7 = l3mjxa7 + dt
- if l3mjxa7 < 0.2 then return end
- l3mjxa7 = 0
- local l1yua3xln = la988uz(); local lqyaq8txf = l6913br8(); local lud2jtj = lle1h6(); local lya6muz = lglas0()
- if lbr0lwzy.noRecoil then
- local lqvsn24 = LocalPlayer.Character and LocalPlayer.Character:FindFirstChildOfClass(_s113)
- if lqvsn24 then
- for _, obj in ipairs(lqvsn24:GetDescendants()) do
- if obj:IsA(_s99) or obj:IsA(_s56) then
- local l8ag5q = string.lower(obj.Name)
- if string.find(l8ag5q, _s14, 1, true) or string.find(l8ag5q, _s125, 1, true) or
- string.find(l8ag5q, _s96, 1, true) or string.find(l8ag5q, _s28, 1, true) or
- string.find(l8ag5q, _s21, 1, true) then
- pcall(function() obj.Value = 0 end)
+RunService.Heartbeat:Connect(function(lle1h6)
+ lx2wvqd = lx2wvqd + lle1h6
+ if lx2wvqd < 0.2 then return end
+ lx2wvqd = 0
+ local ltuszkl = l9fmzl6xc(); local la988uz = l2fnxk7(); local lgqt60 = ll8gar(); local lmmenz = lbpa0d()
+ if ldd0nsmn6.noRecoil then
+ local lf4wts9z = LocalPlayer.Character and LocalPlayer.Character:FindFirstChildOfClass(_s62)
+ if lf4wts9z then
+ for lp6erp, l2fvnlx1 in ipairs(lf4wts9z:GetDescendants()) do
+ if l2fvnlx1:IsA(_s132) or l2fvnlx1:IsA(_s87) then
+ local lpvw3zc = string.lower(l2fvnlx1.Name)
+ if string.find(lpvw3zc, _s76, 1, true) or string.find(lpvw3zc, _s146, 1, true) or
+ string.find(lpvw3zc, _s22, 1, true) or string.find(lpvw3zc, _s122, 1, true) or
+ string.find(lpvw3zc, _s142, 1, true) then
+ pcall(function() l2fvnlx1.Value = 0 end)
  end
- elseif obj:IsA(_s61) then
- local l8ag5q = string.lower(obj.Name)
- if string.find(l8ag5q, _s14, 1, true) or string.find(l8ag5q, _s125, 1, true) then
- pcall(function() obj.Value = Vector3.zero end)
- end
- end
- end
- for _, attr in ipairs({_s157, _s50, _s155, _s70}) do
- pcall(function() lqvsn24:SetAttribute(attr, 0) end)
- end
- end
- local lya6muz = lglas0()
- if lya6muz then
- pcall(function() lya6muz.CFrame = lya6muz.CFrame end)
- end
- end
- if lbr0lwzy.noSpread then
- local lqvsn24 = LocalPlayer.Character and LocalPlayer.Character:FindFirstChildOfClass(_s113)
- if lqvsn24 then
- for _, obj in ipairs(lqvsn24:GetDescendants()) do
- if obj:IsA(_s99) or obj:IsA(_s56) then
- local l8ag5q = string.lower(obj.Name)
- if string.find(l8ag5q, _s43, 1, true) or string.find(l8ag5q, _s129, 1, true) or
- string.find(l8ag5q, _s130, 1, true) or string.find(l8ag5q, _s142, 1, true) or
- string.find(l8ag5q, _s123, 1, true) or string.find(l8ag5q, _s179, 1, true) then
- pcall(function() obj.Value = 0 end)
- end
- elseif obj:IsA(_s61) then
- local l8ag5q = string.lower(obj.Name)
- if string.find(l8ag5q, _s43, 1, true) or string.find(l8ag5q, _s142, 1, true) then
- pcall(function() obj.Value = Vector3.zero end)
+ elseif l2fvnlx1:IsA(_s91) then
+ local lpvw3zc = string.lower(l2fvnlx1.Name)
+ if string.find(lpvw3zc, _s76, 1, true) or string.find(lpvw3zc, _s146, 1, true) then
+ pcall(function() l2fvnlx1.Value = Vector3.zero end)
  end
  end
  end
- for _, attr in ipairs({_s161, _s95, _s145, _s71, _s44}) do
- pcall(function() lqvsn24:SetAttribute(attr, 0) end)
+ for lp6erp, luak4hnqh in ipairs({_s31, _s63, _s24, _s30}) do
+ pcall(function() lf4wts9z:SetAttribute(luak4hnqh, 0) end)
+ end
+ end
+ local lmmenz = lbpa0d()
+ if lmmenz then
+ pcall(function() lmmenz.CFrame = lmmenz.CFrame end)
+ end
+ end
+ if ldd0nsmn6.noSpread then
+ local lf4wts9z = LocalPlayer.Character and LocalPlayer.Character:FindFirstChildOfClass(_s62)
+ if lf4wts9z then
+ for lp6erp, l2fvnlx1 in ipairs(lf4wts9z:GetDescendants()) do
+ if l2fvnlx1:IsA(_s132) or l2fvnlx1:IsA(_s87) then
+ local lpvw3zc = string.lower(l2fvnlx1.Name)
+ if string.find(lpvw3zc, _s17, 1, true) or string.find(lpvw3zc, _s14, 1, true) or
+ string.find(lpvw3zc, _s25, 1, true) or string.find(lpvw3zc, _s108, 1, true) or
+ string.find(lpvw3zc, _s177, 1, true) or string.find(lpvw3zc, _s172, 1, true) then
+ pcall(function() l2fvnlx1.Value = 0 end)
+ end
+ elseif l2fvnlx1:IsA(_s91) then
+ local lpvw3zc = string.lower(l2fvnlx1.Name)
+ if string.find(lpvw3zc, _s17, 1, true) or string.find(lpvw3zc, _s108, 1, true) then
+ pcall(function() l2fvnlx1.Value = Vector3.zero end)
  end
  end
  end
- if lbr0lwzy.antiAfk then
- local lya6muz = lglas0()
- if lya6muz then
- pcall(function() VirtualUser:Button2Down(Vector2.new(0, 0), lya6muz.CFrame) end)
+ for lp6erp, luak4hnqh in ipairs({_s151, _s15, _s42, _s37, _s183}) do
+ pcall(function() lf4wts9z:SetAttribute(luak4hnqh, 0) end)
+ end
+ end
+ end
+ if ldd0nsmn6.antiAfk then
+ local lmmenz = lbpa0d()
+ if lmmenz then
+ pcall(function() VirtualUser:Button2Down(Vector2.new(0, 0), lmmenz.CFrame) end)
  task.wait(0.1)
- pcall(function() VirtualUser:Button2Up(Vector2.new(0, 0), lya6muz.CFrame) end)
+ pcall(function() VirtualUser:Button2Up(Vector2.new(0, 0), lmmenz.CFrame) end)
  end
  end
 end)
-local function lkz4xm8(l6rlpqrc)
- if not l6rlpqrc then return end
+local function lzsvm7l(l3mjxa7)
+ if not l3mjxa7 then return end
  task.wait(0.5)
- local l1yua3xln = l6rlpqrc and l6rlpqrc:FindFirstChildOfClass(_s159)
- if l1yua3xln then
- l1yua3xln.WalkSpeed = lbr0lwzy.walkspeed
- l1yua3xln.UseJumpPower = true
- l1yua3xln.JumpPower = lbr0lwzy.jumppower
+ local ltuszkl = l3mjxa7 and l3mjxa7:FindFirstChildOfClass(_s163)
+ if ltuszkl then
+ ltuszkl.WalkSpeed = ldd0nsmn6.walkspeed
+ ltuszkl.UseJumpPower = true
+ ltuszkl.JumpPower = ldd0nsmn6.jumppower
  end
 end
-LocalPlayer.CharacterAdded:Connect(function(l6rlpqrc)
- lkz4xm8(l6rlpqrc)
+LocalPlayer.CharacterAdded:Connect(function(l3mjxa7)
+ lzsvm7l(l3mjxa7)
 end)
-if LocalPlayer.Character then task.spawn(lkz4xm8, LocalPlayer.Character) end
+if LocalPlayer.Character then task.spawn(lzsvm7l, LocalPlayer.Character) end
 LocalPlayer.Idled:Connect(function()
- if not lbr0lwzy.antiAfk then return end
- local lya6muz = lglas0()
- if not lya6muz then return end
- pcall(function() VirtualUser:Button2Down(Vector2.new(0, 0), lya6muz.CFrame) end)
+ if not ldd0nsmn6.antiAfk then return end
+ local lmmenz = lbpa0d()
+ if not lmmenz then return end
+ pcall(function() VirtualUser:Button2Down(Vector2.new(0, 0), lmmenz.CFrame) end)
  task.wait(1)
- pcall(function() VirtualUser:Button2Up(Vector2.new(0, 0), lya6muz.CFrame) end)
+ pcall(function() VirtualUser:Button2Up(Vector2.new(0, 0), lmmenz.CFrame) end)
 end)
-locszzuh:Notify({
- Title = _s63,
- Content = _s134,
- Icon = _s48,
+lttgdbdlo:Notify({
+ Title = _s145,
+ Content = _s28,
+ Icon = _s170,
  Duration = (8 - 3),
 })
 end)(...)
